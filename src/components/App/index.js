@@ -1,17 +1,14 @@
 import { useState, useEffect } from "react";
 import List from "../List";
 import Input from "../Input";
-import Table from "../Table";
 import LoginButton from "../LoginButton";
 import LogoutButton from "../LogoutButton";
-import { useAuth0 } from "@auth0/auth0-react";
-
-import "./App.css";
+import {Table, Thead, Tbody, Tfoot, Tr, Th, Td, TableCaption, } from "@chakra-ui/react"
+import CSS from "./App.module.css"
 
 function App() {
   console.log("App rerender");
   const [Listings, setListings] = useState(["hello", "world"]);
-  const { user, isAuthenticated, isLoading } = useAuth0();
 
   useEffect(() => {
     document.title = `(${Listings.length}) things to do...`;
@@ -34,6 +31,7 @@ function App() {
       const resourceResponse = await fetch(
         "https://xsfe9i5ech.execute-api.eu-west-1.amazonaws.com/dev/resources"
       );
+
       const energiserData = await energiserResponse.json();
       const bootcamperData = await bootcamperResponse.json();
       const resourceData = await resourceResponse.json();
@@ -56,20 +54,60 @@ function App() {
   }
 
   return (
-    <div className="App">
-      {user?.email === "coach@schoolofcode.co.uk" ? <p>Hi coach</p> : null}
-      {user?.email === "bootcamper@schoolofcode.co.uk" ? (
-        <p>Hi bootcamper</p>
-      ) : null}
+    <div className={CSS.App}>
       <h1>My list...</h1>
       <LoginButton />
       <LogoutButton />
       <Input onData={addListing} />
       <List Listings={Listings} handleDelete={handleDelete} />
-      <Table
-        tbodyData={[{ items: ["a", "b", "c", "d"] }]}
-        theadData={["a", "b", "c", "d"]}
-      />
+      <Table variant="simple">
+  <TableCaption>Bootcamper Names</TableCaption>
+  <Thead>
+    <Tr>
+      <Th>First Name</Th>
+      <Th>Second Name</Th>
+    </Tr>  </Thead>
+  <Tbody>
+    <Tr>
+      <Td>name</Td>
+      <Td>name</Td>
+    </Tr>
+    <Tr>
+      <Td>name</Td>
+      <Td>name</Td>
+    </Tr>
+    <Tr>
+      <Td>name</Td>
+      <Td>name</Td> 
+    </Tr>
+    <Tr>
+      <Td>name</Td>
+      <Td>name</Td> 
+    </Tr><Tr>
+      <Td>name</Td>
+      <Td>name</Td> 
+    </Tr><Tr>
+      <Td>name</Td>
+      <Td>name</Td> 
+    </Tr><Tr>
+      <Td>name</Td>
+      <Td>name</Td> 
+    </Tr><Tr>
+      <Td>name</Td>
+      <Td>name</Td> 
+    </Tr><Tr>
+      <Td>name</Td>
+      <Td>name</Td> 
+    </Tr>
+  </Tbody>
+  <Tfoot>
+    <Tr>
+      <Th>First Name</Th>
+      <Th>Second Name</Th>
+    </Tr>
+  </Tfoot>
+</Table>
+    
     </div>
   );
 }

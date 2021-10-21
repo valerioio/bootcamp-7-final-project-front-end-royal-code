@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CSS from "./Input.module.css"
 
 function Input({ onData }) {
   console.log("Input rerender");
@@ -12,7 +13,7 @@ function Input({ onData }) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
+      <input className={CSS.inputContainer}
         onChange={(e) =>
           console.log("%cinput change event", "color:red") ||
           setText(e.target.value)

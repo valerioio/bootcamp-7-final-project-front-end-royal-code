@@ -1,0 +1,12 @@
+.ListItemContainer {
+    width: 400px;
+    border: 2px solid #158001;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    margin: 1em 0;
+  }
