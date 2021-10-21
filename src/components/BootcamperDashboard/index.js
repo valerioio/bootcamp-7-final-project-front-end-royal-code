@@ -11,6 +11,7 @@ import {
   TableCaption,
 } from "@chakra-ui/react";
 import LogoutButton from "../LogoutButton";
+import ReadingListPage from "../ReadingListPage";
 
 export default function BootcamperDashboard({
   handleDelete,
@@ -19,6 +20,8 @@ export default function BootcamperDashboard({
 }) {
   return (
     <div>
+    <h1>asdf</h1>
+      <ReadingListPage />
       <LogoutButton />
       <Input onData={addListing} />
       <List Listings={Listings} handleDelete={handleDelete} />
