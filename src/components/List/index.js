@@ -1,9 +1,10 @@
 import ListItem from "../ListItem";
+import CSS from "./List.modules.css"
 
 function List({ Listings, handleDelete }) {
   console.log("List rerender");
   return (
-    <ul>
+    <ul className={ CSS.list}>
       {Listings.map((Listing, i) => (
         <ListItem key={i} text={Listing} handleDelete={() => handleDelete(i)} />
       ))}

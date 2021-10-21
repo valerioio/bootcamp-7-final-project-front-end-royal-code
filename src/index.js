@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 ReactDOM.render(
   <Auth0Provider
@@ -12,7 +13,9 @@ ReactDOM.render(
     redirectUri={window.location.origin}
   >
     <React.StrictMode>
-      <App />
+    <ChakraProvider>
+  <App />
+ </ChakraProvider>
     </React.StrictMode>
   </Auth0Provider>,
   document.getElementById("root")
