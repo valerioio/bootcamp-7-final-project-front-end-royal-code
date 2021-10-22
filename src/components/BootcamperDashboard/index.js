@@ -3,10 +3,11 @@ import Input from "../Input";
 import ChakraTable from "../ChakraTable";
 import LogoutButton from "../LogoutButton";
 import Layout from "../Layout";
+import css from "./BootcamperDashboard.module.css";
 
 export default function BootcamperDashboard({
   handleDelete,
-  addListing,
+
   Listings,
   bootcampers,
 }) {
@@ -14,14 +15,10 @@ export default function BootcamperDashboard({
   return (
     <div>
       <Layout>
-        <LogoutButton />
-        <Input onData={addListing} />
-        <List Listings={Listings} handleDelete={handleDelete} />
-        <ChakraTable
-          title="Bootcamper Pairs"
-          columnHeaders={["Person 1", "Person 2"]}
-          data={bootcampers}
-        />
+        <h1 className={css.header}>Resource List</h1>
+        <div className={css.header}>
+          <List Listings={Listings} />
+        </div>
       </Layout>
     </div>
   );

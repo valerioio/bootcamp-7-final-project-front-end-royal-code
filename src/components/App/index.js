@@ -6,6 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import BootcamperDashboard from "../BootcamperDashboard";
 import { NameData } from "../../data";
 import CoachDashboard from "../CoachDashboard";
+import { JourneyData } from "../../data";
 
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -63,20 +64,17 @@ function App() {
           Listings={Listings}
           bootcampers={NameData}
         />
-      ) : (
-       null
-      )};
+      ) : null}
+      ;
       {user?.email === "bootcamper@schoolofcode.co.uk" ? (
         <BootcamperDashboard
           handleDelete={handleDelete}
           addListing={addListing}
-          Listings={Listings}
+          Listings={JourneyData}
           bootcampers={NameData}
         />
-      ) : (
-       null
-      )}
-      {isAuthenticated ? null : <LoginPage/>}
+      ) : null}
+      {isAuthenticated ? null : <LoginPage />}
     </div>
   );
 }
