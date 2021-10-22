@@ -65,7 +65,6 @@ function App() {
           bootcampers={NameData}
         />
       ) : null}
-      ;
       {user?.email === "bootcamper@schoolofcode.co.uk" ? (
         <BootcamperDashboard
           handleDelete={handleDelete}
