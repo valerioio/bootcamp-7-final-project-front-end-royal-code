@@ -26,7 +26,6 @@ export default function ChakraTable({ title, columnHeaders, data }) {
     c = c + rows;
   }
 
-  console.log(dividedData);
   return (
     <div>
       <Table variant="simple">

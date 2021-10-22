@@ -6,7 +6,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import BootcamperDashboard from "../BootcamperDashboard";
 import { NameData } from "../../data";
 
-
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
   console.log("App rerender");
@@ -68,11 +67,11 @@ function App() {
           handleDelete={handleDelete}
           addListing={addListing}
           Listings={Listings}
+          bootcampers={NameData}
         />
       ) : (
         <LoginPage />
       )}
-
     </div>
   );
 }
