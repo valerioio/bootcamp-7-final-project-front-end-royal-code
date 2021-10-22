@@ -20,14 +20,12 @@ import { v4 as uuidv4 } from "uuid";
 
 export default function ChakraTable({ title, columnHeaders, data }) {
   let dividedData = [];
-  let c = 0;
-  let rows = data.length / columnHeaders.length;
-
-  for (let i = 0; i < columnHeaders.length; i++) {
-    dividedData[i] = data.slice(c, c + rows);
-    c = c + rows;
+  const rows = data.length/columnHeaders.length;
+  for(let i = 0; i<data.length; i+= columnHeaders.length){
+    dividedData.push(data.slice(i,i+columnHeaders.length))
   }
-  
+  console.log('asdf',dividedData)
+
   return (
     <div>
       <Table variant="striped" size="lg" colorScheme="blackAlpha">
@@ -43,7 +41,7 @@ export default function ChakraTable({ title, columnHeaders, data }) {
             })}
           </Tr>{" "}
         </Thead>
-        <Tbody classNmae={css.Bodycontainer}>
+        <Tbody className={css.Bodycontainer}>
           {dividedData.map((item, i) => {
             return (
               <Tr key={uuidv4()}>
