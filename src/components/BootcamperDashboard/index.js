@@ -16,8 +16,13 @@ export default function BootcamperDashboard({
       <Input onData={addListing} />
       <List Listings={Listings} handleDelete={handleDelete} />
       <ChakraTable
-        title="Bootcamper List"
-        columnHeaders={["First Name", "Last Name"]}
+        title="Bootcamper Pairs"
+        columnHeaders={["Person 1", "Person 2"]}
+        data={bootcampers}
+      />
+      <ChakraTable
+        title="Bootcamper groups of 4"
+        columnHeaders={["Person 1", "Person 2", "Person 3", "Person 4"]}
         data={bootcampers}
       />
     </div>

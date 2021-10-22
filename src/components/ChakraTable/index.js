@@ -20,6 +20,7 @@ export default function ChakraTable({ title, columnHeaders, data }) {
   let dividedData = [];
   let c = 0;
   let rows = data.length / columnHeaders.length;
+
   for (let i = 0; i < data.length / columnHeaders.length; i++) {
     dividedData[i] = data.slice(c, c + rows);
     c = c + rows;
