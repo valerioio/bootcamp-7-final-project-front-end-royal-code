@@ -2,6 +2,7 @@ import List from "../List";
 import Input from "../Input";
 import ChakraTable from "../ChakraTable";
 import LogoutButton from "../LogoutButton";
+import Layout from "../Layout";
 
 export default function BootcamperDashboard({
   handleDelete,
@@ -12,7 +13,8 @@ export default function BootcamperDashboard({
   console.log(bootcampers);
   return (
     <div>
-      <LogoutButton />
+      <Layout>
+        <LogoutButton />
       <Input onData={addListing} />
       <List Listings={Listings} handleDelete={handleDelete} />
       <ChakraTable
@@ -25,6 +27,7 @@ export default function BootcamperDashboard({
         columnHeaders={["Person 1", "Person 2", "Person 3", "Person 4"]}
         data={bootcampers}
       />
+     <Layout/>
     </div>
   );
 }
