@@ -1,11 +1,11 @@
 import NavBar from "../NavBar";
-import Thing from "../Thing";
+import NameIcon from "../NameIcon";
 
 const Layout = ({ children }) => {
   return (
     <>
       <NavBar />
-      <Thing />
+      <NameIcon />
       {children}
     </>
   );

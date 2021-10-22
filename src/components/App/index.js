@@ -5,6 +5,7 @@ import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import BootcamperDashboard from "../BootcamperDashboard";
 import { NameData } from "../../data";
+import CoachDashboard from "../CoachDashboard";
 
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -55,7 +56,16 @@ function App() {
 
   return (
     <div className={CSS.App}>
-      {user?.email === "coach@schoolofcode.co.uk" ? <p>Hi coach</p> : null}
+      {user?.email === "coach@schoolofcode.co.uk" ? (
+        <CoachDashboard
+          handleDelete={handleDelete}
+          addListing={addListing}
+          Listings={Listings}
+          bootcampers={NameData}
+        />
+      ) : (
+       null
+      )};
       {user?.email === "bootcamper@schoolofcode.co.uk" ? (
         <BootcamperDashboard
           handleDelete={handleDelete}
@@ -64,8 +74,9 @@ function App() {
           bootcampers={NameData}
         />
       ) : (
-        <LoginPage />
+       null
       )}
+      {isAuthenticated ? null : <LoginPage/>}
     </div>
   );
 }

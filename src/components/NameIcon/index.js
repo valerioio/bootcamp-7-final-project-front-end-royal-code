@@ -1,10 +1,11 @@
 import { Box, Circle, Flex, Spacer, Text } from "@chakra-ui/react";
+import LogoutButton from "../LogoutButton";
 
-const Thing = () => {
+const NameIcon = () => {
   return (
     <>
       <Flex>
-        <Spacer />
+        <Spacer /><LogoutButton/>
         <Box borderRadius="md" bg="#31986a" color="white" w={40} h={10} mx={5}>
           <Circle size="1.5em" bg="tomato" color="white">
             VY
@@ -12,8 +13,9 @@ const Thing = () => {
           <Text>Valerio Yrral</Text>
         </Box>
       </Flex>
+      
     </>
   );
 };
 
-export default Thing;
+export default NameIcon;
