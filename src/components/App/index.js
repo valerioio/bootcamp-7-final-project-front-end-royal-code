@@ -55,12 +55,6 @@ function App() {
 
   return (
     <div className={CSS.App}>
-      <BootcamperDashboard
-        handleDelete={handleDelete}
-        addListing={addListing}
-        Listings={Listings}
-        bootcampers={NameData}
-      />
       {user?.email === "coach@schoolofcode.co.uk" ? <p>Hi coach</p> : null}
       {user?.email === "bootcamper@schoolofcode.co.uk" ? (
         <BootcamperDashboard
