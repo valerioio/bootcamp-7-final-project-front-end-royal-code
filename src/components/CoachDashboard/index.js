@@ -15,7 +15,7 @@ export default function CoachDashboard({
   return (
     <div >
       <Layout>
-        <ChakraTable
+        <ChakraTable className={css.tablecontainer}
           title="Bootcamper Pairs"
           columnHeaders={["Person 1", "Person 2"]}
           data={bootcampers}

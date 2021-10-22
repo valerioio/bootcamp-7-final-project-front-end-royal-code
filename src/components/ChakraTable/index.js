@@ -15,40 +15,42 @@ import {
   Td,
   TableCaption,
 } from "@chakra-ui/react";
+import css from "./Chakra.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 export default function ChakraTable({ title, columnHeaders, data }) {
   let dividedData = [];
   let c = 0;
   let rows = data.length / columnHeaders.length;
 
-  for (let i = 0; i < data.length / columnHeaders.length; i++) {
+  for (let i = 0; i < columnHeaders.length; i++) {
     dividedData[i] = data.slice(c, c + rows);
     c = c + rows;
   }
-
+  
   return (
     <div>
-      <Table variant="simple">
+      <Table variant="striped" size="lg" colorScheme="blackAlpha">
         <TableCaption>{title}</TableCaption>
         <Thead>
           <Tr>
             {columnHeaders.map((header) => {
-              return <Th>{header}</Th>;
+              return (
+                <Th key={uuidv4()}>
+                  <div className={css.Header}>{header}</div>
+                </Th>
+              );
             })}
           </Tr>{" "}
         </Thead>
-        <Tbody>
+        <Tbody classNmae={css.Bodycontainer}>
           {dividedData.map((item, i) => {
             return (
-              <Td>
+              <Tr key={uuidv4()}>
                 {item.map((person) => {
-                  return (
-                    <Tr>
-                      {person.firstName} {person.lastName}
-                    </Tr>
-                  );
+                  return <Td key={uuidv4()}>{person.firstName}</Td>;
                 })}
-              </Td>
+              </Tr>
             );
           })}
         </Tbody>

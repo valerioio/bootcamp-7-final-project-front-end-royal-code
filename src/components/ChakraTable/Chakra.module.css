@@ -1,0 +1,12 @@
+.Bordercontainer{
+    border: solid 1 black;
+}
+.Header{
+color:pink;
+width: 10em;
+}
+
+.Bodycontainer{
+    border-spacing: 5em;
+    padding-bottom: 1em;
+}
