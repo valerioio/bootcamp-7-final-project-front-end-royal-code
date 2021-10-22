@@ -1,11 +1,11 @@
 import { Box, Circle, Flex, Spacer, Text } from "@chakra-ui/react";
 
-const ReadingListPage = () => {
+const Thing = () => {
   return (
     <>
       <Flex>
         <Spacer />
-        <Box borderRadius="md" bg="green" color="white" w={40} h={10} mx={5}>
+        <Box borderRadius="md" bg="#31986a" color="white" w={40} h={10} mx={5}>
           <Circle size="1.5em" bg="tomato" color="white">
             VY
           </Circle>
@@ -16,4 +16,4 @@ const ReadingListPage = () => {
   );
 };
 
-export default ReadingListPage;
+export default Thing;

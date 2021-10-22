@@ -63,9 +63,9 @@ function App() {
           Listings={Listings}
         />
       ) : null}
-      <h1>My list...</h1>
+      {/* <h1>My list...</h1>
       <LoginButton />
-      <LogoutButton />
+      <LogoutButton /> */}
     </div>
   );
 }
