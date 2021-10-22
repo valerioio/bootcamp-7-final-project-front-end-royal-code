@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import LoginButton from "../LoginButton";
 import LogoutButton from "../LogoutButton";
-import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import BootcamperDashboard from "../BootcamperDashboard";
+import LoginPage from "../LoginPage";
 
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -61,10 +60,9 @@ function App() {
           addListing={addListing}
           Listings={Listings}
         />
-      ) : null}
-      <h1>My list...</h1>
-      <LoginButton />
-      <LogoutButton />
+      ) : (
+        <LoginPage />
+      )}
     </div>
   );
 }

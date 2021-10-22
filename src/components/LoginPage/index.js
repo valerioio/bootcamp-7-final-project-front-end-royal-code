@@ -7,15 +7,18 @@
 
 import React from "react";
 import LoginButton from "../LoginButton";
-import logo from "../../../public/socLogo.png";
+import logo from "./socLogo.png";
 import styles from "./LoginPage.module.css";
 
 export default function LoginPage() {
   return (
-    <div>
-      <image src={logo} />
-      <h1 className={styles.title}>Login</h1>
-      <LoginButton type="button" />
+    <div className={styles.background}>
+      <image src={logo} className={styles.logo} />
+      <h1 className={styles.title}>Login.</h1>
+      <div className={styles.buttonAlign}>
+        <LoginButton className={styles.login} />
+      </div>
+
       <div className={styles.banner}></div>
     </div>
   );
