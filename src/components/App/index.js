@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import LoginButton from "../LoginButton";
+import LoginPage from "../LoginPage";
 import LogoutButton from "../LogoutButton";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import BootcamperDashboard from "../BootcamperDashboard";
 import { NameData } from "../../data";
+
 
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -32,7 +33,6 @@ function App() {
       const resourceResponse = await fetch(
         "https://xsfe9i5ech.execute-api.eu-west-1.amazonaws.com/dev/resources"
       );
-
       const energiserData = await energiserResponse.json();
       const bootcamperData = await bootcamperResponse.json();
       const resourceData = await resourceResponse.json();
@@ -68,12 +68,11 @@ function App() {
           handleDelete={handleDelete}
           addListing={addListing}
           Listings={Listings}
-          bootcampers={NameData}
         />
-      ) : null}
-      {/* <h1>My list...</h1>
-      <LoginButton />
-      <LogoutButton /> */}
+      ) : (
+        <LoginPage />
+      )}
+
     </div>
   );
 }

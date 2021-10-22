@@ -4,6 +4,7 @@ import ChakraTable from "../ChakraTable";
 import LogoutButton from "../LogoutButton";
 import Layout from "../Layout";
 
+
 export default function BootcamperDashboard({
   handleDelete,
   addListing,

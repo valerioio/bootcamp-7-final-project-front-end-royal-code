@@ -1,4 +1,4 @@
-.Button {
+/*.Button {
   background-color: #158001;
   color: white;
   border-radius: 1px;
@@ -20,4 +20,13 @@ Button:hover {
   border: 1px white;
   color: white;
   transform: scale(1.1);
+}*/
+
+.Button {
+  border-radius: 10%;
+  background-color: #ffffff !important;
+  color: #38a98e;
+  font-size: 50px;
+  padding: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
