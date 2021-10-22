@@ -1,11 +1,10 @@
 .Button {
-    border-radius: 10%;
-    background-color:#38a98e !important;
-    color: #ffffff ;
-    font-size: 1em;
-    padding: 0.1em;
-    height: 3em !important;
-    margin-top:1vw;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
-  }
-  
+  border-radius: 10%;
+  background-color: #31986a !important;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 0.1em;
+  height: 3em !important;
+  margin-top: 1vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}

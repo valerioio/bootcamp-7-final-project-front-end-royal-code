@@ -19,7 +19,6 @@ export default function LoginPage() {
       <div className={styles.buttonAlign}>
         <LoginButton className={styles.login} />
       </div>
-      <LogoutButton/>
 
       <div className={styles.banner}></div>
     </div>

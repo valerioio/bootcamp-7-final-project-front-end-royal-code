@@ -17,13 +17,13 @@ const NameIcon = () => {
         >
           <Flex justify="space-around" align="center">
             <Avatar
-              name="Valerio Yrral"
+              name="Coach"
               bg="white"
               color="#31986a"
               size="sm"
               src="https://bit.ly/broken-link"
             />
-            <Text>Valerio Yrral</Text>
+            <Text>Coach</Text>
           </Flex>
         </Box>
       </Flex>
