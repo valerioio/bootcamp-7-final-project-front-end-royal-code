@@ -1,80 +1,25 @@
 import List from "../List";
 import Input from "../Input";
-import {
-  Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
-  TableCaption,
-} from "@chakra-ui/react";
+import ChakraTable from "../ChakraTable";
 import LogoutButton from "../LogoutButton";
 
 export default function BootcamperDashboard({
   handleDelete,
   addListing,
   Listings,
+  bootcampers,
 }) {
+  console.log(bootcampers);
   return (
     <div>
       <LogoutButton />
       <Input onData={addListing} />
       <List Listings={Listings} handleDelete={handleDelete} />
-      <Table variant="simple">
-        <TableCaption>Bootcamper Names</TableCaption>
-        <Thead>
-          <Tr>
-            <Th>First Name</Th>
-            <Th>Second Name</Th>
-          </Tr>{" "}
-        </Thead>
-        <Tbody>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-          <Tr>
-            <Td>name</Td>
-            <Td>name</Td>
-          </Tr>
-        </Tbody>
-        <Tfoot>
-          <Tr>
-            <Th>First Name</Th>
-            <Th>Second Name</Th>
-          </Tr>
-        </Tfoot>
-      </Table>
+      <ChakraTable
+        title="Bootcamper List"
+        columnHeaders={["First Name", "Last Name"]}
+        data={bootcampers}
+      />
     </div>
   );
 }
