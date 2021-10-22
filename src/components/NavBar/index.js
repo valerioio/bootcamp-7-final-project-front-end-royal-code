@@ -1,9 +1,9 @@
 import React from "react";
 import { Flex, Link, Text } from "@chakra-ui/react";
 
-const NavBar = (props) => {
+const NavBar = ({ children }) => {
   return (
-    <div>
+    <Flex>
       <Flex
         as="nav"
         direction="column"
@@ -26,7 +26,7 @@ const NavBar = (props) => {
           justify="space-around"
           wrap="wrap"
           w="100%"
-          h="30%"
+          h="50%"
           mt="30%"
         >
           <Link href="/bootcamp8">
@@ -46,7 +46,9 @@ const NavBar = (props) => {
           </Link>
         </Flex>
       </Flex>
-    </div>
+      <Flex
+      direction='column'>{children}</Flex>
+    </Flex>
   );
 };
 

@@ -4,9 +4,10 @@ import NameIcon from "../NameIcon";
 const Layout = ({ children }) => {
   return (
     <>
-      <NavBar />
-      <NameIcon />
-      {children}
+      <NavBar>
+        <NameIcon />
+        {children}
+      </NavBar>
     </>
   );
 };
