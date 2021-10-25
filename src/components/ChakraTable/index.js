@@ -29,7 +29,7 @@ export default function ChakraTable({ title, columnHeaders, data }) {
   return (
     <div>
       <Table variant="striped" size="lg" colorScheme="blackAlpha">
-        <TableCaption>{title}</TableCaption>
+        {/* <TableCaption>{title}</TableCaption> */}
         <Thead>
           <Tr>
             {columnHeaders.map((header) => {

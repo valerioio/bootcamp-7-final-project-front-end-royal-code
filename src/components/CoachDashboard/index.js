@@ -1,10 +1,7 @@
-import List from "../List";
-import Input from "../Input";
 import ChakraTable from "../ChakraTable";
-import LogoutButton from "../LogoutButton";
 import Layout from "../Layout";
 import css from "./CoachDashboard.module.css";
-import Container from "../Container";
+import "../../index.css";
 
 export default function CoachDashboard({
   addListing,
@@ -16,29 +13,26 @@ export default function CoachDashboard({
   return (
     <div>
       <Layout>
-        <h1 className={css.header}>Bootcamper pairings</h1>
-        <div className={css.header}>
+        <div className={`${css.header} container`}>
+          <h1 className={css.tableTitle}>Bootcamper pairings</h1>
           <ChakraTable
             className={css.tablecontainer}
             title=""
             columnHeaders={["Person 1", "Person 2"]}
             data={bootcampers}
           />
-        </div> 
-        <Container>
-        <h1 className={css.header}>Bootcamper groups of 4</h1>
-        
-        <div className={css.header}>
+        </div>
+        <div className={`${css.header} container`}>
+          <h1 className={css.tableTitle}>Bootcamper groups of 4</h1>
           <ChakraTable
             className={css.tablecontainer}
             title=""
             columnHeaders={["Person 1", "Person 2", "Person 3", "Person 4"]}
             data={bootcampers}
-          /> 
+          />
         </div>
-        </Container>
-        <h1 className={css.header}>Bootcamper groups of 8</h1>
-        <div className={css.header}>
+        <div className={`${css.header} container`}>
+          <h1 className={css.tableTitle}>Bootcamper groups of 8</h1>
           <ChakraTable
             className={css.tablecontainer}
             title=""
