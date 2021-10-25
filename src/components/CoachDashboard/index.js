@@ -4,6 +4,7 @@ import ChakraTable from "../ChakraTable";
 import LogoutButton from "../LogoutButton";
 import Layout from "../Layout";
 import css from "./CoachDashboard.module.css";
+import Container from "../Container";
 
 export default function CoachDashboard({
   addListing,
@@ -23,16 +24,19 @@ export default function CoachDashboard({
             columnHeaders={["Person 1", "Person 2"]}
             data={bootcampers}
           />
-        </div>
+        </div> 
+        <Container>
         <h1 className={css.header}>Bootcamper groups of 4</h1>
+        
         <div className={css.header}>
           <ChakraTable
             className={css.tablecontainer}
             title=""
             columnHeaders={["Person 1", "Person 2", "Person 3", "Person 4"]}
             data={bootcampers}
-          />
+          /> 
         </div>
+        </Container>
         <h1 className={css.header}>Bootcamper groups of 8</h1>
         <div className={css.header}>
           <ChakraTable
