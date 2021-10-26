@@ -4,15 +4,17 @@ import css from "./BootcamperDashboard.module.css";
 
 export default function BootcamperDashboard({ Listings, name }) {
   const navbarLinks = [
-    { linkText: "Dashboard", href: "/" },
+    { linkText: "Dashboard", href: "/home" },
     { linkText: "Journey", href: "/journey" },
   ];
   return (
     <div>
       <Layout navbarLinks={navbarLinks} name="Bootcamper">
-        <h1 className={css.header}>Resource List</h1>
-        <div className={css.header}>
-          <List Listings={Listings} />
+        <div className={css.dashboard}>
+          <div className={`container`}>
+            <h1 className={css.title}>Resource List</h1>
+            <List className={css.list} Listings={Listings} />
+          </div>
         </div>
       </Layout>
     </div>

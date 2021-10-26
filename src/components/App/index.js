@@ -6,7 +6,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import BootcamperDashboard from "../BootcamperDashboard";
 import { NameData } from "../../data";
 import CoachDashboard from "../CoachDashboard";
-import { JourneyData } from "../../data";
+import { JourneyData, energisers } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Timeline from "../Timeline";
 import Home from "../Home";
@@ -64,6 +64,7 @@ function App() {
               NameData={NameData}
               JourneyData={JourneyData}
               addListing={addListing}
+              energisers={energisers}
             />
           </Route>
           <Route path="/journey">

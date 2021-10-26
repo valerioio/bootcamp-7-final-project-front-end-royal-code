@@ -1,7 +1,7 @@
 // we want data for the enegerises, the title of the energiser, dispriction of enegeriser, link like of enegeriser
 // we want data of 4,8 names firs and last name of boot campers that
 
-export const dummyData = [
+export const energisers = [
   {
     name: "Gartic",
 
@@ -213,8 +213,7 @@ export const JourneyData = [
   },
   {
     week: 8,
-    topic:
-      "project",
+    topic: "project",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },

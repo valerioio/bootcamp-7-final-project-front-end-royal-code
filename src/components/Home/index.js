@@ -8,6 +8,7 @@ export default function Home({
   NameData,
   JourneyData,
   addListing,
+  energisers,
 }) {
   return (
     <div>
@@ -16,6 +17,7 @@ export default function Home({
           handleDelete={handleDelete}
           bootcampers={NameData}
           name={user.name}
+          energisers={energisers}
         />
       ) : null}
       {user?.email === "bootcamper@schoolofcode.co.uk" ? (

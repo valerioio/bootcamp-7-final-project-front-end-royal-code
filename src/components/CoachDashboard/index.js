@@ -1,6 +1,7 @@
 import Layout from "../Layout";
 import css from "./CoachDashboard.module.css";
 import "../../index.css";
+import List from "../List";
 
 function groupParings(bootcampers, size) {
   const groups = [];
@@ -28,12 +29,31 @@ export default function CoachDashboard({
   bootcampers,
   handleDelete,
   name,
+  energisers,
 }) {
-  const navbarLinks = [{ linkText: "Coach", href: "/coach" }];
+  const navbarLinks = [
+    { linkText: "Dashboard", href: "/home" },
+    { linkText: "Energisers", href: "/energisers" },
+  ];
   return (
     <div>
       <Layout navbarLinks={navbarLinks} name="Coach">
         <div className={css.dashboard}>
+          <div className={`container`}>
+            <h1 className={css.title}>Energisers</h1>
+            <ul className={css.list}>
+              {energisers.map((energiser) => {
+                return (
+                  <li>
+                    <p>{energiser.name}</p>
+                    <p>{energiser.description}</p>
+                    <p>{energiser.link}</p>
+                    <br />
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
           <div className={`container`}>
             <h1 className={css.title}>Bootcamper pairings</h1>
             <ul className={css.list}> {groupParings(bootcampers, 2)}</ul>
