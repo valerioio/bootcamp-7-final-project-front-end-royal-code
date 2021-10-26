@@ -7,15 +7,13 @@ import BootcamperDashboard from "../BootcamperDashboard";
 import { NameData } from "../../data";
 import CoachDashboard from "../CoachDashboard";
 import { JourneyData } from "../../data";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Timeline from "../Timeline";
+import Home from "../Home";
 
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
   console.log("App rerender");
-  const [Listings, setListings] = useState(["hello", "world"]);
-
-  useEffect(() => {
-    document.title = `(${Listings.length}) things to do...`;
-  }, [Listings]);
 
   // Plan: Create a fetch to the backend on page initialisation to get data for lists
   // Wrap in useEffect, [] dependency
@@ -47,33 +45,37 @@ function App() {
 */
   function handleDelete(i) {
     console.log("%chandle delete", "color:lightblue");
-    setListings([...Listings.slice(0, i), ...Listings.slice(i + 1)]);
+    // do stuff
   }
 
   function addListing(text) {
     console.log("%cadd  listing ", "color:lightgreen");
-    setListings([...Listings, text]);
+    // do stuff
   }
 
   return (
     <div className={CSS.App}>
-      {user?.email === "coach@schoolofcode.co.uk" ? (
-        <CoachDashboard
-          handleDelete={handleDelete}
-          addListing={addListing}
-          Listings={Listings}
-          bootcampers={NameData}
-        />
-      ) : null}
-      {user?.email === "bootcamper@schoolofcode.co.uk" ? (
-        <BootcamperDashboard
-          handleDelete={handleDelete}
-          addListing={addListing}
-          Listings={JourneyData}
-          bootcampers={NameData}
-        />
-      ) : null}
-      {isAuthenticated ? null : <LoginPage />}
+      <Router>
+        <Switch>
+          <Route path="/home">
+            <Home
+              user={user}
+              handleDelete={handleDelete}
+              NameData={NameData}
+              JourneyData={JourneyData}
+              addListing={addListing}
+            />
+          </Route>
+          <Route path="/journey">
+            <Timeline data={JourneyData} />
+          </Route>
+          <Route path="/">
+            <LoginPage />
+          </Route>
+        </Switch>
+      </Router>
+
+      {/* {isAuthenticated ? null : <LoginPage />} */}
     </div>
   );
 }

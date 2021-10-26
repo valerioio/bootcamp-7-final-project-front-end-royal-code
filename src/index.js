@@ -10,12 +10,12 @@ ReactDOM.render(
   <Auth0Provider
     domain="dev-7plt54d0.us.auth0.com"
     clientId="LFFuAUe4cWdCiHRc7XeYepZoua3TP8Tr"
-    redirectUri={window.location.origin}
+    redirectUri={`${window.location.origin}/home`}
   >
     <React.StrictMode>
-    <ChakraProvider>
-  <App />
- </ChakraProvider>
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
     </React.StrictMode>
   </Auth0Provider>,
   document.getElementById("root")

@@ -27,11 +27,12 @@ export default function CoachDashboard({
   Listings,
   bootcampers,
   handleDelete,
+  name,
 }) {
-  console.log(bootcampers);
+  const navbarLinks = [{ linkText: "Coach", href: "/coach" }];
   return (
     <div>
-      <Layout>
+      <Layout navbarLinks={navbarLinks} name="Coach">
         <div className={css.dashboard}>
           <div className={`container`}>
             <h1 className={css.title}>Bootcamper pairings</h1>

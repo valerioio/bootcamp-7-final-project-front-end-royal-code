@@ -1,8 +1,8 @@
-body {
+/* body {
   overflow-x:hidden;
   /* header { */
-    
-    /* .grad-over {
+
+/* .grad-over {
       font-size: 3em;
       font-weight: bold;
       position: relative;
@@ -23,11 +23,11 @@ body {
       &:hover:after {
         left: -100%;
       }
-    } */
+    } 
   }
   
-  /* .timelineWrapper {
-  } */
+  .timelineWrapper {
+  } 
   .topWeek {
     display:inline-block;
     width: 80px;
@@ -256,4 +256,4 @@ body {
 @keyframes light {
   to{color: #111}
 }
-}
+} */
