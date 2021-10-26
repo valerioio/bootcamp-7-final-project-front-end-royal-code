@@ -139,127 +139,127 @@ export const JourneyData = [
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 1,
+    week: 2,
     topic:
       "Python variables are names: Other languages have {variables}, from Code Like A Pythonista: Idiomatic Python",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 1,
+    week: 2,
     topic:
       "Conditionals: Chapter 4, of How to Think Like a Computer Scientist (through section 4,.8), and the conditional statements section of Python Programming",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 1,
+    week: 3,
     topic: "Iteration: Loops section of Python Programming",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 1,
+    week: 3,
     topic: "Tuples: Tuples and sequences section of the Python Tutorial",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 1,
+    week: 3,
     topic:
       "More on traversing and slicing strings: Chapter 7 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 4,
+    week: 5,
     topic:
       "Functions, type conversion, and stack diagrams: Chapter 3 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 4,
+    week: 5,
     topic:
       "More about functions: Chapter 5 of How to Think Like a Computer Scientist (through section 5.4)",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 4,
+    week: 6,
     topic:
       "Recursion: Chapter 4 of How to Think Like a Computer Scientist (from section 4,.9 on), as well as Chapter 5 of How to Think Like a Computer Scientist (from section 5,.5, on)",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 5,
+    week: 6,
     topic:
       "Numbers: Floating point arithmetic: issues and limitations from the Python Tutorial",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 5,
+    week: 7,
     topic: "Successive approximation: Wikipedia article on Newton's method",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 6,
+    week: 7,
     topic: "Lists: Chapter 8 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 6,
+    week: 8,
     topic:
-      "Dictionaries: Chapter 1,0 of How to Think Like a Computer Scientist",
+      "project",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 6,
+    week: 9,
     topic:
       "As a reference: the Python Tutorial section on lists and dictionaries (feel free to skip 5,.1,.3 and 5,.1,.4,)",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 7,
+    week: 9,
     topic:
       "Asymptotic notation: Section 3 from the Spring 2005, 6.042 lecture notes on OCW (PDF)",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 7,
+    week: 10,
     topic:
       "Order of growth: Sections 2.1 and 2.2 from Computational Modeling and Complexity Science",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 7,
+    week: 10,
     topic:
       "Binary search: Wikipedia article on binary search (focus on the recursive implementation in Section 4,)",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 9,
+    week: 11,
     topic: "Selection sort: Wikipedia article on selection sort",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 9,
+    week: 11,
     topic: "Insertion sort: Wikipedia article on insertion sort",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 9,
+    week: 12,
     topic: "Merge sort: Wikipedia article on merge sort",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
@@ -272,49 +272,49 @@ export const JourneyData = [
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 14,
+    week: 12,
     topic: "Chapter 12 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 14,
+    week: 9,
     topic: "Chapter 13 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 14,
+    week: 7,
     topic: "Chapter 14 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 14,
+    week: 6,
     topic: "Chapter 15 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 14,
+    week: 7,
     topic: "Chapter 16 of How to Think Like a Computer Scientist",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 17,
+    week: 11,
     topic: "Random walks applet",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 17,
+    week: 3,
     topic: "Matplotlib/pylab reference",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
   {
-    week: 20,
+    week: 12,
     topic: "Monte Carlo method: Wikipedia article on the Monte Carlo method",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
