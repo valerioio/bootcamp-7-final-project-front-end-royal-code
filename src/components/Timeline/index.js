@@ -12,7 +12,7 @@ return = ul with jouneryData.map that will give us a contain (divs,h2, p)
 
 export default function Timeline({ data }) {
   const weeks = Array.from(
-    data.reduce((weeks, { week }) => weeks.add(week), new Set())
+    data.reduce((weeks, { week, topic }) => weeks.has(week) ? weeks[week].push(topic) : weeks[week] = [topic], {})
   ).sort((a, b) => a - b);
   return (
     <>{weeks.map()}
