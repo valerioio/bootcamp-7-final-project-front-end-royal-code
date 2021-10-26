@@ -27,13 +27,13 @@ export default function Timeline({ data }) {
         {
           /* begin week block */
         }
-        <section id="timeline-wrapper">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="timeline-top">
-                <div class="top-year">Week {i + 1}</div>
-                <div class="timeline-block">
-                  <div class="timeline-events">
+        <section className={css.timelineWrapper}>
+          <div className={css.containerFluid}>
+            <div className={css.row}>
+              <div className={css.timelineTop}>
+                <div className={css.topWeek}>Week {i + 1}</div>
+                <div className={css.timelineBlock}>
+                  <div className={css.timelineEvents}>
                     <br />
                     {topic.map((item, j) => {
                       {

@@ -1,17 +1,11 @@
 import List from "../List";
-import Input from "../Input";
-import ChakraTable from "../ChakraTable";
-import LogoutButton from "../LogoutButton";
 import Layout from "../Layout";
 import css from "./BootcamperDashboard.module.css";
 
 export default function BootcamperDashboard({
-  handleDelete,
-
   Listings,
-  bootcampers,
 }) {
-  console.log(bootcampers);
+  const navbarLinks = [{linkText: 'Journey', href: '/journey'}, {linkText: 'Journey', href: '/journey'}];
   return (
     <div>
       <Layout>
