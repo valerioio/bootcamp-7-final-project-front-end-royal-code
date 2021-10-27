@@ -50,22 +50,13 @@ export default function CoachDashboard({
             <br />
             <p>{energisers[randomEnergiserIndex].description}</p>
             <br />
-            <a href={energisers[randomEnergiserIndex].link} style={{color: 'blue'}}>
+            <a
+              href={energisers[randomEnergiserIndex].link}
+              style={{ color: "blue" }}
+            >
               {energisers[randomEnergiserIndex].link}
             </a>
             <br />
-            {/* <ul className={css.list}>
-              {energisers.map((energiser) => {
-                return (
-                  <li key={uuidv4()}>
-                    <p>{energiser.name}</p>
-                    <p>{energiser.description}</p>
-                    <p>{energiser.link}</p>
-                    <br />
-                  </li>
-                );
-              })}
-            </ul> */}
           </div>
           <div className={`container`}>
             <h1 className={css.title}>Bootcamper pairings</h1>
@@ -74,18 +65,6 @@ export default function CoachDashboard({
           <div className={`container`}>
             <h1 className={css.title}>Bootcamper groups of 4</h1>
             <ul className={css.list}>{groupParings(bootcampers, 4)}</ul>
-          </div>
-          <div className={`container`}>
-            <h1 className={css.title}>Bootcamper groups of 8</h1>
-            <ul className={css.list}> {groupParings(bootcampers, 8)}</ul>
-          </div>
-          <div className={`container`}>
-            <h1 className={css.title}>Bootcamper groups of 8</h1>
-            <ul className={css.list}> {groupParings(bootcampers, 8)}</ul>
-          </div>
-          <div className={`container`}>
-            <h1 className={css.title}>Bootcamper groups of 8</h1>
-            <ul className={css.list}> {groupParings(bootcampers, 8)}</ul>
           </div>
           <div className={`container`}>
             <h1 className={css.title}>Bootcamper groups of 8</h1>
