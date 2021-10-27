@@ -2,8 +2,7 @@
 import LoginPage from "../LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { NameData } from "../../data";
-import { JourneyData, energisers } from "../../data";
+import { JourneyData, energisers, NameData } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Timeline from "../Timeline";
 import Home from "../Home";
