@@ -6,6 +6,8 @@ import { JourneyData, energisers, NameData } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Journey from "../Timeline";
 import Home from "../Home";
+import EnergisersPage from "../EnergisersPage";
+import Layout from "../Layout";
 
 function App() {
   const { user } = useAuth0();
@@ -44,22 +46,24 @@ function App() {
       <Router>
         <Switch>
           <Route path="/home">
-            <Home
-              user={user}
-              NameData={NameData}
-              JourneyData={JourneyData}
-              energisers={energisers}
-            />
+            <Layout user={user}>
+              <Home
+                user={user}
+                NameData={NameData}
+                JourneyData={JourneyData}
+                energisers={energisers}
+              />
+            </Layout>
           </Route>
           <Route path="/journey">
-            <Journey
-              data={JourneyData}
-              navbarLinks={[
-                { linkText: "Dashboard", href: "/home" },
-                { linkText: "Journey", href: "/journey" },
-              ]}
-              name="Bootcamper"
-            />
+            <Layout user={user}>
+              <Journey data={JourneyData} />
+            </Layout>
+          </Route>
+          <Route path="/energisers">
+            <Layout user={user}>
+              <EnergisersPage />
+            </Layout>
           </Route>
           <Route path="/">
             <LoginPage />

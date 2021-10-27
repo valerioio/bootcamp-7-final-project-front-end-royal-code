@@ -2,12 +2,13 @@ import NavBar from "../NavBar";
 import NameIcon from "../NameIcon";
 import css from "./Layout.module.css";
 
-const Layout = ({ children, navbarLinks, name }) => {
+const Layout = ({ children, user }) => {
+  console.log("user", user?.email);
   return (
-    <div class={css.layout}>
-      <NavBar navbarLinks={navbarLinks} />
+    <div className={css.layout}>
+      <NavBar email={user?.email} />
       <main className={css.main}>
-        <NameIcon name={name} />
+        <NameIcon name={user?.nickname} />
         {children}
       </main>
     </div>
