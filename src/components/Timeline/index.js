@@ -11,7 +11,7 @@ import {
 } from "@material-ui/lab";
 import {v4 as uuidv4} from "uuid";
 
-import { createTheme } from '@mui/material/styles';
+
 
 
 
@@ -57,7 +57,9 @@ export default function Journey({ data, navbarLinks, name }) {
                       <TimelineConnector />
                       <TimelineDot variant="outlined" color="secondary" />
                     </TimelineSeparator>
+                    <div className={`smallContainer`}>
                     <TimelineContent>{resources[i + 1][j]}</TimelineContent>
+                    </div>
                   </TimelineItem>
                 );
               })}
