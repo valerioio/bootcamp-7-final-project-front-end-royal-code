@@ -39,7 +39,7 @@ export const energisers = [
         Choose higher or lower to decide whether it is searched for more or less than the previous card. 
         The objective is to get the most right in a row. If you get one wrong, you lose the game.`,
 
-    link: "https://www.online-stopwatch.com/chance-games/higher-or-lower/full-screen/",
+    link: "https://deck.of.cards/",
   },
   {
     name: "Countdown",

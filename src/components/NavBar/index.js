@@ -1,6 +1,7 @@
 import React from "react";
 import { Flex, Link, Text } from "@chakra-ui/react";
 import css from "./NavBar.module.css";
+import { v4 as uuidv4 } from "uuid";
 
 const NavBar = ({ navbarLinks }) => {
   return (
@@ -33,7 +34,7 @@ const NavBar = ({ navbarLinks }) => {
         >
           {navbarLinks.map((link) => {
             return (
-              <Link href={link.href}>
+              <Link key={uuidv4()} href={link.href}>
                 <Text display="block">{link.linkText}</Text>
               </Link>
             );

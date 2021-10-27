@@ -4,7 +4,7 @@ import css from "./Layout.module.css";
 
 const Layout = ({ children, navbarLinks, name }) => {
   return (
-    <div class={css.layout}>
+    <div className={css.layout}>
       <NavBar navbarLinks={navbarLinks} />
       <main className={css.main}>
         <NameIcon name={name} />

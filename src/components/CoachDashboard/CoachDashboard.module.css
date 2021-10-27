@@ -15,3 +15,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.energiser {
+  padding: 1em;
+}
+
+.energiserName {
+  margin-top: 1em;
+  font-size: large;
+}
