@@ -52,7 +52,14 @@ function App() {
             />
           </Route>
           <Route path="/journey">
-            <Journey data={JourneyData} />
+            <Journey
+              data={JourneyData}
+              navbarLinks={[
+                { linkText: "Dashboard", href: "/home" },
+                { linkText: "Journey", href: "/journey" },
+              ]}
+              name="Bootcamper"
+            />
           </Route>
           <Route path="/">
             <LoginPage />
