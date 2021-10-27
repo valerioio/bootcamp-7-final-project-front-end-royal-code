@@ -4,7 +4,7 @@ import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import { JourneyData, energisers, NameData } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Timeline from "../Timeline";
+import Journey from "../Timeline";
 import Home from "../Home";
 
 function App() {
@@ -52,7 +52,7 @@ function App() {
             />
           </Route>
           <Route path="/journey">
-            <Timeline data={JourneyData} />
+            <Journey data={JourneyData} />
           </Route>
           <Route path="/">
             <LoginPage />
