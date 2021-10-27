@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Timeline from "../Timeline";
 import Home from "../Home";
 import EnergisersPage from "../EnergisersPage";
+import Layout from "../Layout";
 
 function App() {
   const { user } = useAuth0();
@@ -46,18 +47,24 @@ function App() {
       <Router>
         <Switch>
           <Route path="/home">
-            <Home
-              user={user}
-              NameData={NameData}
-              JourneyData={JourneyData}
-              energisers={energisers}
-            />
+            <Layout user={user}>
+              <Home
+                user={user}
+                NameData={NameData}
+                JourneyData={JourneyData}
+                energisers={energisers}
+              />
+            </Layout>
           </Route>
           <Route path="/journey">
-            <Timeline data={JourneyData} />
+            <Layout user={user}>
+              <Timeline data={JourneyData} />
+            </Layout>
           </Route>
           <Route path="/energisers">
-            <EnergisersPage />
+            <Layout user={user}>
+              <EnergisersPage />
+            </Layout>
           </Route>
           <Route path="/">
             <LoginPage />

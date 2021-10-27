@@ -3,7 +3,19 @@ import { Flex, Link, Text } from "@chakra-ui/react";
 import css from "./NavBar.module.css";
 import { v4 as uuidv4 } from "uuid";
 
-const NavBar = ({ navbarLinks }) => {
+const navbarLinksCoaches = [
+  { linkText: "Dashboard", href: "/home" },
+  { linkText: "Curriculum", href: "/curriculum" },
+  { linkText: "Energiser list", href: "/energisers" },
+];
+const navbarLinksBootcampers = [
+  { linkText: "Dashboard", href: "/home" },
+  { linkText: "Journey", href: "/journey" },
+  { linkText: "Reading List", href: "/reading" },
+  { linkText: "Recordings", href: "/recordings" },
+];
+
+const NavBar = ({ email }) => {
   return (
     <Flex>
       <Flex
@@ -32,7 +44,12 @@ const NavBar = ({ navbarLinks }) => {
           h="50%"
           mt="30%"
         >
-          {navbarLinks.map((link) => {
+          {(email === "bootcamper@schoolofcode.co.uk"
+            ? navbarLinksBootcampers
+            : email === "coach@schoolofcode.co.uk"
+            ? navbarLinksCoaches
+            : [{ linkText: "Dashboard", href: "/home" }]
+          ).map((link) => {
             return (
               <Link key={uuidv4()} href={link.href}>
                 <Text display="block">{link.linkText}</Text>

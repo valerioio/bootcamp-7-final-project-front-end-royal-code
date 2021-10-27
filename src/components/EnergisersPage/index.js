@@ -4,12 +4,7 @@ import { v4 as uuidv4 } from "uuid";
 import css from "./EnergisersPage.module.css";
 
 const EnergisersPage = () => {
-  const navbarLinks = [
-    { linkText: "Dashboard", href: "/home" },
-    { linkText: "Energisers", href: "/energisers" },
-  ];
   return (
-    <Layout navbarLinks={navbarLinks} name="Coach">
       <div className={css.main}>
         {energisers.map((energiser) => {
           return (
@@ -24,7 +19,6 @@ const EnergisersPage = () => {
           );
         })}
       </div>
-    </Layout>
   );
 };
 

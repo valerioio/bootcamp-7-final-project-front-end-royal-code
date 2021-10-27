@@ -1,4 +1,3 @@
-import Layout from "../Layout";
 import css from "./CoachDashboard.module.css";
 import "../../index.css";
 import { v4 as uuidv4 } from "uuid";
@@ -39,39 +38,37 @@ export default function CoachDashboard({
   ];
   return (
     <div>
-      <Layout navbarLinks={navbarLinks} name="Coach">
-        <div className={css.dashboard}>
-          <div className={`${css.energiser} container`}>
-            <h1 className={css.title}>Energiser</h1>
-            <hr />
-            <h4 className={css.energiserName}>
-              {energisers[randomEnergiserIndex].name}
-            </h4>
-            <br />
-            <p>{energisers[randomEnergiserIndex].description}</p>
-            <br />
-            <a
-              href={energisers[randomEnergiserIndex].link}
-              style={{ color: "blue" }}
-            >
-              {energisers[randomEnergiserIndex].link}
-            </a>
-            <br />
-          </div>
-          <div className={`container`}>
-            <h1 className={css.title}>Bootcamper pairings</h1>
-            <ul className={css.list}> {groupParings(bootcampers, 2)}</ul>
-          </div>
-          <div className={`container`}>
-            <h1 className={css.title}>Bootcamper groups of 4</h1>
-            <ul className={css.list}>{groupParings(bootcampers, 4)}</ul>
-          </div>
-          <div className={`container`}>
-            <h1 className={css.title}>Bootcamper groups of 8</h1>
-            <ul className={css.list}> {groupParings(bootcampers, 8)}</ul>
-          </div>
+      <div className={css.dashboard}>
+        <div className={`${css.energiser} container`}>
+          <h1 className={css.title}>Energiser</h1>
+          <hr />
+          <h4 className={css.energiserName}>
+            {energisers[randomEnergiserIndex].name}
+          </h4>
+          <br />
+          <p>{energisers[randomEnergiserIndex].description}</p>
+          <br />
+          <a
+            href={energisers[randomEnergiserIndex].link}
+            style={{ color: "blue" }}
+          >
+            {energisers[randomEnergiserIndex].link}
+          </a>
+          <br />
         </div>
-      </Layout>
+        <div className={`container`}>
+          <h1 className={css.title}>Bootcamper pairings</h1>
+          <ul className={css.list}> {groupParings(bootcampers, 2)}</ul>
+        </div>
+        <div className={`container`}>
+          <h1 className={css.title}>Bootcamper groups of 4</h1>
+          <ul className={css.list}>{groupParings(bootcampers, 4)}</ul>
+        </div>
+        <div className={`container`}>
+          <h1 className={css.title}>Bootcamper groups of 8</h1>
+          <ul className={css.list}> {groupParings(bootcampers, 8)}</ul>
+        </div>
+      </div>
     </div>
   );
 }

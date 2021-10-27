@@ -2,6 +2,7 @@ import { Avatar, Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import LogoutButton from "../LogoutButton";
 
 const NameIcon = ({ name }) => {
+  if (name) name = name.replace(/./, (match) => match.toUpperCase());
   return (
     <>
       <Flex>
