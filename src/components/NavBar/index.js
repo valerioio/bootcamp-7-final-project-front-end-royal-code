@@ -27,7 +27,7 @@ const NavBar = ({ email }) => {
         w="10em"
         h="100vh"
         p={3}
-        bg="#31986a"
+        bg="#1D5B40"
         color="white"
       >
         <img
@@ -50,7 +50,11 @@ const NavBar = ({ email }) => {
             : [{ linkText: "Dashboard", href: "/home" }]
           ).map((link) => {
             return (
-              <Link key={uuidv4()} href={link.href} style={{margin: '1.5em 0'}}>
+              <Link
+                key={uuidv4()}
+                href={link.href}
+                style={{ margin: "1.5em 0" }}
+              >
                 <Text display="block">{link.linkText}</Text>
               </Link>
             );

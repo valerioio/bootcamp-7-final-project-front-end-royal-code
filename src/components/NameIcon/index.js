@@ -12,7 +12,7 @@ const NameIcon = ({ name }) => {
         <Box
           className={`${css.shadow} ${css.center}`}
           borderRadius="md"
-          bg="#31986a"
+          bg="#1D5B40"
           color="white"
           w="fit-content"
           p="0.5em"
@@ -24,7 +24,7 @@ const NameIcon = ({ name }) => {
               className={css.shadow}
               name={name}
               bg="white"
-              color="#31986a"
+              color="#1D5B40"
               size="sm"
               m="0 1em 0 0"
             />

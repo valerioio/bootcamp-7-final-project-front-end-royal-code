@@ -1,7 +1,7 @@
 // we want data for the enegerises, the title of the energiser, dispriction of enegeriser, link like of enegeriser
 // we want data of 4,8 names firs and last name of boot campers that
 
-export const dummyData = [
+export const energisers = [
   {
     name: "Gartic",
 
