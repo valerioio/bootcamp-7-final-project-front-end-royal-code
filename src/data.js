@@ -1,7 +1,7 @@
 // we want data for the enegerises, the title of the energiser, dispriction of enegeriser, link like of enegeriser
 // we want data of 4,8 names firs and last name of boot campers that
 
-export const energisers = [
+export const dummyData = [
   {
     name: "Gartic",
 
@@ -317,5 +317,107 @@ export const JourneyData = [
     topic: "Monte Carlo method: Wikipedia article on the Monte Carlo method",
     resource:
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+  },
+];
+export const Recordings = [
+  {
+    Date: "01.10.2021",
+    Title: "Introduction to Web Development || Setup || Part 1",
+    Link: "https://youtu.be/HfTXHrWMGVY",
+  },
+  {
+    Date: "02.10.2021",
+    Title: "Introduction to Web Development || Understanding the Web || Part 2",
+    Link: "https://youtu.be/88QJumITbQA",
+  },
+  {
+    Date: "03.10.2021",
+    Title: "Introduction to HTML || Your First Web Page || Part 1",
+    Link: "https://youtu.be/BvJYXl2ywUE",
+  },
+  {
+    Date: "04.10.2021",
+    Title: "Introduction to HTML || Basic HTML Elements || Part 2",
+    Link: "https://youtu.be/PypMN-yui4Y",
+  },
+  {
+    Date: "05.10.2021",
+    Title: "Introduction to HTML || Advanced HTML Elements || Part 3",
+    Link: "https://youtu.be/1rbo_HHt5nw",
+  },
+  {
+    Date: "06.10.2021",
+    Title: "Introduction to HTML || Links and Inputs || Part 4",
+    Link: "https://youtu.be/bFvjE4ZRtSE",
+  },
+  {
+    Date: "07.10.2021",
+    Title: "Learn CSS in 20 Minutes",
+    Link: "https://youtu.be/1PnVor36_40",
+  },
+  {
+    Date: "08.10.2021",
+    Title: "How to Style a Modern Website (Part One)",
+    Link: "https://youtu.be/Sv_NAxi_jNs",
+  },
+  {
+    Date: "09.10.2021",
+    Title: "How to Style a Modern Website (Part Two)",
+    Link: "https://youtu.be/nKa1JPf0ZN4",
+  },
+  {
+    Date: "10.10.2021",
+    Title: "How to Style a Modern Website (Part Three)",
+    Link: "https://youtu.be/auWKaf0m0S0",
+  },
+  {
+    Date: "11.10.2021",
+    Title: "JavaScript Shopping Cart Tutorial for Beginners",
+    Link: "https://youtu.be/YeFzkC2awTM",
+  },
+  {
+    Date: "12.10.2021",
+    Title: "What Is The Fastest Way To Load JavaScript",
+    Link: "https://youtu.be/BMuFBYw91UQ",
+  },
+  {
+    Date: "13.10.2021",
+    Title: "Differences Between Var, Let, and Const",
+    Link: "https://youtu.be/9WIJQDvt4Us",
+  },
+  {
+    Date: "14.10.2021",
+    Title: "JavaScript ES6 Arrow Functions Tutorial",
+    Link: "https://youtu.be/h33Srr5J9nY",
+  },
+  {
+    Date: "15.10.2021",
+    Title: "JavaScript Cookies vs Local Storage vs Session",
+    Link: "https://youtu.be/GihQAC1I39Q",
+  },
+  {
+    Date: "16.10.2021",
+    Title: "JavaScript Promises In 10 Minutes",
+    Link: "hhttps://youtu.be/DHvZLI7Db8E",
+  },
+  {
+    Date: "17.10.2021",
+    Title: "JavaScript == VS ===",
+    Link: "https://youtu.be/C5ZVC4HHgIg",
+  },
+  {
+    Date: "18.10.2021",
+    Title: "JavaScript ES6 Modules",
+    Link: "https://youtu.be/cRHQNNcYf6s",
+  },
+  {
+    Date: "19.10.2021",
+    Title: "8 Must Know JavaScript Array Methods",
+    Link: "https://youtu.be/R8rmfD9Y5-c",
+  },
+  {
+    Date: "20.10.2021",
+    Title: "JavaScript Async Await",
+    Link: "https://youtu.be/V_Kr9OSfDeU",
   },
 ];
