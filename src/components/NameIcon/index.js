@@ -1,7 +1,7 @@
-import { Avatar, Box, Circle, Flex, Spacer, Text } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import LogoutButton from "../LogoutButton";
 
-const NameIcon = () => {
+const NameIcon = ({ name }) => {
   return (
     <>
       <Flex>
@@ -17,13 +17,13 @@ const NameIcon = () => {
         >
           <Flex justify="space-around" align="center">
             <Avatar
-              name="Coach"
+              name={name}
               bg="white"
               color="#31986a"
               size="sm"
               src="https://bit.ly/broken-link"
             />
-            <Text>Coach</Text>
+            <Text>{name}</Text>
           </Flex>
         </Box>
       </Flex>

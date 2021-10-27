@@ -2,10 +2,11 @@ import React from "react";
 import { Flex, Link, Text } from "@chakra-ui/react";
 import css from "./NavBar.module.css";
 
-const NavBar = ({ children }) => {
+const NavBar = ({ navbarLinks }) => {
   return (
     <Flex>
-      <Flex className={css.navbar}
+      <Flex
+        className={css.navbar}
         as="nav"
         direction="column"
         align="center"
@@ -30,27 +31,15 @@ const NavBar = ({ children }) => {
           h="50%"
           mt="30%"
         >
-          <Link href="#">
-            <Text display="block">Coach dashboard</Text>
-          </Link>
-          {/* <Link href="#">
-            <Text display="block">Bootcamp 8</Text>
-          </Link>
-          <Link href="#">
-            <Text display="block">Bootcamp 9</Text>
-          </Link>
-          <Link href="/bootcamp10">
-            <Text display="block">Bootcamp 10</Text>
-          </Link>
-          <Link href="/curriculum">
-            <Text display="block">Curriculum</Text>
-          </Link>
-          <Link href="/energisers">
-            <Text display="block">Energiser list</Text>
-          </Link> */}
+          {navbarLinks.map((link) => {
+            return (
+              <Link href={link.href}>
+                <Text display="block">{link.linkText}</Text>
+              </Link>
+            );
+          })}
         </Flex>
       </Flex>
-      <Flex direction="column">{children}</Flex>
     </Flex>
   );
 };

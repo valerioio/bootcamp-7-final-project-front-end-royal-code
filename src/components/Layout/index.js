@@ -1,14 +1,16 @@
 import NavBar from "../NavBar";
 import NameIcon from "../NameIcon";
+import css from "./Layout.module.css";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, navbarLinks, name }) => {
   return (
-    <>
-      <NavBar>
-        <NameIcon />
+    <div class={css.layout}>
+      <NavBar navbarLinks={navbarLinks} />
+      <main className={css.main}>
+        <NameIcon name={name} />
         {children}
-      </NavBar>
-    </>
+      </main>
+    </div>
   );
 };
 

@@ -1,0 +1,8 @@
+.layout{
+    display: grid;
+    grid-template-columns: 20vw auto;
+}
+
+.main{
+    grid-column-start: 2;
+}

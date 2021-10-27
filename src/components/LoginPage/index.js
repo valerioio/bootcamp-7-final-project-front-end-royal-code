@@ -9,7 +9,6 @@ import React from "react";
 import LoginButton from "../LoginButton";
 import logo from "./socLogo.png";
 import styles from "./LoginPage.module.css";
-import LogoutButton from "../LogoutButton";
 
 export default function LoginPage() {
   return (
