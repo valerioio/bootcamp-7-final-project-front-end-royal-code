@@ -41,7 +41,6 @@ const NavBar = ({ email }) => {
           justify="space-around"
           wrap="wrap"
           w="100%"
-          h="50%"
           mt="30%"
         >
           {(email === "bootcamper@schoolofcode.co.uk"
@@ -51,7 +50,7 @@ const NavBar = ({ email }) => {
             : [{ linkText: "Dashboard", href: "/home" }]
           ).map((link) => {
             return (
-              <Link key={uuidv4()} href={link.href}>
+              <Link key={uuidv4()} href={link.href} style={{margin: '1.5em 0'}}>
                 <Text display="block">{link.linkText}</Text>
               </Link>
             );
