@@ -1,7 +1,7 @@
 import Layout from "../Layout";
 import css from "./CoachDashboard.module.css";
 import "../../index.css";
-import List from "../List";
+//import List from "../List";
 
 function groupParings(bootcampers, size) {
   const groups = [];
@@ -24,11 +24,9 @@ function groupParings(bootcampers, size) {
   return groups;
 }
 export default function CoachDashboard({
-  addListing,
-  Listings,
+  Listings = null,
   bootcampers,
-  handleDelete,
-  name,
+  name = null,
   energisers,
 }) {
   const navbarLinks = [

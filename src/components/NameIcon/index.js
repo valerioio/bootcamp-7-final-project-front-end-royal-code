@@ -1,4 +1,4 @@
-import { Avatar, Box, Circle, Flex, Spacer, Text } from "@chakra-ui/react";
+import { Avatar, Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import LogoutButton from "../LogoutButton";
 
 const NameIcon = ({ name }) => {

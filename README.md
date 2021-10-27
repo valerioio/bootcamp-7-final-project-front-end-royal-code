@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# School of Code Dashboard Organisation App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Brief
 
-## Available Scripts
+To create an app that will help with the organisational issues relating to the natioal scale-up of School of Code.
+<br/><br/>
+We narrowed this down to:
 
-In the project directory, you can run:
+- Coach organisation
+  - Daily energiser selection
+  - Cohort grouping organisation
+  - Ease of lecture recording access
+    <br/><br/>
+- Bootcamper organisation
+  - Reading list availability
+  - Progress tracking
+  - Ease of lecture recording access
 
-### `npm start`
+## Strategy
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+We aim to work using Agile methodology whilst keeping the app users as the main focus of development.
+<br/><br/>
+Initially, we consulted with coaches to establish the main organisational issues with the School of Code national scale-up to establish our main app features. Following this, we used Disney Ideation (https://www.designorate.com/disneys-creative-strategy/) to decide on our final app. Wireframe designs were constucted and high-fidelity designs were created using Figma and the tech stack was chosen.
+<br/><br/>
+We decided on iterative releases and created our iteration 0 by deploying our front and back end and ensure the requests from the front end were correct. Iteration 1 was released and feedback was obtained using a google form. This feedback helped to direct our focus for the next sprint.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## App Overview
 
-### `npm test`
+This app provides user-specifc dashboards for bootcamp coaches and bootcampers based upon user logins. These dashboards present relevant information to the user that will be obtained from a Serverless backend.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
+## Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Valerio Romaniello
+- Ayaan Hassan
+- Yrral Galura
+- Claire Doswell

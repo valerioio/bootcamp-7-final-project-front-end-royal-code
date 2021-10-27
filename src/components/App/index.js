@@ -1,19 +1,15 @@
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 import LoginPage from "../LoginPage";
-import LogoutButton from "../LogoutButton";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import BootcamperDashboard from "../BootcamperDashboard";
 import { NameData } from "../../data";
-import CoachDashboard from "../CoachDashboard";
 import { JourneyData, energisers } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Timeline from "../Timeline";
 import Home from "../Home";
 
 function App() {
-  const { user, isAuthenticated, isLoading } = useAuth0();
-  console.log("App rerender");
+  const { user } = useAuth0();
 
   // Plan: Create a fetch to the backend on page initialisation to get data for lists
   // Wrap in useEffect, [] dependency
@@ -43,15 +39,6 @@ function App() {
     return allData;
   }, []);
 */
-  function handleDelete(i) {
-    console.log("%chandle delete", "color:lightblue");
-    // do stuff
-  }
-
-  function addListing(text) {
-    console.log("%cadd  listing ", "color:lightgreen");
-    // do stuff
-  }
 
   return (
     <div className={CSS.App}>
@@ -60,10 +47,8 @@ function App() {
           <Route path="/home">
             <Home
               user={user}
-              handleDelete={handleDelete}
               NameData={NameData}
               JourneyData={JourneyData}
-              addListing={addListing}
               energisers={energisers}
             />
           </Route>
@@ -75,8 +60,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-
-      {/* {isAuthenticated ? null : <LoginPage />} */}
     </div>
   );
 }
