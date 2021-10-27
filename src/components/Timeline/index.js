@@ -9,6 +9,11 @@ import {
   TimelineContent,
   TimelineSeparator,
 } from "@material-ui/lab";
+import {v4 as uuidv4} from "uuid";
+
+import { createTheme } from '@mui/material/styles';
+
+
 
 /* plan
 import react 
@@ -30,15 +35,16 @@ export default function Journey({ data, navbarLinks, name }) {
     return resources;
   }, []);
 
+
   return (
     <>
-      <Layout navbarLinks={navbarLinks} name={name}>
+      
         {topics.slice(1).map((topic, i) => {
           return (
-            <Timeline position="alternate">
+            <Timeline key={uuidv4()} align="alternate">
               <TimelineItem>
                 <TimelineSeparator>
-                  <TimelineDot color="secondary" />
+                  <TimelineDot  color="primary" />
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>Week {i + 1}</TimelineContent>
@@ -46,10 +52,10 @@ export default function Journey({ data, navbarLinks, name }) {
 
               {topic.map((item, j) => {
                 return (
-                  <TimelineItem>
+                  <TimelineItem key={uuidv4()}>
                     <TimelineSeparator>
                       <TimelineConnector />
-                      <TimelineDot color="success" />
+                      <TimelineDot variant="outlined" color="secondary" />
                     </TimelineSeparator>
                     <TimelineContent>{resources[i + 1][j]}</TimelineContent>
                   </TimelineItem>
@@ -58,7 +64,7 @@ export default function Journey({ data, navbarLinks, name }) {
             </Timeline>
           );
         })}
-      </Layout>
+      
     </>
   );
 }
