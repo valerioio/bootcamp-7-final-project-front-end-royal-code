@@ -1,5 +1,14 @@
 import React from "react";
 import css from "./Timeline.module.css";
+import Layout from "../Layout";
+import {
+  Timeline,
+  TimelineItem,
+  TimelineDot,
+  TimelineConnector,
+  TimelineContent,
+  TimelineSeparator,
+} from "@material-ui/lab";
 
 /* plan
 import react 
@@ -10,7 +19,7 @@ return = ul with jouneryData.map that will give us a contain (divs,h2, p)
 
 */
 
-export default function Timeline({ data }) {
+export default function Journey({ data, navbarLinks, name }) {
   const topics = data.reduce((topics, { week, topic }) => {
     topics[week] ? topics[week].push(topic) : (topics[week] = [topic]);
     return topics;
@@ -23,62 +32,33 @@ export default function Timeline({ data }) {
 
   return (
     <>
-      {topics.slice(1).map((topic, i) => {
-        {
-          /* begin week block */
-        }
-        return (
-          <section className={css.timelineWrapper}>
-            <div className={css.containerFluid}>
-              <div className={css.row}>
-                <div className={css.timelineTop}>
-                  <div className={css.topWeek}>Week {i + 1}</div>
-                  <div className={css.timelineBlock}>
-                    <div className={css.timelineEvents}>
-                      <br />
-                      {topic.map((item, j) => {
-                        {
-                          /* begin info and resources */
-                        }
-                        return (
-                          <div
-                            className={`${css.eventContainer} ${css.rEventContainer}`}
-                          >
-                            <span className={css.smallCircle}></span>
-                            <div className={css.container}>
-                              <div className={css.eventContent}>
-                                <h5
-                                  className={`${css.topicText} ${css.textLeft}`}
-                                >
-                                  {item}
-                                </h5>
-                                <br />
-                                <br />
-                                <blockquote
-                                  className={`${css.mainText} ${css.textLeft}`}
-                                >
-                                  {resources[i + 1][j]}
-                                  <br />
-                                </blockquote>
-                              </div>
-                            </div>
-                          </div>
-                        );
-                        {
-                          /* end info and resources */
-                        }
-                      })}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        );
-        {
-          /* end week block */
-        }
-      })}
+      <Layout navbarLinks={navbarLinks} name={name}>
+        {topics.slice(1).map((topic, i) => {
+          return (
+            <Timeline position="alternate">
+              <TimelineItem>
+                <TimelineSeparator>
+                  <TimelineDot color="secondary" />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>Week {i + 1}</TimelineContent>
+              </TimelineItem>
+
+              {topic.map((item, j) => {
+                return (
+                  <TimelineItem>
+                    <TimelineSeparator>
+                      <TimelineConnector />
+                      <TimelineDot color="success" />
+                    </TimelineSeparator>
+                    <TimelineContent>{resources[i + 1][j]}</TimelineContent>
+                  </TimelineItem>
+                );
+              })}
+            </Timeline>
+          );
+        })}
+      </Layout>
     </>
   );
 }
