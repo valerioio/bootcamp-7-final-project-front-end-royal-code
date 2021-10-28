@@ -2,20 +2,20 @@ import React from "react";
 import CoachDashboard from "../CoachDashboard";
 import BootcamperDashboard from "../BootcamperDashboard";
 
-export default function Home({ user, NameData, JourneyData, energisers }) {
+export default function Home({ user, nameData, journeyData, energisers }) {
   return (
     <div>
       {user?.email === "coach@schoolofcode.co.uk" ? (
         <CoachDashboard
-          bootcampers={NameData}
+          bootcampers={nameData}
           name={user.name}
           energisers={energisers}
         />
       ) : null}
       {user?.email === "bootcamper@schoolofcode.co.uk" ? (
         <BootcamperDashboard
-          Listings={JourneyData}
-          bootcampers={NameData}
+          Listings={journeyData}
+          bootcampers={nameData}
           name={user.name}
         />
       ) : null}

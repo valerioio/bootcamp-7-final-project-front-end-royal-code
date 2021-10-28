@@ -1,6 +1,4 @@
 import React from "react";
-import css from "./Timeline.module.css";
-import Layout from "../Layout";
 import {
   Timeline,
   TimelineItem,
@@ -9,11 +7,7 @@ import {
   TimelineContent,
   TimelineSeparator,
 } from "@material-ui/lab";
-import {v4 as uuidv4} from "uuid";
-
-
-
-
+import { v4 as uuidv4 } from "uuid";
 
 /* plan
 import react 
@@ -35,38 +29,35 @@ export default function Journey({ data, navbarLinks, name }) {
     return resources;
   }, []);
 
-
   return (
     <>
-      
-        {topics.slice(1).map((topic, i) => {
-          return (
-            <Timeline key={uuidv4()} align="alternate">
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot  color="primary" />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>Week {i + 1}</TimelineContent>
-              </TimelineItem>
+      {topics.slice(1).map((topic, i) => {
+        return (
+          <Timeline key={uuidv4()} align="alternate">
+            <TimelineItem>
+              <TimelineSeparator>
+                <TimelineDot color="primary" />
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent>Week {i + 1}</TimelineContent>
+            </TimelineItem>
 
-              {topic.map((item, j) => {
-                return (
-                  <TimelineItem key={uuidv4()}>
-                    <TimelineSeparator>
-                      <TimelineConnector />
-                      <TimelineDot variant="outlined" color="secondary" />
-                    </TimelineSeparator>
-                    <div className={`smallContainer`}>
+            {topic.map((item, j) => {
+              return (
+                <TimelineItem key={uuidv4()}>
+                  <TimelineSeparator>
+                    <TimelineConnector />
+                    <TimelineDot variant="outlined" color="secondary" />
+                  </TimelineSeparator>
+                  <div className={`smallContainer`}>
                     <TimelineContent>{resources[i + 1][j]}</TimelineContent>
-                    </div>
-                  </TimelineItem>
-                );
-              })}
-            </Timeline>
-          );
-        })}
-      
+                  </div>
+                </TimelineItem>
+              );
+            })}
+          </Timeline>
+        );
+      })}
     </>
   );
 }

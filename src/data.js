@@ -66,7 +66,7 @@ export const energisers = [
   },
 ];
 
-export const NameData = [
+export const nameData = [
   { firstName: "Hamza", lastName: "Ibrahim" },
   { firstName: "Himesh", lastName: "Patel" },
   { firstName: "Irfan", lastName: "Mohammed" },
@@ -117,7 +117,7 @@ export const NameData = [
   { firstName: "Braxton", lastName: "Velez" },
 ];
 
-export const JourneyData = [
+export const journeyData = [
   {
     week: 1,
     topic: "Chapter 1, of How to Think Like a Computer Scientist",
@@ -319,7 +319,7 @@ export const JourneyData = [
       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
   },
 ];
-export const Recordings = [
+export const recordings = [
   {
     Date: "01.10.2021",
     Title: "Introduction to Web Development || Setup || Part 1",
