@@ -1,6 +1,7 @@
 import css from "./CoachDashboard.module.css";
 import "../../index.css";
 import { v4 as uuidv4 } from "uuid";
+import { useState } from "react";
 //import List from "../List";
 
 function groupParings(bootcampers, size) {
@@ -31,16 +32,26 @@ export default function CoachDashboard({
   name = null,
   energisers,
 }) {
-  const randomEnergiserIndex = Math.floor(Math.random() * energisers.length);
-  const navbarLinks = [
-    { linkText: "Dashboard", href: "/home" },
-    { linkText: "Energisers", href: "/energisers" },
-  ];
+  if (!localStorage.getItem("initialEnergiser")) {
+    localStorage.setItem(
+      "initialEnergiser",
+      Math.floor(Math.random() * energisers.length)
+    );
+  }
+  const [randomEnergiserIndex, setRandomEnergiserIndex] = useState(
+    localStorage.getItem("initialEnergiser")
+  );
+  function randomiseEnergiser() {
+    const random = Math.floor(Math.random() * energisers.length);
+    localStorage.setItem("initialEnergiser", random);
+    setRandomEnergiserIndex(random);
+  }
   return (
     <div>
       <div className={css.dashboard}>
         <div className={`${css.energiser} container`}>
           <h1 className={css.title}>Energiser</h1>
+          <button onClick={randomiseEnergiser}>Randomise</button>
           <hr />
           <h4 className={css.energiserName}>
             {energisers[randomEnergiserIndex].name}
