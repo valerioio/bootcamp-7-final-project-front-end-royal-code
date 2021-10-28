@@ -3,7 +3,8 @@ import LogoutButton from "../LogoutButton";
 import css from "./NameIcon.module.css";
 
 const NameIcon = ({ name }) => {
-  if (name) name = name.replace(/./, (match) => match.toUpperCase());
+  let capitalizedName;
+  if (name) capitalizedName = name.replace(/./, (match) => match.toUpperCase());
   return (
     <>
       <Flex>
@@ -22,13 +23,13 @@ const NameIcon = ({ name }) => {
           <Flex justify="space-around" align="center">
             <Avatar
               className={css.shadow}
-              name={name}
+              name={capitalizedName}
               bg="white"
               color="#1D5B40"
               size="sm"
               m="0 1em 0 0"
             />
-            <Text>{name}</Text>
+            <Text>{capitalizedName}</Text>
           </Flex>
         </Box>
       </Flex>

@@ -7,7 +7,7 @@
 
 import React from "react";
 import LoginButton from "../LoginButton";
-import logo from "./socLogo.png";
+import logo from "../../socLogo.png";
 import styles from "./LoginPage.module.css";
 
 export default function LoginPage() {
