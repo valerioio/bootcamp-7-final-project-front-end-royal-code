@@ -38,8 +38,8 @@ export default function Journey({ data, navbarLinks, name }) {
         return (
           <Timeline key={uuidv4()} align="alternate">
             <TimelineItem>
-              <TimelineSeparator>
-                <TimelineDot color="primary" className={`dots`}>
+              <TimelineSeparator className={`seperator`}>
+                <TimelineDot color="primary" className={`dots`} >
                   {i + 1}
                 </TimelineDot>
               </TimelineSeparator>
@@ -49,16 +49,13 @@ export default function Journey({ data, navbarLinks, name }) {
             {topic.map((item, j) => {
               return (
                 <TimelineItem key={uuidv4()}>
-                  <TimelineSeparator>
+                  <TimelineSeparator className={`seperator`}>
                     <TimelineConnector />
                     <TimelineDot variant="outlined" color="secondary" />
                     <TimelineConnector />
                   </TimelineSeparator>
-                  <div className={`smallContainer`}>
-                    <TimelineContent className={`timeContent`}>
-                      {resources[i + 1][j]}
-                    </TimelineContent>
-                  </div>
+                    <TimelineContent ><div className={`smallContainer`}>{resources[i + 1][j]}</div></TimelineContent>
+                  
                 </TimelineItem>
               );
             })}

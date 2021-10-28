@@ -2,6 +2,7 @@ import React from "react";
 import { Flex, Link, Text } from "@chakra-ui/react";
 import css from "./NavBar.module.css";
 import { v4 as uuidv4 } from "uuid";
+import LogoutButton from "../LogoutButton";
 
 const navbarLinksCoaches = [
   { linkText: "Dashboard", href: "/home" },
@@ -27,7 +28,7 @@ const NavBar = ({ email }) => {
         w="10em"
         h="100vh"
         p={3}
-        bg="#1D5B40"
+        bg="#005b4f"
         color="white"
       >
         <img
@@ -60,6 +61,7 @@ const NavBar = ({ email }) => {
             );
           })}
         </Flex>
+        <LogoutButton />
       </Flex>
     </Flex>
   );
