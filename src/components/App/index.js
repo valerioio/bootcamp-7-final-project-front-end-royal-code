@@ -1,21 +1,34 @@
-import { useState, useEffect } from "react";
+//import { useState, useEffect } from "react";
 import LoginPage from "../LoginPage";
-import LogoutButton from "../LogoutButton";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import BootcamperDashboard from "../BootcamperDashboard";
-import { NameData } from "../../data";
-import CoachDashboard from "../CoachDashboard";
-import { JourneyData } from "../../data";
+import { JourneyData, energisers, NameData, Recordings} from "../../data";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Journey from "../Timeline";
+import Home from "../Home";
+import EnergisersPage from "../EnergisersPage";
+import Layout from "../Layout";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: "#1976d2",
+      main: "#1976d2",
+      dark: "#1976d2",
+      contrastText: "#fff",
+    },
+    secondary: {
+      light: "#4ebaaa",
+      main: "#4ebaaa",
+      dark: "#4ebaaa",
+      contrastText: "#000",
+    },
+  },
+});
 
 function App() {
-  const { user, isAuthenticated, isLoading } = useAuth0();
-  console.log("App rerender");
-  const [Listings, setListings] = useState(["hello", "world"]);
-
-  useEffect(() => {
-    document.title = `(${Listings.length}) things to do...`;
-  }, [Listings]);
+  const { user } = useAuth0();
 
   // Plan: Create a fetch to the backend on page initialisation to get data for lists
   // Wrap in useEffect, [] dependency
@@ -45,36 +58,40 @@ function App() {
     return allData;
   }, []);
 */
-  function handleDelete(i) {
-    console.log("%chandle delete", "color:lightblue");
-    setListings([...Listings.slice(0, i), ...Listings.slice(i + 1)]);
-  }
-
-  function addListing(text) {
-    console.log("%cadd  listing ", "color:lightgreen");
-    setListings([...Listings, text]);
-  }
 
   return (
-    <div className={CSS.App}>
-      {user?.email === "coach@schoolofcode.co.uk" ? (
-        <CoachDashboard
-          handleDelete={handleDelete}
-          addListing={addListing}
-          Listings={Listings}
-          bootcampers={NameData}
-        />
-      ) : null}
-      {user?.email === "bootcamper@schoolofcode.co.uk" ? (
-        <BootcamperDashboard
-          handleDelete={handleDelete}
-          addListing={addListing}
-          Listings={JourneyData}
-          bootcampers={NameData}
-        />
-      ) : null}
-      {isAuthenticated ? null : <LoginPage />}
-    </div>
+    <MuiThemeProvider theme = {theme}>
+      <div className={CSS.App}>
+        <Router>
+          <Switch>
+            <Route path="/home">
+              <Layout user={user}>
+                <Home
+                  user={user}
+                  nameData={nameData}
+                  journeyData={journeyData}
+                  energisers={energisers}
+                  recordings={Recordings}
+                />
+              </Layout>
+            </Route>
+            <Route path="/journey">
+              <Layout user={user}>
+                <Journey data={journeyData} />
+              </Layout>
+            </Route>
+            <Route path="/energisers">
+              <Layout user={user}>
+                <EnergisersPage />
+              </Layout>
+            </Route>
+            <Route path="/">
+              <LoginPage />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    </MuiThemeProvider>
   );
 }
 

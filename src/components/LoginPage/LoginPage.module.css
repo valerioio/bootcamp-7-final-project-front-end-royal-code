@@ -9,13 +9,14 @@
 
 .logo {
   position: fixed;
-  left: 15%;
-  top: 15%;
+  width: 5vw;
+  left: 1vw;
+  top: 1vw;
 }
 
 .title {
   background-color: #e3e5e5;
-  color: #31986a;
+  color: #1d5b40;
   font-family: sans-serif;
   font-style: medium;
   font-size: 10em;
@@ -34,7 +35,7 @@
 }
 
 .banner {
-  background-color: #31986a;
+  background-color: #1d5b40;
   position: fixed;
   width: 100%;
   left: 0;
