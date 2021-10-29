@@ -1,29 +1,33 @@
-import { Avatar, Box, Circle, Flex, Spacer, Text } from "@chakra-ui/react";
-import LogoutButton from "../LogoutButton";
+import { Avatar, Box, Flex, Spacer, Text } from "@chakra-ui/react";
+import css from "./NameIcon.module.css";
 
-const NameIcon = () => {
+const NameIcon = ({ name }) => {
+  let capitalizedName;
+  if (name) capitalizedName = name.replace(/./, (match) => match.toUpperCase());
   return (
     <>
       <Flex>
         <Spacer />
-        <LogoutButton />
         <Box
+          className={`${css.shadow} ${css.center} `}
           borderRadius="md"
-          bg="#31986a"
+          bg="#004ba0"
           color="white"
-          w="10em"
+          w="fit-content"
+          p="0.5vw"
           h="3em"
           m="1vw"
         >
           <Flex justify="space-around" align="center">
             <Avatar
-              name="Coach"
+              className={`${css.shadow} ${css.icon}`}
+              name={capitalizedName}
               bg="white"
-              color="#31986a"
+              color="#004ba0"
               size="sm"
-              src="https://bit.ly/broken-link"
+              m="0 1em 0 0"
             />
-            <Text>Coach</Text>
+            <Text className={css.name}>{capitalizedName}</Text>
           </Flex>
         </Box>
       </Flex>

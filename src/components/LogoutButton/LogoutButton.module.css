@@ -1,5 +1,6 @@
 .Button {
   border-radius: 3px;
+
   background-color: #63a4ff;
   color: #000000;
   font-size: 1em;
@@ -8,4 +9,19 @@
   width: auto;
   margin: 1em;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25) !important;
+
+  /* -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; */
 }
+
+/* .Button:hover {
+  background-color: #FA3E57;
+  cursor: pointer;
+  color: #ffffff;
+} */
