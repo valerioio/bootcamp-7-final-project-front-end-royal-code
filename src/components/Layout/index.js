@@ -3,7 +3,6 @@ import NameIcon from "../NameIcon";
 import css from "./Layout.module.css";
 
 const Layout = ({ children, user }) => {
-  console.log("user", user?.email);
   return (
     <div className={css.layout}>
       <NavBar email={user?.email} />

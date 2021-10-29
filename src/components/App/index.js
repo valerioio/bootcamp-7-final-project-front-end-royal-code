@@ -8,6 +8,24 @@ import Journey from "../Timeline";
 import Home from "../Home";
 import EnergisersPage from "../EnergisersPage";
 import Layout from "../Layout";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      light: "#1d5b40",
+      main: "#1d5b40",
+      dark: "#1d5b40",
+      contrastText: "#fff",
+    },
+    secondary: {
+      light: "#4a90e2",
+      main: "#4a90e2",
+      dark: "#4a90e2",
+      contrastText: "#000",
+    },
+  },
+});
 
 function App() {
   const { user } = useAuth0();
@@ -42,36 +60,38 @@ function App() {
 */
 
   return (
-    <div className={CSS.App}>
-      <Router>
-        <Switch>
-          <Route path="/home">
-            <Layout user={user}>
-              <Home
-                user={user}
-                NameData={NameData}
-                JourneyData={JourneyData}
-                energisers={energisers}
-                recordings={Recordings}
-              />
-            </Layout>
-          </Route>
-          <Route path="/journey">
-            <Layout user={user}>
-              <Journey data={JourneyData} />
-            </Layout>
-          </Route>
-          <Route path="/energisers">
-            <Layout user={user}>
-              <EnergisersPage />
-            </Layout>
-          </Route>
-          <Route path="/">
-            <LoginPage />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <MuiThemeProvider theme = {theme}>
+      <div className={CSS.App}>
+        <Router>
+          <Switch>
+            <Route path="/home">
+              <Layout user={user}>
+                <Home
+                  user={user}
+                  nameData={nameData}
+                  journeyData={journeyData}
+                  energisers={energisers}
+                  recordings={Recordings}
+                />
+              </Layout>
+            </Route>
+            <Route path="/journey">
+              <Layout user={user}>
+                <Journey data={journeyData} />
+              </Layout>
+            </Route>
+            <Route path="/energisers">
+              <Layout user={user}>
+                <EnergisersPage />
+              </Layout>
+            </Route>
+            <Route path="/">
+              <LoginPage />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+    </MuiThemeProvider>
   );
 }
 
