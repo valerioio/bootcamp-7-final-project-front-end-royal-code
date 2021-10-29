@@ -5,7 +5,7 @@ import App from "./components/App";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { ChakraProvider } from "@chakra-ui/react";
 
-console.log(process.env.AUTH0_DOMAIN, AUTH0_DOMAIN)
+// console.log(process.env.AUTH0_DOMAIN, AUTH0_DOMAIN)
 
 ReactDOM.render(
   <React.StrictMode>
