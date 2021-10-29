@@ -7,14 +7,14 @@ import LogoutButton from "../LogoutButton";
 
 const navbarLinksCoaches = [
   { linkText: "Dashboard", href: "/home" },
-  { linkText: "Curriculum", href: "/curriculum" },
+  // { linkText: "Curriculum", href: "/curriculum" },
   { linkText: "Energiser list", href: "/energisers" },
 ];
 const navbarLinksBootcampers = [
   { linkText: "Dashboard", href: "/home" },
   { linkText: "Journey", href: "/journey" },
-  { linkText: "Reading List", href: "/reading" },
-  { linkText: "Recordings", href: "/recordings" },
+  // { linkText: "Reading List", href: "/reading" },
+  // { linkText: "Recordings", href: "/recordings" },
 ];
 
 const NavBar = ({ email }) => {

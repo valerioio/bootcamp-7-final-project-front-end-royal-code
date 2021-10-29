@@ -2,7 +2,7 @@ import React from "react";
 import CoachDashboard from "../CoachDashboard";
 import BootcamperDashboard from "../BootcamperDashboard";
 
-export default function Home({ user, NameData, JourneyData, energisers, recordings }) {
+export default function Home({ user, nameData, journeyData, energisers, recordings }) {
   return (
     <div>
       {user?.email === "coach@schoolofcode.co.uk" ? (

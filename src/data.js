@@ -117,6 +117,73 @@ export const nameData = [
   { firstName: "Braxton", lastName: "Velez" },
 ];
 
+// export const journeyData = [
+//   {
+//     "topic": "Foundations",
+//     "week": 1
+//   },
+//   {
+//     "topic": "JavaScript",
+//     "week": 2
+//   },
+//   {
+//     "topic": "Front-end",
+//     "week": 3
+//   },
+//   {
+//     "topic": "Back-end",
+//     "week": 4
+//   },
+//   {
+//     "topic": "Databases",
+//     "week": 5
+//   },
+//   {
+//     "topic": "Testing",
+//     "week": 6
+//   },
+//   {
+//     "topic": "React Basics",
+//     "week": 7
+//   },
+//   {
+//     "topic": "React Advanced",
+//     "week": 8
+//   },
+//   {
+//     "topic": "Client Project",
+//     "week": 9
+//   },
+//   {
+//     "topic": "Agile",
+//     "week": 10
+//   },
+//   {
+//     "topic": "Computer Science",
+//     "week": 11
+//   },
+//   {
+//     "topic": "Architecture",
+//     "week": 12
+//   },
+//   {
+//     "topic": "Project",
+//     "week": 13
+//   },
+//   {
+//     "topic": "Project",
+//     "week": 14
+//   },
+//   {
+//     "topic": "Project",
+//     "week": 15
+//   },
+//   {
+//     "topic": "Project",
+//     "week": 16
+//   }
+// ]
+
 export const journeyData = [
   {
     week: 1,
