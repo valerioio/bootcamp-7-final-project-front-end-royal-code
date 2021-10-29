@@ -2,7 +2,7 @@
 import LoginPage from "../LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { JourneyData, energisers, NameData, Recordings} from "../../data";
+import { journeyData, energisers, nameData, recordings} from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Journey from "../Timeline";
 import Home from "../Home";
@@ -71,7 +71,7 @@ function App() {
                   nameData={nameData}
                   journeyData={journeyData}
                   energisers={energisers}
-                  recordings={Recordings}
+                  recordings={recordings}
                 />
               </Layout>
             </Route>
