@@ -3,7 +3,7 @@
 ## Brief
 
 To create an app that will help with the organisational issues relating to the natioal scale-up of School of Code.
-
+<br/><br/>
 We narrowed this down to:
 
 - Coach organisation
