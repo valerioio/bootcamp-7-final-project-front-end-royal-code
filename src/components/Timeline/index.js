@@ -1,6 +1,4 @@
 import React from "react";
-import css from "./Timeline.module.css";
-import Layout from "../Layout";
 import {
   Timeline,
   TimelineItem,
@@ -55,7 +53,6 @@ export default function Journey({ data, navbarLinks, name }) {
                     <TimelineConnector />
                   </TimelineSeparator>
                     <TimelineContent ><div className={`smallContainer`}>{resources[i + 1][j]}</div></TimelineContent>
-                  
                 </TimelineItem>
               );
             })}

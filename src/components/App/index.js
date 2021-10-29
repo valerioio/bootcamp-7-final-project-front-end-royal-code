@@ -2,7 +2,7 @@
 import LoginPage from "../LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { JourneyData, energisers, NameData } from "../../data";
+import { JourneyData, energisers, NameData, Recordings} from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Journey from "../Timeline";
 import Home from "../Home";
@@ -68,15 +68,16 @@ function App() {
               <Layout user={user}>
                 <Home
                   user={user}
-                  NameData={NameData}
-                  JourneyData={JourneyData}
+                  nameData={nameData}
+                  journeyData={journeyData}
                   energisers={energisers}
+                  recordings={Recordings}
                 />
               </Layout>
             </Route>
             <Route path="/journey">
               <Layout user={user}>
-                <Journey data={JourneyData} />
+                <Journey data={journeyData} />
               </Layout>
             </Route>
             <Route path="/energisers">

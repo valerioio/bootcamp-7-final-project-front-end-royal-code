@@ -2,7 +2,8 @@ import { Avatar, Box, Flex, Spacer, Text } from "@chakra-ui/react";
 import css from "./NameIcon.module.css";
 
 const NameIcon = ({ name }) => {
-  if (name) name = name.replace(/./, (match) => match.toUpperCase());
+  let capitalizedName;
+  if (name) capitalizedName = name.replace(/./, (match) => match.toUpperCase());
   return (
     <>
       <Flex>
@@ -20,14 +21,13 @@ const NameIcon = ({ name }) => {
           <Flex justify="space-around" align="center">
             <Avatar
               className={`${css.shadow} ${css.icon}`}
-              name={name}
+              name={capitalizedName}
               bg="white"
               color="#004ba0"
               size="sm"
               m="0 1em 0 0"
             />
-
-            <Text className={css.name}>{name}</Text>
+            <Text className={css.name}>{capitalizedName}</Text>
           </Flex>
         </Box>
       </Flex>

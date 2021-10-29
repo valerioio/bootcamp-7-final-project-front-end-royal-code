@@ -24,3 +24,15 @@
   margin-top: 1em;
   font-size: large;
 }
+
+.Button {
+  border-radius: 10%;
+  background-color: #1d5b40 !important;
+  color: #ffffff;
+  font-size: 1em;
+  padding: 0 0.5em;
+  height: 2em !important;
+  display: block;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
