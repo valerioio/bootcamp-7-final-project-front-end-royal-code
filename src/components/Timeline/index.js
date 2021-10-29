@@ -6,6 +6,7 @@ import {
   TimelineConnector,
   TimelineContent,
   TimelineSeparator,
+  TimelineOppositeContent,
 } from "@material-ui/lab";
 import { v4 as uuidv4 } from "uuid";
 
@@ -35,23 +36,23 @@ export default function Journey({ data, navbarLinks, name }) {
         return (
           <Timeline key={uuidv4()} align="alternate">
             <TimelineItem>
-              <TimelineSeparator>
-                <TimelineDot color="primary" />
-                <TimelineConnector />
+              <TimelineSeparator className={`seperator`}>
+                <TimelineDot color="primary" className={`dots`} >
+                  {i + 1}
+                </TimelineDot>
               </TimelineSeparator>
-              <TimelineContent>Week {i + 1}</TimelineContent>
+              <TimelineContent></TimelineContent>
             </TimelineItem>
 
             {topic.map((item, j) => {
               return (
                 <TimelineItem key={uuidv4()}>
-                  <TimelineSeparator>
+                  <TimelineSeparator className={`seperator`}>
                     <TimelineConnector />
                     <TimelineDot variant="outlined" color="secondary" />
+                    <TimelineConnector />
                   </TimelineSeparator>
-                  <div className={`smallContainer`}>
-                    <TimelineContent>{resources[i + 1][j]}</TimelineContent>
-                  </div>
+                    <TimelineContent ><div className={`smallContainer`}>{resources[i + 1][j]}</div></TimelineContent>
                 </TimelineItem>
               );
             })}

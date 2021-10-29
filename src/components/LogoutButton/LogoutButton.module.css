@@ -1,10 +1,25 @@
 .Button {
-  border-radius: 10%;
-  background-color: #1d5b40 !important;
-  color: #ffffff;
+  border-radius: 3px;
+  background-color: #63a4ff ;
+  color: #000000;
   font-size: 1em;
   padding: 0.1em;
-  height: 3em !important;
-  margin-top: 1vw;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  height: 2.5vw !important;
+  width: 5vw;
+  margin: 1vw;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25) !important;
+  /* -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; */
 }
+
+/* .Button:hover {
+  background-color: #FA3E57;
+  cursor: pointer;
+  color: #ffffff;
+} */

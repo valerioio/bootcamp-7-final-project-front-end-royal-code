@@ -1,5 +1,4 @@
 import { Avatar, Box, Flex, Spacer, Text } from "@chakra-ui/react";
-import LogoutButton from "../LogoutButton";
 import css from "./NameIcon.module.css";
 
 const NameIcon = ({ name }) => {
@@ -9,27 +8,26 @@ const NameIcon = ({ name }) => {
     <>
       <Flex>
         <Spacer />
-        <LogoutButton />
         <Box
-          className={`${css.shadow} ${css.center}`}
+          className={`${css.shadow} ${css.center} `}
           borderRadius="md"
-          bg="#1D5B40"
+          bg="#004ba0"
           color="white"
           w="fit-content"
-          p="0.5em"
+          p="0.5vw"
           h="3em"
           m="1vw"
         >
           <Flex justify="space-around" align="center">
             <Avatar
-              className={css.shadow}
+              className={`${css.shadow} ${css.icon}`}
               name={capitalizedName}
               bg="white"
-              color="#1D5B40"
+              color="#004ba0"
               size="sm"
               m="0 1em 0 0"
             />
-            <Text>{capitalizedName}</Text>
+            <Text className={css.name}>{capitalizedName}</Text>
           </Flex>
         </Box>
       </Flex>
