@@ -22,11 +22,13 @@ export default function Calendar() {
 
   let counterGet = 0;
   let counterAdd = 0;
-  const firstUpdate = useRef(true);
+  const firstUpdateGet = useRef(true);
+  const firstUpdateAdd = useRef(true);
+
   useEffect(() => {
     async function getEvents() {
-      if (firstUpdate.current) {
-        firstUpdate.current = false;
+      if (firstUpdateGet.current) {
+        firstUpdateGet.current = false;
         return;
       }
       const res = fetch(""); // use date here
@@ -46,6 +48,10 @@ export default function Calendar() {
 
   useEffect(() => {
     async function addEvent() {
+      if (firstUpdateAdd.current) {
+        firstUpdateAdd.current = false;
+        return;
+      }
       const res = fetch("", {
         method: "POST",
         body: JSON.stringify({
