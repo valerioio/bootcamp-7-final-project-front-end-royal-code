@@ -17,7 +17,11 @@ import InputForm from "../InputForm";
 
 export default function Calendar() {
   const [events, setEvents] = useState([]);
-  let counter = 0;
+  const [date, setDate] = useState();
+  const [eventInfo, setEventInfo] = useState("");
+
+  let counterGet = 0;
+  let counterAdd = 0;
   const firstUpdate = useRef(true);
   useEffect(() => {
     async function getEvents() {
@@ -25,18 +29,45 @@ export default function Calendar() {
         firstUpdate.current = false;
         return;
       }
-      const res = fetch("");
+      const res = fetch(""); // use date here
       const data = await res.json();
       setEvents(data);
     }
     getEvents();
-  }, [counter]);
+  }, [counterGet]);
+
+  function updateDate(e) {
+    setDate(e.target.value);
+  }
+
+  function updateEventInfo(e) {
+    setEventInfo(e.target.value);
+  }
+
+  useEffect(() => {
+    async function addEvent() {
+      const res = fetch("", {
+        method: "POST",
+        body: JSON.stringify({
+          date: date,
+          eventInfo: eventInfo,
+        }),
+      });
+      const data = await res.json();
+    }
+    addEvent();
+  }, [counterAdd]);
   return (
     <>
-      <input type="date" />
-      <button onClick={counter++}>Get events</button>
+      <input type="date" onChange={updateDate} />
+      <button onClick={counterGet++}>Get events</button>
       <List Listings={events} />
-      <InputForm />
+      <InputForm
+        handleSubmit={() => {
+          counterAdd++;
+        }}
+        handleChange={updateEventInfo}
+      />
     </>
   );
 }
