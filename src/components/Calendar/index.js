@@ -19,9 +19,9 @@ export default function Calendar() {
   const [events, setEvents] = useState([]);
   const [date, setDate] = useState();
   const [eventInfo, setEventInfo] = useState("");
+  const [counterGet, setCounterGet] = useState(0);
+  const [counterAdd, setCounterAdd] = useState(0);
 
-  let counterGet = 0;
-  let counterAdd = 0;
   const firstUpdateGet = useRef(true);
   const firstUpdateAdd = useRef(true);
 
@@ -31,6 +31,7 @@ export default function Calendar() {
         firstUpdateGet.current = false;
         return;
       }
+
       const res = fetch(""); // use date here
       const data = await res.json();
       setEvents(data);
@@ -52,6 +53,7 @@ export default function Calendar() {
         firstUpdateAdd.current = false;
         return;
       }
+
       const res = fetch("", {
         method: "POST",
         body: JSON.stringify({
@@ -63,14 +65,21 @@ export default function Calendar() {
     }
     addEvent();
   }, [counterAdd]);
+
   return (
     <>
       <input type="date" onChange={updateDate} />
-      <button onClick={counterGet++}>Get events</button>
+      <button
+        onClick={() => {
+          setCounterGet(counterGet + 1);
+        }}
+      >
+        Get events
+      </button>
       <List Listings={events} />
       <InputForm
         handleSubmit={() => {
-          counterAdd++;
+          setCounterAdd(counterAdd + 1);
         }}
         handleChange={updateEventInfo}
         eventInfo={eventInfo}
