@@ -7,12 +7,16 @@
 import React from "react";
 import { Input, InputGroup, InputLeftAddon } from "@chakra-ui/react";
 
-export default function InputForm({ handleSubmit, handleChange }) {
+export default function InputForm({ handleSubmit, handleChange, eventInfo }) {
   return (
     <>
       <InputGroup>
         <InputLeftAddon children="Event:" />
-        <Input placeholder="Event details" onChange={handleChange} />
+        <Input
+          placeholder="Event details"
+          onChange={handleChange}
+          value={eventInfo}
+        />
       </InputGroup>
       <button onClick={handleSubmit}>Add Event</button>
     </>

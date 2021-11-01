@@ -67,6 +67,7 @@ export default function Calendar() {
           counterAdd++;
         }}
         handleChange={updateEventInfo}
+        eventInfo={eventInfo}
       />
     </>
   );
