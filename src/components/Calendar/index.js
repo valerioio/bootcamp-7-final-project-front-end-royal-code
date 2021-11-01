@@ -31,10 +31,11 @@ export default function Calendar() {
         firstUpdateGet.current = false;
         return;
       }
-
+      console.log("getting events", date);
+      /*
       const res = fetch(""); // use date here
       const data = await res.json();
-      setEvents(data);
+      setEvents(data);*/
     }
     getEvents();
   }, [counterGet]);
@@ -53,7 +54,8 @@ export default function Calendar() {
         firstUpdateAdd.current = false;
         return;
       }
-
+      console.log("add event", eventInfo, "date", date);
+      /*
       const res = fetch("", {
         method: "POST",
         body: JSON.stringify({
@@ -61,7 +63,7 @@ export default function Calendar() {
           eventInfo: eventInfo,
         }),
       });
-      const data = await res.json();
+      const data = await res.json();*/
     }
     addEvent();
   }, [counterAdd]);
