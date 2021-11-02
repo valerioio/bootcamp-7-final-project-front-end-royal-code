@@ -5,7 +5,7 @@ import Calendar from "../Calendar";
 export default function BootcamperDashboard({ Listings, name, recordings }) {
   return (
     <div>
-      <h1 className={css.mainTitle}>ASDFG</h1>
+      <h1 className={css.mainTitle}>Dashboard</h1>
       <div className={css.dashboard}>
         <div className={`container`}>
           <h1 className={css.title}>Resource List</h1>

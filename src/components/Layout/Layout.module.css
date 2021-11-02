@@ -1,6 +1,6 @@
 .layout{
     display: grid;
-    grid-template-columns: 20vw auto;
+    grid-template-columns: 15em auto;
 }
 
 .main{

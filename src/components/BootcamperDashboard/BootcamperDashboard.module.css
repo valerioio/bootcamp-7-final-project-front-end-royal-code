@@ -17,12 +17,10 @@
 }
 
 .mainTitle {
-  background-color: #e3e5e5;
-  color: #1d5b40;
-  font-family: sans-serif;
+  font-family: 'Cardo';
   font-style: medium;
-  font-size: 10em;
+  font-size: 8rem;
+  margin-left: 0.5em;
   letter-spacing: -4%;
-  text-align: center;
   vertical-align: top;
 }
