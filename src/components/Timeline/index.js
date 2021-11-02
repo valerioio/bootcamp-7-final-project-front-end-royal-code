@@ -9,6 +9,7 @@ import {
   TimelineOppositeContent,
 } from "@material-ui/lab";
 import { v4 as uuidv4 } from "uuid";
+import css from "./Timeline.module.css";
 
 /* plan
 import react 
@@ -32,31 +33,38 @@ export default function Journey({ data, navbarLinks, name }) {
 
   return (
     <>
+      <h1 className={css.mainTitle}>Journey</h1>
       {topics.slice(1).map((topic, i) => {
         return (
-          <Timeline key={uuidv4()} align="alternate">
-            <TimelineItem>
-              <TimelineSeparator className={`seperator`}>
-                <TimelineDot color="primary" className={`dots`} >
-                  {i + 1}
-                </TimelineDot>
-              </TimelineSeparator>
-              <TimelineContent></TimelineContent>
-            </TimelineItem>
+          <>
+            <Timeline key={uuidv4()} align="alternate">
+              <TimelineItem>
+                <TimelineSeparator className={`seperator`}>
+                  <TimelineDot color="primary" className={`dots`}>
+                    {i + 1}
+                  </TimelineDot>
+                </TimelineSeparator>
+                <TimelineContent></TimelineContent>
+              </TimelineItem>
 
-            {topic.map((item, j) => {
-              return (
-                <TimelineItem key={uuidv4()}>
-                  <TimelineSeparator className={`seperator`}>
-                    <TimelineConnector />
-                    <TimelineDot variant="outlined" color="secondary" />
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                    <TimelineContent ><div className={`smallContainer`}>{resources[i + 1][j]}</div></TimelineContent>
-                </TimelineItem>
-              );
-            })}
-          </Timeline>
+              {topic.map((item, j) => {
+                return (
+                  <TimelineItem key={uuidv4()}>
+                    <TimelineSeparator className={`seperator`}>
+                      <TimelineConnector />
+                      <TimelineDot variant="outlined" color="secondary" />
+                      <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent>
+                      <div className={`smallContainer`}>
+                        {resources[i + 1][j]}
+                      </div>
+                    </TimelineContent>
+                  </TimelineItem>
+                );
+              })}
+            </Timeline>
+          </>
         );
       })}
     </>
