@@ -6,7 +6,7 @@
 // SoC logo
 
 import React from "react";
-import LoginButton from "../LoginButton";
+import LoginButton from "../../components/LoginButton";
 import logo from "../../socLogo.png";
 import styles from "./LoginPage.module.css";
 

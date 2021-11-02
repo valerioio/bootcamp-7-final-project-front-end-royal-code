@@ -1,6 +1,6 @@
-import List from "../List";
+import List from "../../components/List";
 import css from "./BootcamperDashboard.module.css";
-import Calendar from "../Calendar";
+import Calendar from "../../components/Calendar";
 
 export default function BootcamperDashboard({ Listings, name, recordings }) {
   return (

@@ -1,14 +1,15 @@
 //import { useState, useEffect } from "react";
-import LoginPage from "../LoginPage";
+import LoginPage from "../../Pages/LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { journeyData, energisers, nameData, recordings} from "../../data";
+import { journeyData, energisers, nameData, recordings } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Journey from "../Timeline";
-import Home from "../Home";
-import EnergisersPage from "../EnergisersPage";
+import Journey from "../../Pages/Timeline";
+import Home from "../../Pages/Home";
+import EnergisersPage from "../../Pages/EnergisersPage";
 import Layout from "../Layout";
 import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+import GarticPage from "../../Pages/GarticPage";
 
 const theme = createTheme({
   palette: {
@@ -60,7 +61,7 @@ function App() {
 */
 
   return (
-    <MuiThemeProvider theme = {theme}>
+    <MuiThemeProvider theme={theme}>
       <div className={CSS.App}>
         <Router>
           <Switch>
@@ -80,13 +81,18 @@ function App() {
                 <Journey data={journeyData} />
               </Layout>
             </Route>
-            <Route path="/energisers">
+            <Route exact path="/energisers">
               <Layout user={user}>
                 <EnergisersPage />
               </Layout>
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <LoginPage />
+            </Route>
+            <Route exact path="/energisers/gartic">
+              <Layout user={user}>
+                <GarticPage />
+              </Layout>
             </Route>
           </Switch>
         </Router>
