@@ -15,9 +15,14 @@
   border-right: 1em solid #fff;
 }
 
+.link:hover {
+  background-color: rgb(193, 218, 215, 0.3);
+  border-right: 1em solid rgb(0, 103, 91, 0.3);
+}
+
 .selected {
-  background-color: #c1dad7;
-  border-right: 1em solid #00675b;
+  background-color: #c1dad7 !important;
+  border-right: 1em solid #00675b !important;
 }
 
 .icon {

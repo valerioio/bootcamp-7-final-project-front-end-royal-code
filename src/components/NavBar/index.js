@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Text, Spacer } from "@chakra-ui/react";
 import css from "./NavBar.module.css";
 import logo from "../../socLogo.png";
 import { v4 as uuidv4 } from "uuid";
@@ -40,7 +40,7 @@ const NavBar = ({ email, currentPage }) => {
           justify="space-around"
           wrap="wrap"
           w="100%"
-          mt="30%"
+          mt="10%"
         >
           {(email === "bootcamper@schoolofcode.co.uk"
             ? navbarLinksBootcampers
@@ -64,7 +64,10 @@ const NavBar = ({ email, currentPage }) => {
             );
           })}
         </Flex>
-        <LogoutButton />
+        <Spacer />
+        <div className={css.link}>
+          <LogoutButton />
+        </div>
       </Flex>
     </Flex>
   );
