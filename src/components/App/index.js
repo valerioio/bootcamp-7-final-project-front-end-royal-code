@@ -2,7 +2,7 @@
 import LoginPage from "../LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { journeyData, energisers, nameData, recordings} from "../../data";
+import { journeyData, energisers, nameData, recordings } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Journey from "../Timeline";
 import Home from "../Home";
@@ -60,12 +60,12 @@ function App() {
 */
 
   return (
-    <MuiThemeProvider theme = {theme}>
+    <MuiThemeProvider theme={theme}>
       <div className={CSS.App}>
         <Router>
           <Switch>
             <Route path="/home">
-              <Layout user={user}>
+              <Layout user={user} currentPage={"/home"}>
                 <Home
                   user={user}
                   nameData={nameData}
@@ -76,12 +76,12 @@ function App() {
               </Layout>
             </Route>
             <Route path="/journey">
-              <Layout user={user}>
+              <Layout user={user} currentPage={"/journey"}>
                 <Journey data={journeyData} />
               </Layout>
             </Route>
             <Route path="/energisers">
-              <Layout user={user}>
+              <Layout user={user} currentPage={"/energisers"}>
                 <EnergisersPage />
               </Layout>
             </Route>

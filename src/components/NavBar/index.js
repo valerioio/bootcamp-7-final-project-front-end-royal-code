@@ -4,20 +4,22 @@ import css from "./NavBar.module.css";
 import logo from "../../socLogo.png";
 import { v4 as uuidv4 } from "uuid";
 import LogoutButton from "../LogoutButton";
+import TimelineIcon from "@material-ui/icons/Timeline";
+import BookIcon from "@material-ui/icons/Book";
 
 const navbarLinksCoaches = [
-  { linkText: "Dashboard", href: "/home" },
-  // { linkText: "Curriculum", href: "/curriculum" },
-  { linkText: "Energiser list", href: "/energisers" },
+  { linkText: "Dashboard", href: "/home", icon: null },
+  // { linkText: "Curriculum", href: "/curriculum", icon: null},
+  { linkText: "Energiser list", href: "/energisers", icon: null },
 ];
 const navbarLinksBootcampers = [
-  { linkText: "Dashboard", href: "/home" },
-  { linkText: "Journey", href: "/journey" },
-  // { linkText: "Reading List", href: "/reading" },
-  // { linkText: "Recordings", href: "/recordings" },
+  { linkText: "Dashboard", href: "/home", icon: null },
+  { linkText: "Journey", href: "/journey", icon: <TimelineIcon /> },
+  // { linkText: "Reading List", href: "/reading", icon: null},
+  // { linkText: "Recordings", href: "/recordings", icon: null},
 ];
 
-const NavBar = ({ email }) => {
+const NavBar = ({ email, currentPage }) => {
   return (
     <Flex>
       <Flex
@@ -26,16 +28,11 @@ const NavBar = ({ email }) => {
         direction="column"
         align="center"
         wrap="wrap"
-        w="10em"
+        w="15em"
         h="100vh"
-        p={3}
-        bg="#005b4f"
-        color="white"
       >
-        <img
-          src={logo}
-          alt="logo"
-        />
+        <br />
+        <img src={logo} alt="logo" width="90%" />
         <Flex
           as="nav"
           direction="column"
@@ -55,8 +52,13 @@ const NavBar = ({ email }) => {
               <Link
                 key={uuidv4()}
                 href={link.href}
-                style={{ margin: "1.5em 0" }}
+                className={
+                  link.href === currentPage
+                    ? `${css.link} ${css.selected}`
+                    : css.link
+                }
               >
+                <div className={css.icon}>{link.icon}</div>
                 <Text display="block">{link.linkText}</Text>
               </Link>
             );
