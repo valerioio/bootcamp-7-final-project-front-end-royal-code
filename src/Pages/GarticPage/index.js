@@ -13,7 +13,7 @@ import { energisers } from "../../data";
 
 export default function GarticPage() {
   console.log(energisers);
-  const gartic = energisers[1];
+  const gartic = energisers[0];
   console.log(gartic);
   return (
     <div>
