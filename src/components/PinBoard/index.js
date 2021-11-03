@@ -12,7 +12,13 @@ import StickyNote from "../StickyNote";
 import css from "./PinBoard.module.css";
 
 export default function PinBoard() {
-  const [notes, setNotes] = useState(["here is a test note"]);
+  const [notes, setNotes] = useState([
+    "here is a test note",
+    "here is another note",
+    "and another",
+    "and another",
+    "and another",
+  ]);
   const [noteText, setNoteText] = useState("");
 
   // plan for addNote
@@ -22,13 +28,13 @@ export default function PinBoard() {
   function addNote() {
     return (
       <div className={css.stickyNote}>
-        <input className={css.noteInput} type="text">
-          Add Note
-        </input>
+        <input className={css.noteInput} type="text"></input>
         <button
           className={css.submitNoteButton}
           onClick={setNotes([...notes, noteText])}
-        ></button>
+        >
+          Add Note
+        </button>
       </div>
     );
   }
