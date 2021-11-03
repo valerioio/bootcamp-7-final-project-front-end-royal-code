@@ -1,6 +1,5 @@
 import css from "./CoachDashboard.module.css";
 import "../../index.css";
-import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 //import List from "../List";
 
@@ -8,14 +7,14 @@ function groupParings(bootcampers, size) {
   const groups = [];
   for (let i = 0; i < bootcampers.length; i += size) {
     groups.push(
-      <div key={uuidv4()}>
+      <div key={`${i}95`}>
         <p>
           {size === 2 ? "Pair" : "Group"} {i / size + 1}
         </p>
         <li>
           {" "}
           {bootcampers.slice(i, i + size).map((bootcamper) => (
-            <p key={uuidv4()}>
+            <p key={`${i}47`}>
               {bootcamper.firstName + " " + bootcamper.lastName}
             </p>
           ))}{" "}

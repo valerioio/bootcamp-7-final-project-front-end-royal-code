@@ -37,7 +37,7 @@ export default function Journey({ data, navbarLinks, name }) {
       {topics.slice(1).map((topic, i) => {
         return (
           <>
-            <Timeline key={uuidv4()} align="alternate">
+            <Timeline key={`${i}21`} align="alternate">
               <TimelineItem>
                 <TimelineSeparator className={`seperator`}>
                   <TimelineDot color="primary" className={`dots`}>
@@ -49,7 +49,7 @@ export default function Journey({ data, navbarLinks, name }) {
 
               {topic.map((item, j) => {
                 return (
-                  <TimelineItem key={uuidv4()}>
+                  <TimelineItem key={`${i}23`}>
                     <TimelineSeparator className={`seperator`}>
                       <TimelineConnector />
                       <TimelineDot variant="outlined" color="secondary" />

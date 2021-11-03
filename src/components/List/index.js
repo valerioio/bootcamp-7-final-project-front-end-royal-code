@@ -5,7 +5,7 @@ function List({ Listings }) {
   return (
     <ul className={css.list}>
       {Listings.map((Listing, i) => (
-        <ListItem key={i} text={Listing} />
+        <ListItem key={`${i}68`} text={Listing} />
       ))}
     </ul>
   );
