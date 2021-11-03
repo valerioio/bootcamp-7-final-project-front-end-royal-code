@@ -330,6 +330,7 @@ export const journeyData = [
       "Working with variables in the console",
     ],
     topicIcon: "https://i.ibb.co/gdz4Zvx/foundation.png ",
+    color: "orange",
   },
   {
     topic: "JavaScript",
@@ -340,6 +341,7 @@ export const journeyData = [
       " Declaring Objects",
     ],
     topicIcon: "https://i.ibb.co/3dTLJdZ/js.png ",
+    color: "orange",
   },
   {
     topic: "Front-end",
@@ -347,6 +349,7 @@ export const journeyData = [
     description: ["Array methods", "DOM manipulation ", "Asynchronous Request"],
     topicIcon:
       "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
+      color: "orange",
   },
   {
     topic: "Back-end",
@@ -357,18 +360,21 @@ export const journeyData = [
       "Intro to Node",
     ],
     topicIcon: "https://i.ibb.co/jrrS0qn/backend.png",
+    color: "green",
   },
   {
     topic: "Databases",
     week: 5,
     description: ["SQL", "PostgreSQL"],
     topicIcon: "https://i.ibb.co/BgLqJXc/database.png ",
+    color: "green",
   },
   {
     topic: "Testing",
     week: 6,
     description: ["Introduction to Jest", "API endpoint testing", "Test-athon"],
     topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png ",
+    color: "green",
   },
   {
     topic: "React Basics",
@@ -379,12 +385,14 @@ export const journeyData = [
       "Immutable Updates to Objects and Arrays",
     ],
     topicIcon: "https://i.ibb.co/6HRsmdw/react.png ",
+    color: "blue",
   },
   {
     topic: "React Advanced",
     week: 8,
     description: ["React Side Effects", "UseEffect ", "useReducer"],
     topicIcon: "https://i.ibb.co/y8brvLf/react-logo.png",
+    color: "blue",
   },
   {
     topic: "Client Project",
@@ -395,24 +403,29 @@ export const journeyData = [
       "Presentation",
     ],
     topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png ",
+    color: "red",
+    
   },
   {
     topic: "Agile",
     week: 10,
     description: ["Scrum", "Kanban"],
     topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png ",
+    color: "grey",
   },
   {
     topic: "Computer Science",
     week: 11,
     description: ["Cypress", "Typescript", "Ui Libaries"],
     topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png ",
+    color: "blue",
   },
   {
     topic: "Architecture",
     week: 12,
     description: ["AWS", "Aynamodb", "AWS Amplify"],
     topicIcon: "https://i.ibb.co/x8D77wp/architecture.png ",
+    color: "grey",
   },
   {
     topic: "Project",
@@ -424,6 +437,7 @@ export const journeyData = [
       "Application Planning",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    color: "red",
   },
   {
     topic: "Project",
@@ -434,6 +448,7 @@ export const journeyData = [
       "Styling of Application",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    color: "red",
   },
   {
     topic: "Project",
@@ -445,12 +460,14 @@ export const journeyData = [
       " Application Polishing",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    color: "red",
   },
   {
     topic: "Project",
     week: 16,
     description: ["Completed Application", "Presentation", "Demo"],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    color: "red",
   },
 ];
 

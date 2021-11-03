@@ -1,11 +1,37 @@
 .mainTitle {
-  font-family: 'Cardo';
+  font-family: "Cardo";
   font-style: medium;
   font-size: 8rem;
   margin-left: 0.5em;
   letter-spacing: -4%;
   vertical-align: top;
   margin-bottom: 0.25em;
+}
+.timeLine{
+  position: left;
+  margin-left: 20%;
+ 
+
+
+
+}
+.sContainer{
+  display: flex;
+ border: 1px solid; 
+border-color: aqua;
+}
+.image{
+  height: 50px;
+  margin-left: auto;
+  order: 2;
+}
+.list{
+padding: 2em;
+display: grid;
+align-items: center;
+}
+.topicTitle{
+  position:center;
 }
 
 /* body {
