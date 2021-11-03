@@ -7,15 +7,12 @@ const EnergisersPage = () => {
     <>
       <h1 className={css.mainTitle}>Energisers</h1>
       <div className={css.main}>
-        {energisers.map((energiser) => {
+        {energisers.map((energiser, i) => {
           return (
-            <div className={`${css.energiser} container`} key={uuidv4()}>
-              <h1 className={css.title}>{energiser.name}</h1>
-              <p>{energiser.description}</p>
+            <div key={`${i}54`}>
+              <img src={energiser.logo} alt={energiser.name + " logo"} />
+              <h2>{energiser.name}</h2> <br />
               <br />
-              <a href={energiser.link} style={{ color: "blue" }}>
-                {energiser.link}
-              </a>
             </div>
           );
         })}
