@@ -8,7 +8,6 @@
 // button to delete note
 
 // to do
-// https://kookma.github.io/TW-Pinboard/
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
 // random background color
 // drag and drop
@@ -16,18 +15,22 @@
 // fix text area onChange
 // include pin
 // have the border of the text area invisible
+// change the cork board
 
-
-import React from "react";
+import React, { useState } from "react";
 import css from "./StickyNote.module.css";
-const colors = ["lavenderblush"];
+const COLORS = ["lavenderblush", "honeydew", "lightyellow", "lightcyan"];
+
 export default function StickyNote({ text, deleteNote, changeNote }) {
+  const [color, setColor] = useState(
+    COLORS[Math.floor(Math.random() * COLORS.length)]
+  );
   return (
     <div
       className={css.stickyNote}
-      // style={{
-      //   backgroundColor: colors[Math.floor(Math.random() * colors.length)],
-      // }}
+      style={{
+        backgroundColor: color,
+      }}
     >
       <button className={css.removeButton} onClick={deleteNote}>
         -

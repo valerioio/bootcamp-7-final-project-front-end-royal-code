@@ -36,7 +36,7 @@ export default function PinBoard() {
   // update note state (spread)
   function addNote() {
     const newNotes = [...notes, ""];
-    localStorage.setItem(NOTES, newNotes);
+    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     setNotes(newNotes);
     // return (
     //   <div className={css.stickyNote}>
@@ -56,7 +56,7 @@ export default function PinBoard() {
   // update note state (spread and slice)
   function deleteNote(index) {
     const newNotes = [...notes.slice(0, index), ...notes.slice(index + 1)];
-    localStorage.setItem(NOTES, newNotes);
+    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     setNotes(newNotes);
   }
 
@@ -66,7 +66,7 @@ export default function PinBoard() {
       noteText,
       ...notes.slice(index + 1),
     ];
-    localStorage.setItem(NOTES, newNotes);
+    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     setNotes(newNotes);
   }
 
