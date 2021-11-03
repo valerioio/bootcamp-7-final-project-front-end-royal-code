@@ -29,3 +29,7 @@
   font-family: courgette;
   background-color: inherit;
 }
+
+.noteText:focus {
+  outline: none;
+}
