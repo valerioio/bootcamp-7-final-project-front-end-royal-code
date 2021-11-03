@@ -351,7 +351,7 @@ export const journeyData = [
     topic: "Back-end",
     week: 4,
     description: [
-      "Express 101 -books API",
+      "Express 101 - books API",
       "Intro To Express",
       "Intro to Node",
     ],
