@@ -7,17 +7,39 @@
 // text field with note
 // button to delete note
 
+// to do
+// https://kookma.github.io/TW-Pinboard/
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea
+// random background color
+// drag and drop
+// fix text area size
+// fix text area onChange
+// include pin
+// have the border of the text area invisible
+
+
 import React from "react";
 import css from "./StickyNote.module.css";
-
-export default function StickyNote({ text, deleteNote }) {
+const colors = ["lavenderblush"];
+export default function StickyNote({ text, deleteNote, changeNote }) {
   return (
-    <div className={css.stickyNote}>
+    <div
+      className={css.stickyNote}
+      // style={{
+      //   backgroundColor: colors[Math.floor(Math.random() * colors.length)],
+      // }}
+    >
       <button className={css.removeButton} onClick={deleteNote}>
         -
       </button>
-      <p className={css.noteText}>{text}</p>
-      {/* <input className={css.noteText} value={text} /> */}
+      {/* <p className={css.noteText}>{text}</p> */}
+      <textarea
+        className={css.noteText}
+        onChange={(e) => changeNote(e.target.value)}
+        placeholder="add a new note"
+      >
+        {text}
+      </textarea>
     </div>
   );
 }

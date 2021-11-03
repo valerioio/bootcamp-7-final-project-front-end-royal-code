@@ -35,7 +35,7 @@ export default function PinBoard() {
   // add new note text to note array
   // update note state (spread)
   function addNote() {
-    const newNotes = [...notes, ''];
+    const newNotes = [...notes, ""];
     localStorage.setItem(NOTES, newNotes);
     setNotes(newNotes);
     // return (
@@ -60,13 +60,29 @@ export default function PinBoard() {
     setNotes(newNotes);
   }
 
+  function changeNote(index, noteText) {
+    const newNotes = [
+      ...notes.slice(0, index),
+      noteText,
+      ...notes.slice(index + 1),
+    ];
+    localStorage.setItem(NOTES, newNotes);
+    setNotes(newNotes);
+  }
+
   return (
     <div className={css.pinBoard}>
       <button className={css.addNoteButton} onClick={addNote}>
         +
       </button>
       {notes.map((note, index) => {
-        return <StickyNote text={note} deleteNote={() => deleteNote(index)} />;
+        return (
+          <StickyNote
+            text={note}
+            deleteNote={() => deleteNote(index)}
+            changeNote={(noteText) => changeNote(index, noteText)}
+          />
+        );
       })}
     </div>
   );
