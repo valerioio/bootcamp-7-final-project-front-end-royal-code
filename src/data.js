@@ -432,6 +432,7 @@ export const journeyData = [
       "Application Planning",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    link: "https://vimeo.com/showcase/8691982/video/600107702",
   },
   {
     topic: "Project",
@@ -442,7 +443,7 @@ export const journeyData = [
       "Styling of Application",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
-    link: "https://vimeo.com/showcase/8691982/video/600107702",
+    link: "https://vimeo.com/showcase/8691982/video/629075546",
   },
   {
     topic: "Project",

@@ -5,7 +5,13 @@ import logo from "../../socLogo.png";
 import { v4 as uuidv4 } from "uuid";
 import LogoutButton from "../LogoutButton";
 // import TimelineIcon from "@material-ui/icons/Timeline";
-import { MdWindow, MdTimeline, MdOutlineWbSunny } from "react-icons/md";
+import {
+  MdWindow,
+  MdTimeline,
+  MdOutlineWbSunny,
+  MdBook,
+  MdCameraRoll,
+} from "react-icons/md";
 
 const navbarLinksCoaches = [
   { linkText: "Dashboard", href: "/home", icon: <MdWindow /> },
@@ -19,8 +25,12 @@ const navbarLinksCoaches = [
 const navbarLinksBootcampers = [
   { linkText: "Dashboard", href: "/home", icon: <MdWindow /> },
   { linkText: "Journey", href: "/journey", icon: <MdTimeline /> },
-  { linkText: "Reading List", href: "/reading-list", icon: null },
-  { linkText: "Lecture Recordings", href: "/lecture-recordings", icon: null },
+  { linkText: "Reading List", href: "/reading-list", icon: <MdBook /> },
+  {
+    linkText: "Lecture Recordings",
+    href: "/lecture-recordings",
+    icon: <MdCameraRoll />,
+  },
 ];
 
 const NavBar = ({ email, currentPage }) => {
