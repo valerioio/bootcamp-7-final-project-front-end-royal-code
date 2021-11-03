@@ -25,11 +25,12 @@ export default function StickyNote({ text, deleteNote, changeNote }) {
       <button className={css.removeButton} onClick={deleteNote}>
         -
       </button>
-      {/* <p className={css.noteText}>{text}</p> */}
       <textarea
         className={css.noteText}
         onChange={(e) => changeNote(e.target.value)}
         placeholder="add a new note"
+        maxLength={56} /* change here to make the notes longer to 80*/
+        rows={5} /* change here to make the notes longer to 7*/
       >
         {text}
       </textarea>
