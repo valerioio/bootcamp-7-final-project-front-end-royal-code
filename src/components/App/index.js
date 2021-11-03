@@ -97,12 +97,12 @@ function App() {
               </Layout>
             </Route>
             <Route exact path="/reading-list">
-              <Layout user={user}>
+              <Layout user={user} currentPage={"/reading-list"}>
                 <ReadingListPage />
               </Layout>
             </Route>
             <Route exact path="/lecture-recordings">
-              <Layout user={user}>
+              <Layout user={user} currentPage={"/lecture-recordings"}>
                 <LectureRecordingsPage />
               </Layout>
             </Route>
