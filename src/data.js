@@ -330,16 +330,14 @@ export const journeyData = [
       "Working with variables in the console",
     ],
     topicIcon: "https://i.ibb.co/gdz4Zvx/foundation.png ",
+    link: "https://vimeo.com/showcase/8691982/video/579481884",
   },
   {
     topic: "JavaScript",
     week: 2,
-    description: [
-      "Events",
-      "How to link a JS file to your HTML",
-      "Declaring Objects",
-    ],
+    description: ["Events", "Advanced functions", "Declaring Objects"],
     topicIcon: "https://i.ibb.co/3dTLJdZ/js.png ",
+    link: "https://vimeo.com/showcase/8691982/video/582899072",
   },
   {
     topic: "Front-end",
@@ -347,6 +345,7 @@ export const journeyData = [
     description: ["Array methods", "DOM manipulation ", "Asynchronous Request"],
     topicIcon:
       "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
+    link: "https://vimeo.com/showcase/8691982/video/582906096",
   },
   {
     topic: "Back-end",
@@ -357,18 +356,21 @@ export const journeyData = [
       "Intro to Node",
     ],
     topicIcon: "https://i.ibb.co/jrrS0qn/backend.png",
+    link: "https://vimeo.com/showcase/8691982/video/586881602",
   },
   {
     topic: "Databases",
     week: 5,
     description: ["SQL", "PostgreSQL"],
     topicIcon: "https://i.ibb.co/BgLqJXc/database.png ",
+    link: "https://vimeo.com/showcase/8691982/video/586856209",
   },
   {
     topic: "Testing",
     week: 6,
     description: ["Introduction to Jest", "API endpoint testing", "Test-athon"],
     topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png ",
+    link: "https://vimeo.com/showcase/8691982/video/592683987",
   },
   {
     topic: "React Basics",
@@ -379,40 +381,46 @@ export const journeyData = [
       "Immutable Updates to Objects and Arrays",
     ],
     topicIcon: "https://i.ibb.co/6HRsmdw/react.png ",
+    link: "https://vimeo.com/showcase/8691982/video/595903474",
   },
   {
     topic: "React Advanced",
     week: 8,
     description: ["React Side Effects", "UseEffect ", "useReducer"],
     topicIcon: "https://i.ibb.co/y8brvLf/react-logo.png",
+    link: "https://vimeo.com/showcase/8691982/video/600158578",
   },
   {
     topic: "Client Project",
     week: 9,
     description: [
       "Client Brief",
-      "Planing Using Desiney Ideation",
+      "Planning Using Desiney Ideation",
       "Presentation",
     ],
     topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png ",
+    link: "https://vimeo.com/showcase/8691982/video/591009549",
   },
   {
     topic: "Agile",
     week: 10,
     description: ["Scrum", "Kanban"],
     topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png ",
+    link: "https://vimeo.com/showcase/8691982/video/612425603",
   },
   {
     topic: "Computer Science",
     week: 11,
     description: ["Cypress", "Typescript", "Ui Libaries"],
     topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png ",
+    link: "https://vimeo.com/showcase/8691982/video/629026237",
   },
   {
     topic: "Architecture",
     week: 12,
-    description: ["AWS", "Aynamodb", "AWS Amplify"],
+    description: ["Containers", "DynamoDB", "AWS Amplify"],
     topicIcon: "https://i.ibb.co/x8D77wp/architecture.png ",
+    link: "https://vimeo.com/showcase/8691982/video/629270662",
   },
   {
     topic: "Project",
@@ -434,23 +442,26 @@ export const journeyData = [
       "Styling of Application",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    link: "https://vimeo.com/showcase/8691982/video/600107702",
   },
   {
     topic: "Project",
     week: 15,
     description: [
-      "Pull Request",
+      "Pull Requests",
       "Deployment",
       "Depolyment Feedback",
       "Application Polishing",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    link: "https://vimeo.com/showcase/8691982/video/600397206",
   },
   {
     topic: "Project",
     week: 16,
     description: ["Completed Application", "Presentation", "Demo"],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    link: "https://vimeo.com/showcase/8691982/video/609846395",
   },
 ];
 

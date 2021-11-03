@@ -25,9 +25,9 @@ export default function ReadingListPage() {
               {week.description.map((description) => {
                 return <p>{description}</p>;
               })}
-              {/* <a className={css.link} href={week.link}>
+              <a className={css.link} href={week.link}>
                 {week.link}
-              </a> */}
+              </a>
             </div>
           );
         })}
