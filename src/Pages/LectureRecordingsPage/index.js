@@ -19,7 +19,7 @@ export default function LectureRecordingsPage() {
         {recordings.map((recording) => {
           return (
             <div className={css.recordingDetails}>
-              <h1>{recording.title}</h1>
+              <h1 className={css.title}>{recording.title}</h1>
               <p>{recording.date}</p>
               <a className={css.link} href={recording.link}>
                 {recording.link}

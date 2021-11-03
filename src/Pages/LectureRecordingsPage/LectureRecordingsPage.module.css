@@ -26,3 +26,9 @@
   padding: 1.5em;
   line-height: 2;
 }
+
+.title {
+  font-size: 1.2em;
+  text-decoration: underline;
+  font-weight: bold;
+}

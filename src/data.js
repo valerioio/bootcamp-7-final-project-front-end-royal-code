@@ -336,8 +336,8 @@ export const journeyData = [
     week: 2,
     description: [
       "Events",
-      " How to link a JS file to your HTML",
-      " Declaring Objects",
+      "How to link a JS file to your HTML",
+      "Declaring Objects",
     ],
     topicIcon: "https://i.ibb.co/3dTLJdZ/js.png ",
   },
@@ -440,9 +440,9 @@ export const journeyData = [
     week: 15,
     description: [
       "Pull Request",
-      " Deployment",
+      "Deployment",
       "Depolyment Feedback",
-      " Application Polishing",
+      "Application Polishing",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
   },
