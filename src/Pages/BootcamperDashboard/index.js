@@ -2,11 +2,13 @@ import List from "../../components/List";
 import css from "./BootcamperDashboard.module.css";
 import Calendar from "../../components/Calendar";
 import Event from "../../components/Event";
+import Pin from "../../components/Pin";
 
 export default function BootcamperDashboard({ Listings, name, recordings }) {
   return (
     <div>
       <Event />
+      <Pin />
       <h1 className={css.mainTitle}>Dashboard</h1>
       <div className={css.dashboard}>
         <div className={`container`}>
