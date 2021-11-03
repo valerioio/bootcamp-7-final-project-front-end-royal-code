@@ -5,10 +5,9 @@ import Event from "../../components/Event";
 import Pin from "../../components/Pin";
 
 export default function BootcamperDashboard({ Listings, name, recordings }) {
+  const today = new Date();
   return (
     <div>
-      <Event />
-      <Pin />
       <h1 className={css.mainTitle}>Dashboard</h1>
       <div className={css.dashboard}>
         <div className={`container`}>
@@ -21,6 +20,16 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
         </div>
       </div>
       <Calendar />
+      <ul>
+        {Array(7)
+          .fill()
+          .map((_, i) => (
+            <li key={i}>
+              <Event daysFromToday={i}/>
+            </li>
+          ))}
+      </ul>
+      <Pin />
     </div>
   );
 }
