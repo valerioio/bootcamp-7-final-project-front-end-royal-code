@@ -56,6 +56,7 @@ export default function PinBoard() {
   // update note state (spread and slice)
   function deleteNote(index) {
     const newNotes = [...notes.slice(0, index), ...notes.slice(index + 1)];
+    console.log(notes, newNotes);
     localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     setNotes(newNotes);
   }

@@ -29,11 +29,10 @@ export default function StickyNote({ text, deleteNote, changeNote }) {
         className={css.noteText}
         onChange={(e) => changeNote(e.target.value)}
         placeholder="add a new note"
-        maxLength={56} /* change here to make the notes longer to 80*/
+        maxLength={40} /* change here to make the notes longer to 56*/
         rows={5} /* change here to make the notes longer to 7*/
-      >
-        {text}
-      </textarea>
+        value={text}
+      />
     </div>
   );
 }
