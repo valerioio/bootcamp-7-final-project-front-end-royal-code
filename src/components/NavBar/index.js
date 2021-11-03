@@ -4,17 +4,21 @@ import css from "./NavBar.module.css";
 import logo from "../../socLogo.png";
 import { v4 as uuidv4 } from "uuid";
 import LogoutButton from "../LogoutButton";
-import TimelineIcon from "@material-ui/icons/Timeline";
-import BookIcon from "@material-ui/icons/Book";
+// import TimelineIcon from "@material-ui/icons/Timeline";
+import { MdWindow, MdTimeline, MdOutlineWbSunny } from "react-icons/md";
 
 const navbarLinksCoaches = [
-  { linkText: "Dashboard", href: "/home", icon: null },
+  { linkText: "Dashboard", href: "/home", icon: <MdWindow /> },
   // { linkText: "Curriculum", href: "/curriculum", icon: null},
-  { linkText: "Energiser list", href: "/energisers", icon: null },
+  {
+    linkText: "Energiser list",
+    href: "/energisers",
+    icon: <MdOutlineWbSunny />,
+  },
 ];
 const navbarLinksBootcampers = [
-  { linkText: "Dashboard", href: "/home", icon: null },
-  { linkText: "Journey", href: "/journey", icon: <TimelineIcon /> },
+  { linkText: "Dashboard", href: "/home", icon: <MdWindow /> },
+  { linkText: "Journey", href: "/journey", icon: <MdTimeline /> },
   // { linkText: "Reading List", href: "/reading", icon: null},
   // { linkText: "Recordings", href: "/recordings", icon: null},
 ];
@@ -59,7 +63,9 @@ const NavBar = ({ email, currentPage }) => {
                 }
               >
                 <div className={css.icon}>{link.icon}</div>
-                <Text display="block">{link.linkText}</Text>
+                <Text pt="0.25em" display="block">
+                  {link.linkText}
+                </Text>
               </Link>
             );
           })}
