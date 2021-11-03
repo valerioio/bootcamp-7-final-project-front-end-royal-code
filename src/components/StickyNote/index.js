@@ -17,6 +17,7 @@ export default function StickyNote({ text, deleteNote }) {
         -
       </button>
       <p className={css.noteText}>{text}</p>
+      {/* <input className={css.noteText} value={text} /> */}
     </div>
   );
 }
