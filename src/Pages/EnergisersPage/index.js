@@ -1,5 +1,4 @@
 import { energisers } from "../../data";
-import { v4 as uuidv4 } from "uuid";
 import css from "./EnergisersPage.module.css";
 
 const EnergisersPage = () => {
@@ -7,15 +6,26 @@ const EnergisersPage = () => {
     <>
       <h1 className={css.mainTitle}>Energisers</h1>
       <div className={css.main}>
-        {energisers.map((energiser) => {
+        {energisers.map((energiser, i) => {
           return (
-            <div className={`${css.energiser} container`} key={uuidv4()}>
-              <h1 className={css.title}>{energiser.name}</h1>
-              <p>{energiser.description}</p>
-              <br />
-              <a href={energiser.link} style={{ color: "blue" }}>
-                {energiser.link}
+            <div key={`${i}54`} className={css.energiser}>
+              <a
+                href={`https://main.d2o20242c1ey75.amplifyapp.com/energisers/${energiser.name.toLowerCase()}`}
+              >
+                <img
+                  src={energiser.logo}
+                  alt={energiser.name + " logo"}
+                  className={css.image}
+                />
               </a>
+              <a
+                className={css.link}
+                href={`https://main.d2o20242c1ey75.amplifyapp.com/energisers/${energiser.name.toLowerCase()}`}
+              >
+                {energiser.name}
+              </a>
+              <br />
+              <br />
             </div>
           );
         })}
