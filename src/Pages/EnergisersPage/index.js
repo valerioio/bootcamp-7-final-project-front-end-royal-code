@@ -1,5 +1,4 @@
 import { energisers } from "../../data";
-import { v4 as uuidv4 } from "uuid";
 import css from "./EnergisersPage.module.css";
 
 const EnergisersPage = () => {
@@ -7,9 +6,9 @@ const EnergisersPage = () => {
     <>
       <h1 className={css.mainTitle}>Energisers</h1>
       <div className={css.main}>
-        {energisers.map((energiser) => {
+        {energisers.map((energiser, i) => {
           return (
-            <div className={`${css.energiser} container`} key={uuidv4()}>
+            <div className={`${css.energiser} container`} key={`${i}85`}>
               <h1 className={css.title}>{energiser.name}</h1>
               <p>{energiser.description}</p>
               <br />
