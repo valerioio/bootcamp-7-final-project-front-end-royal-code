@@ -19,8 +19,8 @@ const navbarLinksCoaches = [
 const navbarLinksBootcampers = [
   { linkText: "Dashboard", href: "/home", icon: <MdWindow /> },
   { linkText: "Journey", href: "/journey", icon: <MdTimeline /> },
-  // { linkText: "Reading List", href: "/reading", icon: null},
-  // { linkText: "Recordings", href: "/recordings", icon: null},
+  { linkText: "Reading List", href: "/reading-list", icon: null },
+  { linkText: "Lecture Recordings", href: "/lecture-recordings", icon: null },
 ];
 
 const NavBar = ({ email, currentPage }) => {

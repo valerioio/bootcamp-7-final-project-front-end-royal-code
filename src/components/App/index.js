@@ -10,6 +10,8 @@ import EnergisersPage from "../../Pages/EnergisersPage";
 import Layout from "../Layout";
 import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import GarticPage from "../../Pages/GarticPage";
+import ReadingListPage from "../../Pages/ReadingListPage";
+import LectureRecordingsPage from "../../Pages/LectureRecordingsPage";
 
 const theme = createTheme({
   palette: {
@@ -82,7 +84,7 @@ function App() {
               </Layout>
             </Route>
             <Route exact path="/energisers">
-            <Layout user={user} currentPage={"/energisers"}>
+              <Layout user={user} currentPage={"/energisers"}>
                 <EnergisersPage />
               </Layout>
             </Route>
@@ -92,6 +94,16 @@ function App() {
             <Route exact path="/energisers/gartic">
               <Layout user={user}>
                 <GarticPage />
+              </Layout>
+            </Route>
+            <Route exact path="/reading-list">
+              <Layout user={user}>
+                <ReadingListPage />
+              </Layout>
+            </Route>
+            <Route exact path="/lecture-recordings">
+              <Layout user={user}>
+                <LectureRecordingsPage />
               </Layout>
             </Route>
           </Switch>
