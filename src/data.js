@@ -14,9 +14,8 @@ export const energisers = [
       The players can also skip their turn if they do not want to draw.
       Players can discuss their confusions in the chatbox with other players, and get done with them.`,
     link: "https://gartic.io/",
-    logo:" https://i.ibb.co/xJXTjMz/G",
-    screenshot:"https://i.ibb.co/1JPN3gN/gartic-energiser.png",
-    
+    logo: " https://i.ibb.co/xJXTjMz/G",
+    screenshot: "https://i.ibb.co/1JPN3gN/gartic-energiser.png",
   },
   {
     name: "Scattergories",
@@ -32,8 +31,8 @@ export const energisers = [
         If you want to keep the same categories, click on “re-roll” for a new letter. You will need to use something else for your timer.`,
 
     link: "https://swellgarfo.com/scattergories/",
-    logo:"https://i.ibb.co/4KD6rnr/00-XBest-Sites-To-Play-Scattergories-Online.png",
-    screenshot:"https://i.ibb.co/4Tk7WWN/scattergories-energiser.png ",
+    logo: "https://i.ibb.co/4KD6rnr/00-XBest-Sites-To-Play-Scattergories-Online.png",
+    screenshot: "https://i.ibb.co/4Tk7WWN/scattergories-energiser.png ",
   },
   {
     name: "Higher or Lower",
@@ -45,8 +44,8 @@ export const energisers = [
         The objective is to get the most right in a row. If you get one wrong, you lose the game.`,
 
     link: "https://deck.of.cards/",
-    logo:" https://i.ibb.co/5kRg76N/higherorlower.jpg ",
-    screenshot:"https://i.ibb.co/XZCKkfS/higher-or-lower.png ",
+    logo: " https://i.ibb.co/5kRg76N/higherorlower.jpg ",
+    screenshot: "https://i.ibb.co/XZCKkfS/higher-or-lower.png ",
   },
   {
     name: "Countdown",
@@ -57,8 +56,8 @@ export const energisers = [
         Countdown Word game: The player choosing the letters then starts the Countdown Clock. All players have thirty seconds to come up with the longest word they can. 
         They write this word onto the space for the first letter round on their Score Sheet. After the thirty seconds is up all players compare words`,
     link: "https://incoherency.co.uk/countdown/practice/",
-    logo:"https://i.ibb.co/x3SgFXR/countdown-marks-its-6000th-episode-md.jpg",
-    screenshot:"https://i.ibb.co/khKQnvD/countdown-energiser.png ",
+    logo: "https://i.ibb.co/x3SgFXR/countdown-marks-its-6000th-episode-md.jpg",
+    screenshot: "https://i.ibb.co/khKQnvD/countdown-energiser.png ",
   },
   {
     name: "Charades",
@@ -66,339 +65,597 @@ export const energisers = [
     description: ` Split your group into teams and use a charades idea generator to choose your words and phrases. 
         The person who's acting out the charade uses the Zoom "spotlight" feature, and their team has one minute to figure out the phrase.`,
     link: "https://psycatgames.com/app/charades/",
-    logo:"https://i.ibb.co/426pW2q/e86abfcf-83e3-4842-a52b-82d48d9c721d.png ",
-    screenshot:"https://i.ibb.co/R2PRJz6/Charades-energiser.png ",
+    logo: "https://i.ibb.co/426pW2q/e86abfcf-83e3-4842-a52b-82d48d9c721d.png ",
+    screenshot: "https://i.ibb.co/R2PRJz6/Charades-energiser.png ",
   },
   {
     name: "Articulate",
 
     description: `This involves players describing things to their team without saying the word on the card.`,
     link: "https://www.drumondpark.com/articulate_cards",
-    logo:"https://i.ibb.co/nBhftPP/Articulate.png ",
-    screenshot:"https://i.ibb.co/rxsF54f/Articulate-energiser.png ",
+    logo: "https://i.ibb.co/nBhftPP/Articulate.png ",
+    screenshot: "https://i.ibb.co/rxsF54f/Articulate-energiser.png ",
   },
 ];
 
 export const nameData = [
-  { firstName: "Hamza", lastName: "Ibrahim" },
-  { firstName: "Himesh", lastName: "Patel" },
-  { firstName: "Irfan", lastName: "Mohammed" },
-  { firstName: "James", lastName: "Perrett" },
-  { firstName: "Joseph", lastName: "T" },
-  { firstName: "Joy", lastName: "Lin" },
-  { firstName: "Tzu-Yun", lastName: "Lin" },
-  { firstName: "Juweyriya", lastName: "Abdikadir" },
-  { firstName: "Laurence", lastName: "Meah" },
-  { firstName: "Liz", lastName: "Kaufman" },
-  { firstName: "Lizard", lastName: "Morrow" },
-  { firstName: "Mark", lastName: "Gilligan" },
-  { firstName: "Mitchell", lastName: "Colson" },
-  { firstName: "Mohit", lastName: "Sharma" },
-  { firstName: "Nasra", lastName: "Diini" },
-  { firstName: "Siddharth", lastName: "Nair" },
-  { firstName: "Tao", lastName: "Sharma" },
-  { firstName: "Tom", lastName: "Lowen" },
-  { firstName: "Jadon", lastName: "Neal" },
-  { firstName: "Jaydon", lastName: "Gilmore" },
-  { firstName: "Moses", lastName: "Meadows" },
-  { firstName: "Trenton", lastName: "Donovan" },
-  { firstName: "Marin", lastName: "Ellis" },
-  { firstName: "Gillian", lastName: "Wise" },
-  { firstName: "Jay", lastName: "Gillespie" },
-  { firstName: "Amiya", lastName: "Brennan" },
-  { firstName: "Anne", lastName: "Levy" },
-  { firstName: "Aryana", lastName: "Werner" },
-  { firstName: "Christopher", lastName: "Barajas" },
-  { firstName: "Deshawn", lastName: "Berry" },
-  { firstName: "Yadira", lastName: "Schwartz" },
-  { firstName: "Finnegan", lastName: "Norman" },
-  { firstName: "Kody", lastName: "Delacruz" },
-  { firstName: "Nevaeh", lastName: "Booth" },
-  { firstName: "Eliana", lastName: "Baird" },
-  { firstName: "Billy", lastName: "Hughes" },
-  { firstName: "Imani", lastName: "Ortiz" },
-  { firstName: "Orion", lastName: "Parker" },
-  { firstName: "Sean", lastName: "Wolfe" },
-  { firstName: "Dale", lastName: "Sloan" },
-  { firstName: "Cristofer", lastName: "Schaefer" },
-  { firstName: "Evelin", lastName: "Mullins" },
-  { firstName: "Delilah", lastName: "Acevedo" },
-  { firstName: "Keenan", lastName: "Morris" },
-  { firstName: "Kallie", lastName: "Tanner" },
-  { firstName: "Trevor", lastName: "Santiago" },
-  { firstName: "Izabella", lastName: "Arias" },
-  { firstName: "Braxton", lastName: "Velez" },
+  {
+    firstName: "Hamza",
+    lastName: "Ibrahim",
+    bootcamperImage: "https://i.ibb.co/fYpsHs9/boot-Camper1.png",
+  },
+  {
+    firstName: "Himesh",
+    lastName: "Patel",
+    bootcamperImage: "https://i.ibb.co/ZSqjBqK/boot-Camper6.png ",
+  },
+  {
+    firstName: "Irfan",
+    lastName: "Mohammed",
+    bootcamperImage: "https://i.ibb.co/YWChRKp/boot-Camper7.png",
+  },
+  {
+    firstName: "James",
+    lastName: "Perrett",
+    bootcamperImage: "https://i.ibb.co/0sqTPFr/boot-Camper15.png ",
+  },
+  {
+    firstName: "Joseph",
+    lastName: "T",
+    bootcamperImage: "https://i.ibb.co/dc4k0wH/boot-Camper11.png ",
+  },
+  {
+    firstName: "Joy",
+    lastName: "Lin",
+    bootcamperImage: "https://i.ibb.co/F0qQbmR/boot-Camper9.jpg ",
+  },
+  {
+    firstName: "Tzu-Yun",
+    lastName: "Lin",
+    bootcamperImage: "https://i.ibb.co/yRvPV4v/boot-Camper18.png ",
+  },
+  {
+    firstName: "Juweyriya",
+    lastName: "Abdikadir",
+    bootcamperImage: "https://i.ibb.co/y84PRkw/boot-Camper19.png",
+  },
+  {
+    firstName: "Laurence",
+    lastName: "Meah",
+    bootcamperImage: "https://i.ibb.co/8NHF0tQ/boot-Camper20.png ",
+  },
+  {
+    firstName: "Liz",
+    lastName: "Kaufman",
+    bootcamperImage: "https://i.ibb.co/pPJ5KCd/boot-Camper21.png ",
+  },
+  {
+    firstName: "Lizard",
+    lastName: "Morrow",
+    bootcamperImage: "https://i.ibb.co/ZMTTtzX/boot-Camper22.png ",
+  },
+  {
+    firstName: "Mark",
+    lastName: "Gilligan",
+    bootcamperImage: "https://i.ibb.co/9cbc7H1/boot-Camper23.jpg",
+  },
+  {
+    firstName: "Mitchell",
+    lastName: "Colson",
+    bootcamperImage: "https://i.ibb.co/SDk5bKf/boot-Camper24.jpg ",
+  },
+  {
+    firstName: "Mohit",
+    lastName: "Sharma",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Nasra",
+    lastName: "Diini",
+    bootcamperImage: "https://i.ibb.co/xm7zdv8/boot-Camper26.png ",
+  },
+  {
+    firstName: "Siddharth",
+    lastName: "Nair",
+    bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+  },
+  {
+    firstName: "Tao",
+    lastName: "Sharma",
+    bootcamperImage: "https://i.ibb.co/VwHf3j0/boot-Camper28.png ",
+  },
+  {
+    firstName: "Tom",
+    lastName: "Lowen",
+    bootcamperImage: "https://i.ibb.co/8BznVsJ/boot-Camper29.png",
+  },
+  {
+    firstName: "Jadon",
+    lastName: "Neal",
+    bootcamperImage: "https://i.ibb.co/XxPkvYT/boot-Camper30.jpg ",
+  },
+  {
+    firstName: "Jaydon",
+    lastName: "Gilmore",
+    bootcamperImage: "https://i.ibb.co/G29Pv4J/bootcamper32.png",
+  },
+  {
+    firstName: "Moses",
+    lastName: "Meadows",
+    bootcamperImage: "https://i.ibb.co/S7Lww9S/boot-Camper33.png ",
+  },
+  {
+    firstName: "Trenton",
+    lastName: "Donovan",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Marin",
+    lastName: "Ellis",
+    bootcamperImage: "https://i.ibb.co/sytT2Qq/boot-Camper4.png ",
+  },
+  {
+    firstName: "Gillian",
+    lastName: "Wise",
+    bootcamperImage: "https://i.ibb.co/hsRk3zG/boot-Camper14.jpg ",
+  },
+  {
+    firstName: "Jay",
+    lastName: "Gillespie",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Amiya",
+    lastName: "Brennan",
+    bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+  },
+  {
+    firstName: "Anne",
+    lastName: "Levy",
+    bootcamperImage: "https://i.ibb.co/pPJ5KCd/boot-Camper21.png ",
+  },
+  {
+    firstName: "Aryana",
+    lastName: "Werner",
+    bootcamperImage: "https://i.ibb.co/y84PRkw/boot-Camper19.png ",
+  },
+  {
+    firstName: "Christopher",
+    lastName: "Barajas",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Deshawn",
+    lastName: "Berry",
+    bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+  },
+  {
+    firstName: "Yadira",
+    lastName: "Schwartz",
+    bootcamperImage: "https://i.ibb.co/S5dVkBQ/boot-Camper8.png ",
+  },
+  {
+    firstName: "Finnegan",
+    lastName: "Norman",
+    bootcamperImage: "https://i.ibb.co/VwHf3j0/boot-Camper28.png ",
+  },
+  {
+    firstName: "Kody",
+    lastName: "Delacruz",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Nevaeh",
+    lastName: "Booth",
+    bootcamperImage: "https://i.ibb.co/F0qQbmR/boot-Camper9.jpg ",
+  },
+  {
+    firstName: "Eliana",
+    lastName: "Baird",
+    bootcamperImage: "https://i.ibb.co/sytT2Qq/boot-Camper4.png ",
+  },
+  {
+    firstName: "Billy",
+    lastName: "Hughes",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Imani",
+    lastName: "Ortiz",
+    bootcamperImage: "https://i.ibb.co/hsRk3zG/boot-Camper14.jpg ",
+  },
+  {
+    firstName: "Orion",
+    lastName: "Parker",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Sean",
+    lastName: "Wolfe",
+    bootcamperImage: "https://i.ibb.co/9rytWhM/boot-Camper12.png",
+  },
+  {
+    firstName: "Dale",
+    lastName: "Sloan",
+    bootcamperImage: "https://i.ibb.co/fxkM58g/boot-Camper16.jpg ",
+  },
+  {
+    firstName: "Cristofer",
+    lastName: "Schaefer",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Evelin",
+    lastName: "Mullins",
+    bootcamperImage: "https://i.ibb.co/yRvPV4v/boot-Camper18.png ",
+  },
+  {
+    firstName: "Delilah",
+    lastName: "Acevedo",
+    bootcamperImage: "https://i.ibb.co/y84PRkw/boot-Camper19.png ",
+  },
+  {
+    firstName: "Keenan",
+    lastName: "Morris",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Kallie",
+    lastName: "Tanner",
+    bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+  },
+  {
+    firstName: "Trevor",
+    lastName: "Santiago",
+    bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+  },
+  {
+    firstName: "Izabella",
+    lastName: "Arias",
+    bootcamperImage: "https://i.ibb.co/sytT2Qq/boot-Camper4.png ",
+  },
+  {
+    firstName: "Braxton",
+    lastName: "Velez",
+    bootcamperImage: "https://i.ibb.co/b56y6TG/boot-Camper10.jpg ",
+  },
+];
+
+export const journeyData = [
+  {
+    topic: "Foundations",
+    week: 1,
+    description: [
+      "Using Computational Thinking in Problem Solving",
+      "Working with variables in the console",
+    ],
+    topicIcon: "https://i.ibb.co/gdz4Zvx/foundation.png ",
+  },
+  {
+    topic: "JavaScript",
+    week: 2,
+    description: [
+      "Events",
+      " How to link a JS file to your HTML",
+      " Declaring Objects",
+    ],
+    topicIcon: "https://i.ibb.co/3dTLJdZ/js.png ",
+  },
+  {
+    topic: "Front-end",
+    week: 3,
+    description: ["Array methods", "DOM manipulation ", "Asynchronous Request"],
+    topicIcon:
+      "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
+  },
+  {
+    topic: "Back-end",
+    week: 4,
+    description: [
+      "Express 101 -books API",
+      "Intro To Express",
+      "Intro to Node",
+    ],
+    topicIcon: "https://i.ibb.co/jrrS0qn/backend.png",
+  },
+  {
+    topic: "Databases",
+    week: 5,
+    description: ["SQL", "PostgreSQL"],
+    topicIcon: "https://i.ibb.co/BgLqJXc/database.png ",
+  },
+  {
+    topic: "Testing",
+    week: 6,
+    description: ["Introduction to Jest", "API endpoint testing", "Test-athon"],
+    topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png ",
+  },
+  {
+    topic: "React Basics",
+    week: 7,
+    description: [
+      "React 101",
+      "React useState",
+      "Immutable Updates to Objects and Arrays",
+    ],
+    topicIcon: "https://i.ibb.co/6HRsmdw/react.png ",
+  },
+  {
+    topic: "React Advanced",
+    week: 8,
+    description: ["React Side Effects", "UseEffect ", "useReducer"],
+    topicIcon: "https://i.ibb.co/y8brvLf/react-logo.png",
+  },
+  {
+    topic: "Client Project",
+    week: 9,
+    description: [
+      "Client Brief",
+      "Planing Using Desiney Ideation",
+      "Presentation",
+    ],
+    topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png ",
+  },
+  {
+    topic: "Agile",
+    week: 10,
+    description: ["Scrum", "Kanban"],
+    topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png ",
+  },
+  {
+    topic: "Computer Science",
+    week: 11,
+    description: ["Cypress", "Typescript", "Ui Libaries"],
+    topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png ",
+  },
+  {
+    topic: "Architecture",
+    week: 12,
+    description: ["AWS", "Aynamodb", "AWS Amplify"],
+    topicIcon: "https://i.ibb.co/x8D77wp/architecture.png ",
+  },
+  {
+    topic: "Project",
+    week: 13,
+    description: [
+      "Project Brief",
+      "Organisation of team",
+      "Application Research",
+      "Application Planning",
+    ],
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+  },
+  {
+    topic: "Project",
+    week: 14,
+    description: [
+      "Sprint Planning",
+      "Application coding",
+      "Styling of Application",
+    ],
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+  },
+  {
+    topic: "Project",
+    week: 15,
+    description: [
+      "Pull Request",
+      " Deployment",
+      "Depolyment Feedback",
+      " Application Polishing",
+    ],
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+  },
+  {
+    topic: "Project",
+    week: 16,
+    description: ["Completed Application", "Presentation", "Demo"],
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+  },
 ];
 
 // export const journeyData = [
 //   {
-//     "topic": "Foundations",
-//     "week": 1
+//     week: 1,
+//     topic: "Chapter 1, of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "JavaScript",
-//     "week": 2
+//     week: 1,
+//     topic:
+//       "Variables and statements: Chapter 2 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Front-end",
-//     "week": 3
+//     week: 1,
+//     topic:
+//       "Strings: Variables and strings section of Python Programming (also, the strings section)",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Back-end",
-//     "week": 4
+//     week: 2,
+//     topic:
+//       "Python variables are names: Other languages have {variables}, from Code Like A Pythonista: Idiomatic Python",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Databases",
-//     "week": 5
+//     week: 2,
+//     topic:
+//       "Conditionals: Chapter 4, of How to Think Like a Computer Scientist (through section 4,.8), and the conditional statements section of Python Programming",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Testing",
-//     "week": 6
+//     week: 3,
+//     topic: "Iteration: Loops section of Python Programming",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "React Basics",
-//     "week": 7
+//     week: 3,
+//     topic: "Tuples: Tuples and sequences section of the Python Tutorial",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "React Advanced",
-//     "week": 8
+//     week: 3,
+//     topic:
+//       "More on traversing and slicing strings: Chapter 7 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Client Project",
-//     "week": 9
+//     week: 5,
+//     topic:
+//       "Functions, type conversion, and stack diagrams: Chapter 3 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Agile",
-//     "week": 10
+//     week: 5,
+//     topic:
+//       "More about functions: Chapter 5 of How to Think Like a Computer Scientist (through section 5.4)",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Computer Science",
-//     "week": 11
+//     week: 6,
+//     topic:
+//       "Recursion: Chapter 4 of How to Think Like a Computer Scientist (from section 4,.9 on), as well as Chapter 5 of How to Think Like a Computer Scientist (from section 5,.5, on)",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Architecture",
-//     "week": 12
+//     week: 6,
+//     topic:
+//       "Numbers: Floating point arithmetic: issues and limitations from the Python Tutorial",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Project",
-//     "week": 13
+//     week: 7,
+//     topic: "Successive approximation: Wikipedia article on Newton's method",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Project",
-//     "week": 14
+//     week: 7,
+//     topic: "Lists: Chapter 8 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Project",
-//     "week": 15
+//     week: 8,
+//     topic: "project",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
 //   },
 //   {
-//     "topic": "Project",
-//     "week": 16
-//   }
-// ]
-
-export const journeyData = [
-  {
-    week: 1,
-    topic: "Chapter 1, of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 1,
-    topic:
-      "Variables and statements: Chapter 2 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 1,
-    topic:
-      "Strings: Variables and strings section of Python Programming (also, the strings section)",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 2,
-    topic:
-      "Python variables are names: Other languages have {variables}, from Code Like A Pythonista: Idiomatic Python",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 2,
-    topic:
-      "Conditionals: Chapter 4, of How to Think Like a Computer Scientist (through section 4,.8), and the conditional statements section of Python Programming",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 3,
-    topic: "Iteration: Loops section of Python Programming",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 3,
-    topic: "Tuples: Tuples and sequences section of the Python Tutorial",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 3,
-    topic:
-      "More on traversing and slicing strings: Chapter 7 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 5,
-    topic:
-      "Functions, type conversion, and stack diagrams: Chapter 3 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 5,
-    topic:
-      "More about functions: Chapter 5 of How to Think Like a Computer Scientist (through section 5.4)",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 6,
-    topic:
-      "Recursion: Chapter 4 of How to Think Like a Computer Scientist (from section 4,.9 on), as well as Chapter 5 of How to Think Like a Computer Scientist (from section 5,.5, on)",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 6,
-    topic:
-      "Numbers: Floating point arithmetic: issues and limitations from the Python Tutorial",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 7,
-    topic: "Successive approximation: Wikipedia article on Newton's method",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 7,
-    topic: "Lists: Chapter 8 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 8,
-    topic: "project",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 9,
-    topic:
-      "As a reference: the Python Tutorial section on lists and dictionaries (feel free to skip 5,.1,.3 and 5,.1,.4,)",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 9,
-    topic:
-      "Asymptotic notation: Section 3 from the Spring 2005, 6.042 lecture notes on OCW (PDF)",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 10,
-    topic:
-      "Order of growth: Sections 2.1 and 2.2 from Computational Modeling and Complexity Science",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 10,
-    topic:
-      "Binary search: Wikipedia article on binary search (focus on the recursive implementation in Section 4,)",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 11,
-    topic: "Selection sort: Wikipedia article on selection sort",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 11,
-    topic: "Insertion sort: Wikipedia article on insertion sort",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 12,
-    topic: "Merge sort: Wikipedia article on merge sort",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 12,
-    topic:
-      "The knapsack problem and dynamic programming: Introduction to dynamic programming on 20bits.com",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 12,
-    topic: "Chapter 12 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 9,
-    topic: "Chapter 13 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 7,
-    topic: "Chapter 14 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 6,
-    topic: "Chapter 15 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 7,
-    topic: "Chapter 16 of How to Think Like a Computer Scientist",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 11,
-    topic: "Random walks applet",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 3,
-    topic: "Matplotlib/pylab reference",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-  {
-    week: 12,
-    topic: "Monte Carlo method: Wikipedia article on the Monte Carlo method",
-    resource:
-      "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
-  },
-];
+//     week: 9,
+//     topic:
+//       "As a reference: the Python Tutorial section on lists and dictionaries (feel free to skip 5,.1,.3 and 5,.1,.4,)",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 9,
+//     topic:
+//       "Asymptotic notation: Section 3 from the Spring 2005, 6.042 lecture notes on OCW (PDF)",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 10,
+//     topic:
+//       "Order of growth: Sections 2.1 and 2.2 from Computational Modeling and Complexity Science",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 10,
+//     topic:
+//       "Binary search: Wikipedia article on binary search (focus on the recursive implementation in Section 4,)",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 11,
+//     topic: "Selection sort: Wikipedia article on selection sort",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 11,
+//     topic: "Insertion sort: Wikipedia article on insertion sort",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 12,
+//     topic: "Merge sort: Wikipedia article on merge sort",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 12,
+//     topic:
+//       "The knapsack problem and dynamic programming: Introduction to dynamic programming on 20bits.com",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 12,
+//     topic: "Chapter 12 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 9,
+//     topic: "Chapter 13 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 7,
+//     topic: "Chapter 14 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 6,
+//     topic: "Chapter 15 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 7,
+//     topic: "Chapter 16 of How to Think Like a Computer Scientist",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 11,
+//     topic: "Random walks applet",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 3,
+//     topic: "Matplotlib/pylab reference",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+//   {
+//     week: 12,
+//     topic: "Monte Carlo method: Wikipedia article on the Monte Carlo method",
+//     resource:
+//       "https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00-introduction-to-computer-science-and-programming-fall-2008/readings/",
+//   },
+// ];
 export const recordings = [
   {
     Date: "01.10.2021",
