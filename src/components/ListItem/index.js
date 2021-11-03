@@ -3,7 +3,6 @@ import CSS from "./ListItem.module.css";
 function ListItem({ text }) {
   const keys = Object.keys(text);
   const capsKeys = [];
-  console.log(text);
   for (let i = 0; i < keys.length; i++) {
     capsKeys[i] = keys[i].charAt(0).toUpperCase() + keys[i].slice(1);
   }
