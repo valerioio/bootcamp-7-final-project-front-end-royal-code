@@ -5,7 +5,6 @@ import Event from "../../components/Event";
 import Pin from "../../components/Pin";
 
 export default function BootcamperDashboard({ Listings, name, recordings }) {
-  const today = new Date();
   return (
     <div>
       <h1 className={css.mainTitle}>Dashboard</h1>
@@ -19,7 +18,9 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
           <List className={css.list} Listings={recordings} />
         </div>
       </div>
+      <img src='https://images.unsplash.com/photo-1503551723145-6c040742065b-v2' alt='pinboard' />
       <Calendar />
+      <h2 className={css.secondaryTitle}>Upcoming events</h2>
       <ul>
         {Array(7)
           .fill()
