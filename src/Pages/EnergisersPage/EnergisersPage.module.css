@@ -6,19 +6,32 @@
 
 .energiser {
   padding: 1em;
+  grid-column-start: 2;
+  grid-column-end: 6;
 }
 
 .main {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 4em 4em 4em 4em 4em 4em 4em 4em 4em;
 }
 
 .mainTitle {
-  font-family: 'Cardo';
+  font-family: "Cardo";
   font-style: medium;
   font-size: 8rem;
   margin-left: 0.5em;
   letter-spacing: -4%;
   vertical-align: top;
   margin-bottom: 0.25em;
+}
+
+.image {
+  width: auto;
+  height: auto;
+  max-width: 6em;
+  max-height: 6em;
+}
+
+.link {
+  font-size: 1.5em;
 }
