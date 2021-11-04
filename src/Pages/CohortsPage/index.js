@@ -7,8 +7,15 @@
 
 import React from "react";
 import css from "./CohortsPage.module.css";
+import img1 from "../../Images/soc7.jpg";
+import img2 from "../../Images/soc8.jpg";
+import img3 from "../../Images/soc3.jpg";
+import img4 from "../../Images/soc5.jpg";
+import img5 from "../../Images/soc1.jpg";
+import img6 from "../../Images/soc2.jpg";
+import img7 from "../../Images/soc6.jpg";
 
-const cohorts = ["img1", "img2", "img3", "img4", "img5", "img6", "img7"];
+const cohorts = [img1, img2, img3, img4, img5, img6, img7];
 
 export default function CohortPage() {
   return (
@@ -20,7 +27,7 @@ export default function CohortPage() {
             <div className={css.cohortTile}>
               <img
                 className={css.cohortImage}
-                src={cohort.image}
+                src={cohort}
                 alt={`cohort ${i + 1} photo`}
               />
               <a

@@ -18,6 +18,7 @@
 
 .cohortTile {
   padding: 1.5em;
+  align-self: baseline;
 }
 
 .link {
