@@ -14,7 +14,7 @@ export const energisers = [
       The players can also skip their turn if they do not want to draw.
       Players can discuss their confusions in the chatbox with other players, and get done with them.`,
     link: "https://gartic.io/",
-    logo: " https://i.ibb.co/xJXTjMz/G",
+    logo: "https://i.ibb.co/xJXTjMz/Gartic.jpg",
     screenshot: "https://i.ibb.co/1JPN3gN/gartic-energiser.png",
   },
   {
@@ -330,18 +330,24 @@ export const journeyData = [
       "Working with variables in the console",
     ],
     topicIcon: "https://i.ibb.co/gdz4Zvx/foundation.png ",
+
     color: "orange",
+
+    link: "https://vimeo.com/showcase/8691982/video/579481884",
+    thumbnail: 'https://i.vimeocdn.com/video/1199031331-b248116c776743769840b8bc418347d6771a6ecf6a6d975e0d8c293e091a8b21-d?mw=1400&mh=705&q=70'
+
   },
   {
     topic: "JavaScript",
     week: 2,
-    description: [
-      "Events",
-      " How to link a JS file to your HTML",
-      " Declaring Objects",
-    ],
+    description: ["Events", "Advanced functions", "Declaring Objects"],
     topicIcon: "https://i.ibb.co/3dTLJdZ/js.png ",
+
     color: "orange",
+
+    link: "https://vimeo.com/showcase/8691982/video/582899072",
+    thumbnail: 'https://i.vimeocdn.com/video/1206418285-fb37c862d5675f163046b453bf9862c7b263e4b4639691b13fe53cf5bff187af-d?mw=1300&mh=703&q=70'
+
   },
   {
     topic: "Front-end",
@@ -349,32 +355,52 @@ export const journeyData = [
     description: ["Array methods", "DOM manipulation ", "Asynchronous Request"],
     topicIcon:
       "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
+
       color: "orange",
+
+    link: "https://vimeo.com/showcase/8691982/video/582906096",
+    thumbnail: 'https://i.vimeocdn.com/video/1206431583-632af5ca4b9526359109744142e876c3d5b6a3516314474ab9f6b805f9a4a7a6-d?mw=1300&mh=703&q=70'
+
   },
   {
     topic: "Back-end",
     week: 4,
     description: [
-      "Express 101 -books API",
+      "Express 101 - books API",
       "Intro To Express",
       "Intro to Node",
     ],
     topicIcon: "https://i.ibb.co/jrrS0qn/backend.png",
+
     color: "green",
+
+    link: "https://vimeo.com/showcase/8691982/video/586881602",
+    thumbnail: 'https://i.vimeocdn.com/video/1214191685-39e9431dd486b266515b50c985551a9cd0f871163927df7866622b6b117cf435-d?mw=1300&mh=703&q=70'
+
   },
   {
     topic: "Databases",
     week: 5,
     description: ["SQL", "PostgreSQL"],
     topicIcon: "https://i.ibb.co/BgLqJXc/database.png ",
+
     color: "green",
+
+    link: "https://vimeo.com/showcase/8691982/video/586856209",
+    thumbnail: 'https://i.vimeocdn.com/video/1214158126-b8beb06720d80d419dad81fd2f9ee0089a92f1c904fec4bf9840f6f944c57781-d?mw=1300&mh=703&q=70'
+
   },
   {
     topic: "Testing",
     week: 6,
     description: ["Introduction to Jest", "API endpoint testing", "Test-athon"],
     topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png ",
+
     color: "green",
+
+    link: "https://vimeo.com/showcase/8691982/video/592683987",
+    thumbnail: 'https://i.vimeocdn.com/video/1224696629-e4e1fb16d0e76bcb68c7a9a2fdacf4db9e6462d02c96f6a8d3461a34eb8eadbd-d?mw=1200&mh=676&q=70'
+
   },
   {
     topic: "React Basics",
@@ -385,47 +411,76 @@ export const journeyData = [
       "Immutable Updates to Objects and Arrays",
     ],
     topicIcon: "https://i.ibb.co/6HRsmdw/react.png ",
+
     color: "blue",
+
+    link: "https://vimeo.com/showcase/8691982/video/595903474",
+    thumbnail: 'https://i.vimeocdn.com/video/1230062503-c5f999dd2422f9996159e3ab8b4351a8fcb5b0b79c8ee8462e784dd7b2a45a7b-d?mw=1300&mh=703&q=70'
+
   },
   {
     topic: "React Advanced",
     week: 8,
     description: ["React Side Effects", "UseEffect ", "useReducer"],
     topicIcon: "https://i.ibb.co/y8brvLf/react-logo.png",
+
     color: "blue",
+
+    link: "https://vimeo.com/showcase/8691982/video/600158578",
+    thumbnail: 'https://i.vimeocdn.com/video/1235886136-b03f4434b87b586f0b3099feb8d15ca49dd4a6da741e0265410a98463a8c61eb-d?mw=1400&mh=717&q=70'
+
   },
   {
     topic: "Client Project",
     week: 9,
     description: [
       "Client Brief",
-      "Planing Using Desiney Ideation",
+      "Planning Using Desiney Ideation",
       "Presentation",
     ],
     topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png ",
+
     color: "red",
-    
+
+    link: "https://vimeo.com/showcase/8691982/video/591009549",
+    thumbnail: 'https://i.vimeocdn.com/video/1222008328-2ddb83250a4eb85e72456df5707896baebab1738f68af4529844e54964a05911-d?mw=1300&mh=703&q=70'
+
   },
   {
     topic: "Agile",
     week: 10,
     description: ["Scrum", "Kanban"],
     topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png ",
+
     color: "grey",
+
+    link: "https://vimeo.com/showcase/8691982/video/612425603",
+    thumbnail: 'https://i.vimeocdn.com/video/1249891633-1823ecd2cc1b11162207ab9c4f634d4229e332bacd498f067?mw=1200&mh=675&q=70'
+
   },
   {
     topic: "Computer Science",
     week: 11,
     description: ["Cypress", "Typescript", "Ui Libaries"],
     topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png ",
+
     color: "blue",
+
+    link: "https://vimeo.com/showcase/8691982/video/629026237",
+    thumbnail: 'https://i.vimeocdn.com/video/1271305639-2b3aa3e3f313d13fe34a66f94859df3428944706c85a76220?mw=1400&mh=725&q=70'
+
   },
   {
     topic: "Architecture",
     week: 12,
-    description: ["AWS", "Aynamodb", "AWS Amplify"],
+    description: ["Containers", "DynamoDB", "AWS Amplify"],
     topicIcon: "https://i.ibb.co/x8D77wp/architecture.png ",
+
     color: "grey",
+
+    link: "https://vimeo.com/showcase/8691982/video/629270662",
+    thumbnail: 'https://i.vimeocdn.com/video/1271543305-060530376a9e1cabdb8bddeb5760904d423e3d3b6840bfb82?mw=1300&mh=703&q=70'
+
   },
   {
     topic: "Project",
@@ -437,7 +492,12 @@ export const journeyData = [
       "Application Planning",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+
     color: "red",
+
+    link: "https://vimeo.com/showcase/8691982/video/600107702",
+    thumbnail: 'https://i.vimeocdn.com/video/1235825717-90c0f916ba1430763cd82c49ab09e5414633bcf0433bb3e3451157c45df9f6f4-d?mw=1400&mh=705&q=70'
+
   },
   {
     topic: "Project",
@@ -448,26 +508,41 @@ export const journeyData = [
       "Styling of Application",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+
     color: "red",
+
+    link: "https://vimeo.com/showcase/8691982/video/629075546",
+    thumbnail: 'https://i.vimeocdn.com/video/1271349067-c7a7d0cc451b387625afcb7ca68659d0885728fcd087fafd0?mw=1400&mh=705&q=70'
+
   },
   {
     topic: "Project",
     week: 15,
     description: [
-      "Pull Request",
-      " Deployment",
+      "Pull Requests",
+      "Deployment",
       "Depolyment Feedback",
-      " Application Polishing",
+      "Application Polishing",
     ],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+
     color: "red",
+
+    link: "https://vimeo.com/showcase/8691982/video/600397206",
+    thumbnail: 'https://i.vimeocdn.com/video/1236188993-3ff6720a0bba37f1761f7b5db6c6dcc3100907d249365997975747962dc6deed-d?mw=1400&mh=699&q=70'
+
   },
   {
     topic: "Project",
     week: 16,
     description: ["Completed Application", "Presentation", "Demo"],
     topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+
     color: "red",
+
+    link: "https://vimeo.com/showcase/8691982/video/609846395",
+    thumbnail: 'https://i.vimeocdn.com/video/1246554710-44a5246a1b7ac2a8fd8fdec91a999642b5fd4882df621058a3280f9849e689ac-d?mw=1400&mh=705&q=70'
+
   },
 ];
 
@@ -675,103 +750,103 @@ export const journeyData = [
 // ];
 export const recordings = [
   {
-    Date: "01.10.2021",
-    Title: "Introduction to Web Development || Setup || Part 1",
-    Link: "https://youtu.be/HfTXHrWMGVY",
+    date: "01.10.2021",
+    title: "Introduction to Web Development || Setup || Part 1",
+    link: "https://youtu.be/HfTXHrWMGVY",
   },
   {
-    Date: "02.10.2021",
-    Title: "Introduction to Web Development || Understanding the Web || Part 2",
-    Link: "https://youtu.be/88QJumITbQA",
+    date: "02.10.2021",
+    title: "Introduction to Web Development || Understanding the Web || Part 2",
+    link: "https://youtu.be/88QJumITbQA",
   },
   {
-    Date: "03.10.2021",
-    Title: "Introduction to HTML || Your First Web Page || Part 1",
-    Link: "https://youtu.be/BvJYXl2ywUE",
+    date: "03.10.2021",
+    title: "Introduction to HTML || Your First Web Page || Part 1",
+    link: "https://youtu.be/BvJYXl2ywUE",
   },
   {
-    Date: "04.10.2021",
-    Title: "Introduction to HTML || Basic HTML Elements || Part 2",
-    Link: "https://youtu.be/PypMN-yui4Y",
+    date: "04.10.2021",
+    title: "Introduction to HTML || Basic HTML Elements || Part 2",
+    link: "https://youtu.be/PypMN-yui4Y",
   },
   {
-    Date: "05.10.2021",
-    Title: "Introduction to HTML || Advanced HTML Elements || Part 3",
-    Link: "https://youtu.be/1rbo_HHt5nw",
+    date: "05.10.2021",
+    title: "Introduction to HTML || Advanced HTML Elements || Part 3",
+    link: "https://youtu.be/1rbo_HHt5nw",
   },
   {
-    Date: "06.10.2021",
-    Title: "Introduction to HTML || Links and Inputs || Part 4",
-    Link: "https://youtu.be/bFvjE4ZRtSE",
+    date: "06.10.2021",
+    title: "Introduction to HTML || Links and Inputs || Part 4",
+    link: "https://youtu.be/bFvjE4ZRtSE",
   },
   {
-    Date: "07.10.2021",
-    Title: "Learn CSS in 20 Minutes",
-    Link: "https://youtu.be/1PnVor36_40",
+    date: "07.10.2021",
+    title: "Learn CSS in 20 Minutes",
+    link: "https://youtu.be/1PnVor36_40",
   },
   {
-    Date: "08.10.2021",
-    Title: "How to Style a Modern Website (Part One)",
-    Link: "https://youtu.be/Sv_NAxi_jNs",
+    date: "08.10.2021",
+    title: "How to Style a Modern Website (Part One)",
+    link: "https://youtu.be/Sv_NAxi_jNs",
   },
   {
-    Date: "09.10.2021",
-    Title: "How to Style a Modern Website (Part Two)",
-    Link: "https://youtu.be/nKa1JPf0ZN4",
+    date: "09.10.2021",
+    title: "How to Style a Modern Website (Part Two)",
+    link: "https://youtu.be/nKa1JPf0ZN4",
   },
   {
-    Date: "10.10.2021",
-    Title: "How to Style a Modern Website (Part Three)",
-    Link: "https://youtu.be/auWKaf0m0S0",
+    date: "10.10.2021",
+    title: "How to Style a Modern Website (Part Three)",
+    link: "https://youtu.be/auWKaf0m0S0",
   },
   {
-    Date: "11.10.2021",
-    Title: "JavaScript Shopping Cart Tutorial for Beginners",
-    Link: "https://youtu.be/YeFzkC2awTM",
+    date: "11.10.2021",
+    title: "JavaScript Shopping Cart Tutorial for Beginners",
+    link: "https://youtu.be/YeFzkC2awTM",
   },
   {
-    Date: "12.10.2021",
-    Title: "What Is The Fastest Way To Load JavaScript",
-    Link: "https://youtu.be/BMuFBYw91UQ",
+    date: "12.10.2021",
+    title: "What Is The Fastest Way To Load JavaScript",
+    link: "https://youtu.be/BMuFBYw91UQ",
   },
   {
-    Date: "13.10.2021",
-    Title: "Differences Between Var, Let, and Const",
-    Link: "https://youtu.be/9WIJQDvt4Us",
+    date: "13.10.2021",
+    title: "Differences Between Var, Let, and Const",
+    link: "https://youtu.be/9WIJQDvt4Us",
   },
   {
-    Date: "14.10.2021",
-    Title: "JavaScript ES6 Arrow Functions Tutorial",
-    Link: "https://youtu.be/h33Srr5J9nY",
+    date: "14.10.2021",
+    title: "JavaScript ES6 Arrow Functions Tutorial",
+    link: "https://youtu.be/h33Srr5J9nY",
   },
   {
-    Date: "15.10.2021",
-    Title: "JavaScript Cookies vs Local Storage vs Session",
-    Link: "https://youtu.be/GihQAC1I39Q",
+    date: "15.10.2021",
+    title: "JavaScript Cookies vs Local Storage vs Session",
+    link: "https://youtu.be/GihQAC1I39Q",
   },
   {
-    Date: "16.10.2021",
-    Title: "JavaScript Promises In 10 Minutes",
-    Link: "hhttps://youtu.be/DHvZLI7Db8E",
+    date: "16.10.2021",
+    title: "JavaScript Promises In 10 Minutes",
+    link: "hhttps://youtu.be/DHvZLI7Db8E",
   },
   {
-    Date: "17.10.2021",
-    Title: "JavaScript == VS ===",
-    Link: "https://youtu.be/C5ZVC4HHgIg",
+    date: "17.10.2021",
+    title: "JavaScript == VS ===",
+    link: "https://youtu.be/C5ZVC4HHgIg",
   },
   {
-    Date: "18.10.2021",
-    Title: "JavaScript ES6 Modules",
-    Link: "https://youtu.be/cRHQNNcYf6s",
+    date: "18.10.2021",
+    title: "JavaScript ES6 Modules",
+    link: "https://youtu.be/cRHQNNcYf6s",
   },
   {
-    Date: "19.10.2021",
-    Title: "8 Must Know JavaScript Array Methods",
-    Link: "https://youtu.be/R8rmfD9Y5-c",
+    date: "19.10.2021",
+    title: "8 Must Know JavaScript Array Methods",
+    link: "https://youtu.be/R8rmfD9Y5-c",
   },
   {
-    Date: "20.10.2021",
-    Title: "JavaScript Async Await",
-    Link: "https://youtu.be/V_Kr9OSfDeU",
+    date: "20.10.2021",
+    title: "JavaScript Async Await",
+    link: "https://youtu.be/V_Kr9OSfDeU",
   },
 ];
