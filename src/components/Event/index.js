@@ -2,10 +2,7 @@ import css from "./Event.module.css";
 
 const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 
-const Event = ({ daysFromToday = 0, eventText = "No events today" }) => {
-  const date = new Date(
-    new Date().setDate(new Date().getDate() + daysFromToday)
-  );
+const Event = ({ date = new Date(), eventText = "No events today" }) => {
   const [weekDay, monthDate] = [
     weekDays[date.getDay()],
     date.getDate().toString().padStart(2, "0"),

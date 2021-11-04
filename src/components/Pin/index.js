@@ -1,6 +1,6 @@
 import css from "./Pin.module.css";
 
-const colours = ["red", "green", "blue"];
+const colours = ["red", "green", "blue", "yellow"];
 
 const Pin = ({ handleClick }) => {
   return (
