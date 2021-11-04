@@ -1,14 +1,10 @@
-.main {
-  margin-left: 4rem;
-}
-
 .mainTitle {
   font-family: "Cardo";
   font-style: medium;
   font-size: 8rem;
   letter-spacing: -4%;
   vertical-align: top;
-  margin-bottom: 2eem;
+  margin-bottom: 2rem;
 }
 
 .link {
