@@ -15,7 +15,7 @@ import css from "./GarticPage.module.css";
 export default function GarticPage() {
   const gartic = energisers[0];
   return (
-    <div className={css.main}>
+    <div>
       <h1 className={css.mainTitle}>{gartic.name}</h1>
       <a className={css.link} href={`${gartic.link}`}>
         Play Gartic
