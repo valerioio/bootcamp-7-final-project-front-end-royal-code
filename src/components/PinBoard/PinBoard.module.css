@@ -1,0 +1,47 @@
+.pinBoard {
+  background-image: url("https://i.ibb.co/ysJnjxJ/pinboard.jpg");
+  width: 65vw;
+  min-height: 80vh;
+  height: auto;
+  padding: 1em;
+  margin-left: 3.5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addNoteButton {
+  background: white;
+  border-radius: 8px;
+  font-size: 2em;
+  max-width: 8vw;
+  max-height: 8vh;
+  padding: 0 0.5em 0.15em 0.5em;
+  align-items: right;
+}
+
+.submitNoteButton {
+  background: lightgrey;
+  border-radius: 8px;
+  font-size: 1.5em;
+  padding: 0.1em 0.3em;
+  margin: auto;
+  text-align: center;
+}
+
+.noteInput {
+  border-radius: 8px;
+}
+
+.stickyNote {
+  display: grid;
+  grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+  grid-template-rows: 10% 10% 20% 20% 20% 10% 10%;
+  background-color: #fdfd86;
+  line-height: 1;
+  text-align: left;
+  width: 225px;
+  height: 225px;
+  margin: 25px;
+  box-shadow: 0 0.5em 0.5em 0;
+  padding: 1em;
+}

@@ -1,0 +1,36 @@
+.stickyNote {
+  display: grid;
+  grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+  grid-template-rows: 10% 10% 20% 20% 20% 10% 10%;
+  background-color: #fdfd86;
+  line-height: 1;
+  text-align: left;
+  width: 225px;
+  height: 225px;
+  margin: 25px;
+  box-shadow: 0 0.5em 0.5em 0;
+  padding: 1em;
+}
+
+.removeButton {
+  background: lightgrey;
+  border-radius: 8px;
+  font-size: 1.5em;
+  padding: 0.1em 0.3em;
+  margin: auto;
+  text-align: center;
+}
+
+.noteText {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-end: 5; /* change here to make the notes longer to 6*/
+  grid-row-start: 3;
+  font-family: courgette;
+  background-color: inherit;
+  resize: none;
+}
+
+.noteText:focus {
+  outline: none;
+}
