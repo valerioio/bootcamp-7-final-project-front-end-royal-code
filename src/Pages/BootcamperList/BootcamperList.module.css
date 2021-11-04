@@ -1,0 +1,22 @@
+.mainTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 8rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar {
+  width: 6em;
+  height: auto;
+}
+
+.bootcamper {
+}
+
+.link {
+}

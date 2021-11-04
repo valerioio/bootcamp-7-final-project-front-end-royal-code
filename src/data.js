@@ -83,81 +83,97 @@ export const nameData = [
     firstName: "Hamza",
     lastName: "Ibrahim",
     bootcamperImage: "https://i.ibb.co/fYpsHs9/boot-Camper1.png",
+    link: "",
   },
   {
     firstName: "Himesh",
     lastName: "Patel",
     bootcamperImage: "https://i.ibb.co/ZSqjBqK/boot-Camper6.png ",
+    link: "",
   },
   {
     firstName: "Irfan",
     lastName: "Mohammed",
     bootcamperImage: "https://i.ibb.co/YWChRKp/boot-Camper7.png",
+    link: "",
   },
   {
     firstName: "James",
     lastName: "Perrett",
     bootcamperImage: "https://i.ibb.co/0sqTPFr/boot-Camper15.png ",
+    link: "",
   },
   {
     firstName: "Joseph",
     lastName: "T",
     bootcamperImage: "https://i.ibb.co/dc4k0wH/boot-Camper11.png ",
+    link: "",
   },
   {
     firstName: "Joy",
     lastName: "Lin",
     bootcamperImage: "https://i.ibb.co/F0qQbmR/boot-Camper9.jpg ",
+    link: "",
   },
   {
     firstName: "Tzu-Yun",
     lastName: "Lin",
     bootcamperImage: "https://i.ibb.co/yRvPV4v/boot-Camper18.png ",
+    link: "",
   },
   {
     firstName: "Juweyriya",
     lastName: "Abdikadir",
     bootcamperImage: "https://i.ibb.co/y84PRkw/boot-Camper19.png",
+    link: "",
   },
   {
     firstName: "Laurence",
     lastName: "Meah",
     bootcamperImage: "https://i.ibb.co/8NHF0tQ/boot-Camper20.png ",
+    link: "",
   },
   {
     firstName: "Liz",
     lastName: "Kaufman",
     bootcamperImage: "https://i.ibb.co/pPJ5KCd/boot-Camper21.png ",
+    link: "",
   },
   {
     firstName: "Lizard",
     lastName: "Morrow",
     bootcamperImage: "https://i.ibb.co/ZMTTtzX/boot-Camper22.png ",
+    link: "",
   },
   {
     firstName: "Mark",
     lastName: "Gilligan",
     bootcamperImage: "https://i.ibb.co/9cbc7H1/boot-Camper23.jpg",
+    link: "",
   },
   {
     firstName: "Mitchell",
     lastName: "Colson",
     bootcamperImage: "https://i.ibb.co/SDk5bKf/boot-Camper24.jpg ",
+    link: "",
   },
   {
     firstName: "Mohit",
     lastName: "Sharma",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Nasra",
     lastName: "Diini",
     bootcamperImage: "https://i.ibb.co/xm7zdv8/boot-Camper26.png ",
+    link: "",
   },
   {
     firstName: "Siddharth",
     lastName: "Nair",
     bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+    link: "",
   },
   {
     firstName: "Tao",
@@ -168,156 +184,187 @@ export const nameData = [
     firstName: "Tom",
     lastName: "Lowen",
     bootcamperImage: "https://i.ibb.co/8BznVsJ/boot-Camper29.png",
+    link: "",
   },
   {
     firstName: "Jadon",
     lastName: "Neal",
     bootcamperImage: "https://i.ibb.co/XxPkvYT/boot-Camper30.jpg ",
+    link: "",
   },
   {
     firstName: "Jaydon",
     lastName: "Gilmore",
     bootcamperImage: "https://i.ibb.co/G29Pv4J/bootcamper32.png",
+    link: "",
   },
   {
     firstName: "Moses",
     lastName: "Meadows",
     bootcamperImage: "https://i.ibb.co/S7Lww9S/boot-Camper33.png ",
+    link: "",
   },
   {
     firstName: "Trenton",
     lastName: "Donovan",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Marin",
     lastName: "Ellis",
     bootcamperImage: "https://i.ibb.co/sytT2Qq/boot-Camper4.png ",
+    link: "",
   },
   {
     firstName: "Gillian",
     lastName: "Wise",
     bootcamperImage: "https://i.ibb.co/hsRk3zG/boot-Camper14.jpg ",
+    link: "",
   },
   {
     firstName: "Jay",
     lastName: "Gillespie",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Amiya",
     lastName: "Brennan",
     bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+    link: "",
   },
   {
     firstName: "Anne",
     lastName: "Levy",
     bootcamperImage: "https://i.ibb.co/pPJ5KCd/boot-Camper21.png ",
+    link: "",
   },
   {
     firstName: "Aryana",
     lastName: "Werner",
     bootcamperImage: "https://i.ibb.co/y84PRkw/boot-Camper19.png ",
+    link: "",
   },
   {
     firstName: "Christopher",
     lastName: "Barajas",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Deshawn",
     lastName: "Berry",
     bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+    link: "",
   },
   {
     firstName: "Yadira",
     lastName: "Schwartz",
     bootcamperImage: "https://i.ibb.co/S5dVkBQ/boot-Camper8.png ",
+    link: "",
   },
   {
     firstName: "Finnegan",
     lastName: "Norman",
     bootcamperImage: "https://i.ibb.co/VwHf3j0/boot-Camper28.png ",
+    link: "",
   },
   {
     firstName: "Kody",
     lastName: "Delacruz",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Nevaeh",
     lastName: "Booth",
     bootcamperImage: "https://i.ibb.co/F0qQbmR/boot-Camper9.jpg ",
+    link: "",
   },
   {
     firstName: "Eliana",
     lastName: "Baird",
     bootcamperImage: "https://i.ibb.co/sytT2Qq/boot-Camper4.png ",
+    link: "",
   },
   {
     firstName: "Billy",
     lastName: "Hughes",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Imani",
     lastName: "Ortiz",
     bootcamperImage: "https://i.ibb.co/hsRk3zG/boot-Camper14.jpg ",
+    link: "",
   },
   {
     firstName: "Orion",
     lastName: "Parker",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Sean",
     lastName: "Wolfe",
     bootcamperImage: "https://i.ibb.co/9rytWhM/boot-Camper12.png",
+    link: "",
   },
   {
     firstName: "Dale",
     lastName: "Sloan",
     bootcamperImage: "https://i.ibb.co/fxkM58g/boot-Camper16.jpg ",
+    link: "",
   },
   {
     firstName: "Cristofer",
     lastName: "Schaefer",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Evelin",
     lastName: "Mullins",
     bootcamperImage: "https://i.ibb.co/yRvPV4v/boot-Camper18.png ",
+    link: "",
   },
   {
     firstName: "Delilah",
     lastName: "Acevedo",
     bootcamperImage: "https://i.ibb.co/y84PRkw/boot-Camper19.png ",
+    link: "",
   },
   {
     firstName: "Keenan",
     lastName: "Morris",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Kallie",
     lastName: "Tanner",
     bootcamperImage: "https://i.ibb.co/k9xGrc5/boot-Camper27.png ",
+    link: "",
   },
   {
     firstName: "Trevor",
     lastName: "Santiago",
     bootcamperImage: "https://i.ibb.co/c6B3yGB/boot-Camper25.png ",
+    link: "",
   },
   {
     firstName: "Izabella",
     lastName: "Arias",
     bootcamperImage: "https://i.ibb.co/sytT2Qq/boot-Camper4.png ",
+    link: "",
   },
   {
     firstName: "Braxton",
     lastName: "Velez",
     bootcamperImage: "https://i.ibb.co/b56y6TG/boot-Camper10.jpg ",
+    link: "",
   },
 ];
 
@@ -334,8 +381,8 @@ export const journeyData = [
     color: "orange",
 
     link: "https://vimeo.com/showcase/8691982/video/579481884",
-    thumbnail: 'https://i.vimeocdn.com/video/1199031331-b248116c776743769840b8bc418347d6771a6ecf6a6d975e0d8c293e091a8b21-d?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1199031331-b248116c776743769840b8bc418347d6771a6ecf6a6d975e0d8c293e091a8b21-d?mw=1400&mh=705&q=70",
   },
   {
     topic: "JavaScript",
@@ -346,8 +393,8 @@ export const journeyData = [
     color: "orange",
 
     link: "https://vimeo.com/showcase/8691982/video/582899072",
-    thumbnail: 'https://i.vimeocdn.com/video/1206418285-fb37c862d5675f163046b453bf9862c7b263e4b4639691b13fe53cf5bff187af-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1206418285-fb37c862d5675f163046b453bf9862c7b263e4b4639691b13fe53cf5bff187af-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Front-end",
@@ -356,11 +403,11 @@ export const journeyData = [
     topicIcon:
       "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
 
-      color: "orange",
+    color: "orange",
 
     link: "https://vimeo.com/showcase/8691982/video/582906096",
-    thumbnail: 'https://i.vimeocdn.com/video/1206431583-632af5ca4b9526359109744142e876c3d5b6a3516314474ab9f6b805f9a4a7a6-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1206431583-632af5ca4b9526359109744142e876c3d5b6a3516314474ab9f6b805f9a4a7a6-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Back-end",
@@ -375,8 +422,8 @@ export const journeyData = [
     color: "green",
 
     link: "https://vimeo.com/showcase/8691982/video/586881602",
-    thumbnail: 'https://i.vimeocdn.com/video/1214191685-39e9431dd486b266515b50c985551a9cd0f871163927df7866622b6b117cf435-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1214191685-39e9431dd486b266515b50c985551a9cd0f871163927df7866622b6b117cf435-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Databases",
@@ -387,8 +434,8 @@ export const journeyData = [
     color: "green",
 
     link: "https://vimeo.com/showcase/8691982/video/586856209",
-    thumbnail: 'https://i.vimeocdn.com/video/1214158126-b8beb06720d80d419dad81fd2f9ee0089a92f1c904fec4bf9840f6f944c57781-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1214158126-b8beb06720d80d419dad81fd2f9ee0089a92f1c904fec4bf9840f6f944c57781-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Testing",
@@ -399,8 +446,8 @@ export const journeyData = [
     color: "green",
 
     link: "https://vimeo.com/showcase/8691982/video/592683987",
-    thumbnail: 'https://i.vimeocdn.com/video/1224696629-e4e1fb16d0e76bcb68c7a9a2fdacf4db9e6462d02c96f6a8d3461a34eb8eadbd-d?mw=1200&mh=676&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1224696629-e4e1fb16d0e76bcb68c7a9a2fdacf4db9e6462d02c96f6a8d3461a34eb8eadbd-d?mw=1200&mh=676&q=70",
   },
   {
     topic: "React Basics",
@@ -415,8 +462,8 @@ export const journeyData = [
     color: "blue",
 
     link: "https://vimeo.com/showcase/8691982/video/595903474",
-    thumbnail: 'https://i.vimeocdn.com/video/1230062503-c5f999dd2422f9996159e3ab8b4351a8fcb5b0b79c8ee8462e784dd7b2a45a7b-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1230062503-c5f999dd2422f9996159e3ab8b4351a8fcb5b0b79c8ee8462e784dd7b2a45a7b-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "React Advanced",
@@ -427,8 +474,8 @@ export const journeyData = [
     color: "blue",
 
     link: "https://vimeo.com/showcase/8691982/video/600158578",
-    thumbnail: 'https://i.vimeocdn.com/video/1235886136-b03f4434b87b586f0b3099feb8d15ca49dd4a6da741e0265410a98463a8c61eb-d?mw=1400&mh=717&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1235886136-b03f4434b87b586f0b3099feb8d15ca49dd4a6da741e0265410a98463a8c61eb-d?mw=1400&mh=717&q=70",
   },
   {
     topic: "Client Project",
@@ -443,8 +490,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/591009549",
-    thumbnail: 'https://i.vimeocdn.com/video/1222008328-2ddb83250a4eb85e72456df5707896baebab1738f68af4529844e54964a05911-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1222008328-2ddb83250a4eb85e72456df5707896baebab1738f68af4529844e54964a05911-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Agile",
@@ -455,8 +502,8 @@ export const journeyData = [
     color: "grey",
 
     link: "https://vimeo.com/showcase/8691982/video/612425603",
-    thumbnail: 'https://i.vimeocdn.com/video/1249891633-1823ecd2cc1b11162207ab9c4f634d4229e332bacd498f067?mw=1200&mh=675&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1249891633-1823ecd2cc1b11162207ab9c4f634d4229e332bacd498f067?mw=1200&mh=675&q=70",
   },
   {
     topic: "Computer Science",
@@ -467,8 +514,8 @@ export const journeyData = [
     color: "blue",
 
     link: "https://vimeo.com/showcase/8691982/video/629026237",
-    thumbnail: 'https://i.vimeocdn.com/video/1271305639-2b3aa3e3f313d13fe34a66f94859df3428944706c85a76220?mw=1400&mh=725&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1271305639-2b3aa3e3f313d13fe34a66f94859df3428944706c85a76220?mw=1400&mh=725&q=70",
   },
   {
     topic: "Architecture",
@@ -479,8 +526,8 @@ export const journeyData = [
     color: "grey",
 
     link: "https://vimeo.com/showcase/8691982/video/629270662",
-    thumbnail: 'https://i.vimeocdn.com/video/1271543305-060530376a9e1cabdb8bddeb5760904d423e3d3b6840bfb82?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1271543305-060530376a9e1cabdb8bddeb5760904d423e3d3b6840bfb82?mw=1300&mh=703&q=70",
   },
   {
     topic: "Project",
@@ -496,8 +543,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/600107702",
-    thumbnail: 'https://i.vimeocdn.com/video/1235825717-90c0f916ba1430763cd82c49ab09e5414633bcf0433bb3e3451157c45df9f6f4-d?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1235825717-90c0f916ba1430763cd82c49ab09e5414633bcf0433bb3e3451157c45df9f6f4-d?mw=1400&mh=705&q=70",
   },
   {
     topic: "Project",
@@ -512,8 +559,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/629075546",
-    thumbnail: 'https://i.vimeocdn.com/video/1271349067-c7a7d0cc451b387625afcb7ca68659d0885728fcd087fafd0?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1271349067-c7a7d0cc451b387625afcb7ca68659d0885728fcd087fafd0?mw=1400&mh=705&q=70",
   },
   {
     topic: "Project",
@@ -529,8 +576,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/600397206",
-    thumbnail: 'https://i.vimeocdn.com/video/1236188993-3ff6720a0bba37f1761f7b5db6c6dcc3100907d249365997975747962dc6deed-d?mw=1400&mh=699&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1236188993-3ff6720a0bba37f1761f7b5db6c6dcc3100907d249365997975747962dc6deed-d?mw=1400&mh=699&q=70",
   },
   {
     topic: "Project",
@@ -541,8 +588,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/609846395",
-    thumbnail: 'https://i.vimeocdn.com/video/1246554710-44a5246a1b7ac2a8fd8fdec91a999642b5fd4882df621058a3280f9849e689ac-d?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1246554710-44a5246a1b7ac2a8fd8fdec91a999642b5fd4882df621058a3280f9849e689ac-d?mw=1400&mh=705&q=70",
   },
 ];
 
