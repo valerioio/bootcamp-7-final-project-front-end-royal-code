@@ -8,7 +8,6 @@ import {
   TimelineSeparator,
   TimelineOppositeContent,
 } from "@material-ui/lab";
-import { v4 as uuidv4 } from "uuid";
 import css from "./Timeline.module.css";
 
 /* plan
@@ -49,23 +48,27 @@ export default function Journey({ data, navbarLinks, name }) {
               <TimelineItem>
                 <TimelineOppositeContent
                   style={{
-                    maxWidth: "1px",
-                    // paddingLeft: "30px",
-                    paddingRight: "30px",
+                    maxWidth: "0",
                   }}
                 />
                 <TimelineSeparator className={`seperator`}>
                   <TimelineDot color="primary" className={`dots`}>
                     {i + 1}
                   </TimelineDot>
-                  <TimelineConnector />
-                  <TimelineDot className={css.littleDot} variant="outlined" color="secondary" />
+                  <TimelineConnector style={{ maxHeight: "1.5em" }} />
+                  <TimelineDot
+                    className={css.littleDot}
+                    variant="outlined"
+                    color="secondary"
+                  />
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
                   <div
                     className={`smallContainer ${css.sContainer}`}
-                    style={{ borderColor: color }}
+                    style={{
+                      borderColor: color,
+                    }}
                   >
                     <h2 className={css.topicTitle}>{topic}</h2>
 
@@ -77,7 +80,6 @@ export default function Journey({ data, navbarLinks, name }) {
                       </ul>
                     </span>
                     <img
-                      style={{ float: "right" }}
                       src={topicIcon}
                       alt={topic}
                       className={css.image}

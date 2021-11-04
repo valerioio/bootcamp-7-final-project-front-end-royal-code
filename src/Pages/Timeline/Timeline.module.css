@@ -7,32 +7,36 @@
   vertical-align: top;
   margin-bottom: 0.25em;
 }
-.timeLine{
+.timeLine {
   position: left;
   margin-left: 20%;
 }
 
-.littleDot{
-  align-self: center;
+.littleDot {
+  align-self: center !important;
 }
 
-.sContainer{
+.sContainer {
   display: flex;
- border: 1px solid; 
-border-color: aqua;
+  border: 1px solid;
+  border-color: aqua;
+  margin: 6.25em 0 2em -0.75em;
+  border-width: 3px;
+  border-top-left-radius: 0;
 }
-.image{
+
+.image {
   height: 50px;
   margin-left: auto;
   order: 2;
 }
-.list{
-padding: 2em;
-display: grid;
-align-items: center;
+.list {
+  padding: 2em;
+  display: grid;
+  align-items: center;
 }
-.topicTitle{
-  position:center;
+.topicTitle {
+  position: center;
 }
 
 /* body {
