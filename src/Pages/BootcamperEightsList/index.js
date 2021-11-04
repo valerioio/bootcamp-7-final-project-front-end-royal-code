@@ -11,6 +11,7 @@
 import React, { useReducer } from "react";
 import { weeksOf8 } from "../../weeks-of-8";
 import css from "./BootcamperEightsList.module.css";
+import img1 from "../../Images/soc12.jpg";
 
 function reducer(week, action) {
   switch (action.type) {
@@ -29,7 +30,6 @@ export default function BootcamperFourList({ cohort }) {
   return (
     <>
       <h1 className={css.mainTitle}>Cohort 7 Groups of 8</h1>
-
       <button
         className={css.button}
         onClick={() => {
@@ -38,7 +38,6 @@ export default function BootcamperFourList({ cohort }) {
       >
         Last Week
       </button>
-
       <button
         className={`${css.buttonRight} ${css.button}`}
         onClick={() => {
@@ -47,24 +46,28 @@ export default function BootcamperFourList({ cohort }) {
       >
         Next Week
       </button>
-
       <main className={css.main}>
         <h2 className={css.secondaryTitle}>Week {week.count}</h2>
-        {weeksOf8[week.count - 1].groups.map((group) => {
-          return (
-            <div className={css.pairs}>
-              {group.map((bootcamper) => {
-                return (
-                  <div className={css.bootcamper}>
-                    <a className={css.link} href={bootcamper.link}>
-                      {bootcamper}
-                    </a>
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
+        <div className={css.content}>
+          <ul className={css.bootcampersList}>
+            {weeksOf8[week.count - 1].groups.map((group) => {
+              return (
+                <div className={css.pairs}>
+                  {group.map((bootcamper) => {
+                    return (
+                      <div className={css.bootcamper}>
+                        <a className={css.link} href={bootcamper.link}>
+                          {bootcamper}
+                        </a>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })}
+          </ul>
+          <img className={css.image} src={img1} alt="Bootcampers" />
+        </div>
       </main>
     </>
   );
