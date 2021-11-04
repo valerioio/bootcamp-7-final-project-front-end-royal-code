@@ -37,5 +37,6 @@
 }
 
 .buttonRight {
-  align-self: flex-end;
+  float: right;
+  margin-right: 5em;
 }

@@ -29,26 +29,25 @@ export default function BootcamperFourList({ cohort }) {
   return (
     <>
       <h1 className={css.mainTitle}>Cohort 7 Groups of 4</h1>
-      <div>
-        <button
-          className={css.button}
-          onClick={() => {
-            dispatch({ type: "decrement" });
-          }}
-        >
-          Last Week
-        </button>
-      </div>
-      <div className={css.buttonRight}>
-        <button
-          className={css.button}
-          onClick={() => {
-            dispatch({ type: "increment" });
-          }}
-        >
-          Next Week
-        </button>
-      </div>
+
+      <button
+        className={css.button}
+        onClick={() => {
+          dispatch({ type: "decrement" });
+        }}
+      >
+        Last Week
+      </button>
+
+      <button
+        className={`${css.buttonRight} ${css.button}`}
+        onClick={() => {
+          dispatch({ type: "increment" });
+        }}
+      >
+        Next Week
+      </button>
+
       <main className={css.main}>
         <h2 className={css.secondaryTitle}>Week {week.count}</h2>
         {weeksOf4[week.count - 1].groups.map((group) => {
