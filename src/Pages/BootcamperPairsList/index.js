@@ -25,7 +25,7 @@ function reducer(week, action) {
 
 export default function BootcamperPairList({ cohort }) {
   const [week, dispatch] = useReducer(reducer, { count: 1 });
-  console.log(weeksOf2);
+
   return (
     <>
       <h1 className={css.mainTitle}>Cohort 7 Pairs</h1>
