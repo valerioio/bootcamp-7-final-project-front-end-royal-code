@@ -48,6 +48,7 @@ export default function CoachDashboard({
   return (
     <div>
       <h1 className={css.mainTitle}>Dashboard</h1>
+      <p className={css.subTitle}>{(new Date()).toDateString()}</p>
       <div className={css.dashboard}>
         <div className={`${css.energiser} container`}>
           <h1 className={css.title}>Energiser</h1>
