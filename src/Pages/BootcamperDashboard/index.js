@@ -1,6 +1,12 @@
 import List from "../../components/List";
 import css from "./BootcamperDashboard.module.css";
 import Calendar from "../../components/Calendar";
+import Event from "../../components/Event";
+import Pin from "../../components/Pin";
+
+function dateInTheFuture(daysFromToday) {
+  return new Date(new Date().setDate(new Date().getDate() + daysFromToday));
+}
 
 export default function BootcamperDashboard({ Listings, name, recordings }) {
   return (
@@ -18,6 +24,16 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
         </div>
       </div>
       <Calendar />
+      <h2 className={css.secondaryTitle}>Upcoming events</h2>
+      <ul>
+        {Array(7)
+          .fill()
+          .map((_, i) => (
+            <li>
+              <Event date={dateInTheFuture(i)} />
+            </li>
+          ))}
+      </ul>
     </div>
   );
 }

@@ -1,0 +1,31 @@
+.container {
+  background: #ffffff;
+  box-shadow: 0px 2px 3px #00675b;
+  border-radius: 0.4em;
+  display: flex;
+  align-items: center;
+  font-family: "Josefin sans";
+  padding: 0.5rem;
+  margin: 1em 0;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #00675b;
+  width: 10rem;
+  padding-left: 2rem;
+}
+
+.dateNumber {
+  font-family: "Cardo";
+  font-size: 2.5rem;
+  color: #c1dad7;
+  margin: -0.5rem 0;
+}
+
+.eventText {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
