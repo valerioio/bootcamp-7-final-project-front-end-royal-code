@@ -10,11 +10,12 @@
 .timeLine{
   position: left;
   margin-left: 20%;
- 
-
-
-
 }
+
+.littleDot{
+  align-self: center;
+}
+
 .sContainer{
   display: flex;
  border: 1px solid; 

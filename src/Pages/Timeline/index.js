@@ -32,8 +32,8 @@ export default function Journey({ data, navbarLinks, name }) {
   }, []);*/
 
   const resources = data.reduce(
-    (resources, { week, topic, topicIcon, description ,color}) => {
-      resources[week] = { topic, description, topicIcon,color };
+    (resources, { week, topic, topicIcon, description, color }) => {
+      resources[week] = { topic, description, topicIcon, color };
       return resources;
     },
     []
@@ -41,15 +41,16 @@ export default function Journey({ data, navbarLinks, name }) {
   return (
     <>
       <h1 className={css.mainTitle}>Journey</h1>
-      {resources.slice(1).map(({ topic, description, topicIcon, color}, i) => {
-        return (
-          <>
-            <Timeline key={`${i}21`} className={`timeLine`}>
+      <Timeline className={`timeLine`}>
+        {resources
+          .slice(1)
+          .map(({ topic, description, topicIcon, color }, i) => {
+            return (
               <TimelineItem>
                 <TimelineOppositeContent
                   style={{
                     maxWidth: "1px",
-                    paddingLeft: "30px",
+                    // paddingLeft: "30px",
                     paddingRight: "30px",
                   }}
                 />
@@ -57,18 +58,19 @@ export default function Journey({ data, navbarLinks, name }) {
                   <TimelineDot color="primary" className={`dots`}>
                     {i + 1}
                   </TimelineDot>
-                </TimelineSeparator>
-                <TimelineSeparator className={`seperator`}>
                   <TimelineConnector />
-                  <TimelineDot variant="outlined" color="secondary" />
+                  <TimelineDot className={css.littleDot} variant="outlined" color="secondary" />
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <div className={`smallContainer ${css.sContainer}`}style={{borderColor:color}}>
+                  <div
+                    className={`smallContainer ${css.sContainer}`}
+                    style={{ borderColor: color }}
+                  >
                     <h2 className={css.topicTitle}>{topic}</h2>
 
                     <span className={css.list}>
-                      <ul >
+                      <ul>
                         {description.map((subTopic) => {
                           return <li>{subTopic}</li>;
                         })}
@@ -82,37 +84,10 @@ export default function Journey({ data, navbarLinks, name }) {
                     ></img>
                   </div>
                 </TimelineContent>
-
-                <TimelineContent></TimelineContent>
               </TimelineItem>
-
-              {/* {topic.map((item, j) => {
-                return (
-                  <TimelineItem key={`${i}23`}>
-                    <TimelineOppositeContent
-                      style={{
-                        maxWidth: "1px",
-                        paddingLeft: "30px",
-                        paddingRight: "30px",
-                      }}
-                    />
-                    <TimelineSeparator className={`seperator`}>
-                      <TimelineConnector />
-                      <TimelineDot variant="outlined" color="secondary" />
-                      <TimelineConnector />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                      <div className={`smallContainer`}>
-                        {resources[i + 1][j]}
-                      </div>
-                    </TimelineContent>
-                  </TimelineItem>
-                );
-              })} */}
-            </Timeline>
-          </>
-        );
-      })}
+            );
+          })}
+      </Timeline>
     </>
   );
 }
