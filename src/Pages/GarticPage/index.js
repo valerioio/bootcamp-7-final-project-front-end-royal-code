@@ -10,15 +10,16 @@
 
 import React from "react";
 import { energisers } from "../../data";
+import css from "./GarticPage.module.css";
 
 export default function GarticPage() {
-  console.log(energisers);
   const gartic = energisers[0];
-  console.log(gartic);
   return (
     <div>
-      <h1>{gartic.name}</h1>
-      <a href={`${gartic.link}`}>Play Gartic</a>
+      <h1 className={css.mainTitle}>{gartic.name}</h1>
+      <a className={css.link} href={`${gartic.link}`}>
+        Play Gartic
+      </a>
       <img src={`${gartic.logo}`} alt="Gartic logo" />
       <p>{gartic.description}</p>
       <img src={`${gartic.bootcamperImage}`} alt="Bootcampers playing Gartic" />
