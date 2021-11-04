@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Timeline,
   TimelineItem,
@@ -29,7 +29,7 @@ export default function Journey({ data, navbarLinks, name }) {
     resources[week] ? resources[week].push(topic) : (resources[week] = [topic]);
     return resources;
   }, []);*/
-
+  const [detail, setDetail] = useState(true);
   const resources = data.reduce(
     (resources, { week, topic, topicIcon, description, color }) => {
       resources[week] = { topic, description, topicIcon, color };
@@ -40,6 +40,7 @@ export default function Journey({ data, navbarLinks, name }) {
   return (
     <>
       <h1 className={css.mainTitle}>Journey</h1>
+      <button onClick={()=>setDetail(!detail)}>Click me</button>
       <Timeline className={`timeLine`}>
         {resources
           .slice(1)
@@ -65,25 +66,24 @@ export default function Journey({ data, navbarLinks, name }) {
                 </TimelineSeparator>
                 <TimelineContent>
                   <div
-                    className={`smallContainer ${css.sContainer}`}
+                    className={css.smallContainer}
                     style={{
                       borderColor: color,
                     }}
                   >
-                    <h2 className={css.topicTitle}>{topic}</h2>
-
-                    <span className={css.list}>
-                      <ul>
-                        {description.map((subTopic) => {
-                          return <li>{subTopic}</li>;
-                        })}
-                      </ul>
-                    </span>
-                    <img
-                      src={topicIcon}
-                      alt={topic}
-                      className={css.image}
-                    ></img>
+                    <div className={css.imageBox}>
+                      <img src={topicIcon} alt={topic} className={css.image} />
+                    </div>
+                    <div className={css.textBox}>
+                      <h4 className={css.topic}>{topic}</h4>
+                      {detail ? (
+                        <ul className={css.topicList}>
+                          {description.map((subTopic) => {
+                            return <li>{subTopic}</li>;
+                          })}
+                        </ul>
+                      ) : null}
+                    </div>
                   </div>
                 </TimelineContent>
               </TimelineItem>
