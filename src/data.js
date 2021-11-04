@@ -329,13 +329,13 @@ export const journeyData = [
       "Using Computational Thinking in Problem Solving",
       "Working with variables in the console",
     ],
-    topicIcon: "https://i.ibb.co/gdz4Zvx/foundation.png ",
+    topicIcon: "https://i.ibb.co/txPLQ5r/foundation-2.png",
 
     color: "orange",
 
     link: "https://vimeo.com/showcase/8691982/video/579481884",
-    thumbnail: 'https://i.vimeocdn.com/video/1199031331-b248116c776743769840b8bc418347d6771a6ecf6a6d975e0d8c293e091a8b21-d?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1199031331-b248116c776743769840b8bc418347d6771a6ecf6a6d975e0d8c293e091a8b21-d?mw=1400&mh=705&q=70",
   },
   {
     topic: "JavaScript",
@@ -346,8 +346,8 @@ export const journeyData = [
     color: "orange",
 
     link: "https://vimeo.com/showcase/8691982/video/582899072",
-    thumbnail: 'https://i.vimeocdn.com/video/1206418285-fb37c862d5675f163046b453bf9862c7b263e4b4639691b13fe53cf5bff187af-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1206418285-fb37c862d5675f163046b453bf9862c7b263e4b4639691b13fe53cf5bff187af-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Front-end",
@@ -356,11 +356,11 @@ export const journeyData = [
     topicIcon:
       "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
 
-      color: "orange",
+    color: "orange",
 
     link: "https://vimeo.com/showcase/8691982/video/582906096",
-    thumbnail: 'https://i.vimeocdn.com/video/1206431583-632af5ca4b9526359109744142e876c3d5b6a3516314474ab9f6b805f9a4a7a6-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1206431583-632af5ca4b9526359109744142e876c3d5b6a3516314474ab9f6b805f9a4a7a6-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Back-end",
@@ -375,8 +375,8 @@ export const journeyData = [
     color: "green",
 
     link: "https://vimeo.com/showcase/8691982/video/586881602",
-    thumbnail: 'https://i.vimeocdn.com/video/1214191685-39e9431dd486b266515b50c985551a9cd0f871163927df7866622b6b117cf435-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1214191685-39e9431dd486b266515b50c985551a9cd0f871163927df7866622b6b117cf435-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Databases",
@@ -387,8 +387,8 @@ export const journeyData = [
     color: "green",
 
     link: "https://vimeo.com/showcase/8691982/video/586856209",
-    thumbnail: 'https://i.vimeocdn.com/video/1214158126-b8beb06720d80d419dad81fd2f9ee0089a92f1c904fec4bf9840f6f944c57781-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1214158126-b8beb06720d80d419dad81fd2f9ee0089a92f1c904fec4bf9840f6f944c57781-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Testing",
@@ -399,8 +399,8 @@ export const journeyData = [
     color: "green",
 
     link: "https://vimeo.com/showcase/8691982/video/592683987",
-    thumbnail: 'https://i.vimeocdn.com/video/1224696629-e4e1fb16d0e76bcb68c7a9a2fdacf4db9e6462d02c96f6a8d3461a34eb8eadbd-d?mw=1200&mh=676&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1224696629-e4e1fb16d0e76bcb68c7a9a2fdacf4db9e6462d02c96f6a8d3461a34eb8eadbd-d?mw=1200&mh=676&q=70",
   },
   {
     topic: "React Basics",
@@ -415,8 +415,8 @@ export const journeyData = [
     color: "blue",
 
     link: "https://vimeo.com/showcase/8691982/video/595903474",
-    thumbnail: 'https://i.vimeocdn.com/video/1230062503-c5f999dd2422f9996159e3ab8b4351a8fcb5b0b79c8ee8462e784dd7b2a45a7b-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1230062503-c5f999dd2422f9996159e3ab8b4351a8fcb5b0b79c8ee8462e784dd7b2a45a7b-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "React Advanced",
@@ -427,8 +427,8 @@ export const journeyData = [
     color: "blue",
 
     link: "https://vimeo.com/showcase/8691982/video/600158578",
-    thumbnail: 'https://i.vimeocdn.com/video/1235886136-b03f4434b87b586f0b3099feb8d15ca49dd4a6da741e0265410a98463a8c61eb-d?mw=1400&mh=717&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1235886136-b03f4434b87b586f0b3099feb8d15ca49dd4a6da741e0265410a98463a8c61eb-d?mw=1400&mh=717&q=70",
   },
   {
     topic: "Client Project",
@@ -443,8 +443,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/591009549",
-    thumbnail: 'https://i.vimeocdn.com/video/1222008328-2ddb83250a4eb85e72456df5707896baebab1738f68af4529844e54964a05911-d?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1222008328-2ddb83250a4eb85e72456df5707896baebab1738f68af4529844e54964a05911-d?mw=1300&mh=703&q=70",
   },
   {
     topic: "Agile",
@@ -455,8 +455,8 @@ export const journeyData = [
     color: "grey",
 
     link: "https://vimeo.com/showcase/8691982/video/612425603",
-    thumbnail: 'https://i.vimeocdn.com/video/1249891633-1823ecd2cc1b11162207ab9c4f634d4229e332bacd498f067?mw=1200&mh=675&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1249891633-1823ecd2cc1b11162207ab9c4f634d4229e332bacd498f067?mw=1200&mh=675&q=70",
   },
   {
     topic: "Computer Science",
@@ -467,8 +467,8 @@ export const journeyData = [
     color: "blue",
 
     link: "https://vimeo.com/showcase/8691982/video/629026237",
-    thumbnail: 'https://i.vimeocdn.com/video/1271305639-2b3aa3e3f313d13fe34a66f94859df3428944706c85a76220?mw=1400&mh=725&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1271305639-2b3aa3e3f313d13fe34a66f94859df3428944706c85a76220?mw=1400&mh=725&q=70",
   },
   {
     topic: "Architecture",
@@ -479,8 +479,8 @@ export const journeyData = [
     color: "grey",
 
     link: "https://vimeo.com/showcase/8691982/video/629270662",
-    thumbnail: 'https://i.vimeocdn.com/video/1271543305-060530376a9e1cabdb8bddeb5760904d423e3d3b6840bfb82?mw=1300&mh=703&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1271543305-060530376a9e1cabdb8bddeb5760904d423e3d3b6840bfb82?mw=1300&mh=703&q=70",
   },
   {
     topic: "Project",
@@ -496,8 +496,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/600107702",
-    thumbnail: 'https://i.vimeocdn.com/video/1235825717-90c0f916ba1430763cd82c49ab09e5414633bcf0433bb3e3451157c45df9f6f4-d?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1235825717-90c0f916ba1430763cd82c49ab09e5414633bcf0433bb3e3451157c45df9f6f4-d?mw=1400&mh=705&q=70",
   },
   {
     topic: "Project",
@@ -512,8 +512,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/629075546",
-    thumbnail: 'https://i.vimeocdn.com/video/1271349067-c7a7d0cc451b387625afcb7ca68659d0885728fcd087fafd0?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1271349067-c7a7d0cc451b387625afcb7ca68659d0885728fcd087fafd0?mw=1400&mh=705&q=70",
   },
   {
     topic: "Project",
@@ -529,8 +529,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/600397206",
-    thumbnail: 'https://i.vimeocdn.com/video/1236188993-3ff6720a0bba37f1761f7b5db6c6dcc3100907d249365997975747962dc6deed-d?mw=1400&mh=699&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1236188993-3ff6720a0bba37f1761f7b5db6c6dcc3100907d249365997975747962dc6deed-d?mw=1400&mh=699&q=70",
   },
   {
     topic: "Project",
@@ -541,8 +541,8 @@ export const journeyData = [
     color: "red",
 
     link: "https://vimeo.com/showcase/8691982/video/609846395",
-    thumbnail: 'https://i.vimeocdn.com/video/1246554710-44a5246a1b7ac2a8fd8fdec91a999642b5fd4882df621058a3280f9849e689ac-d?mw=1400&mh=705&q=70'
-
+    thumbnail:
+      "https://i.vimeocdn.com/video/1246554710-44a5246a1b7ac2a8fd8fdec91a999642b5fd4882df621058a3280f9849e689ac-d?mw=1400&mh=705&q=70",
   },
 ];
 
@@ -848,5 +848,28 @@ export const recordings = [
     date: "20.10.2021",
     title: "JavaScript Async Await",
     link: "https://youtu.be/V_Kr9OSfDeU",
+  },
+];
+
+export const eventData = [
+  {
+    date: "22.11.2021",
+    event: ["Claire's Underwater Music Festival"],
+  },
+  {
+    date: "23.11.2021",
+    event: ["Yrral's Wedding day", "Toby's birthday"],
+  },
+  {
+    date: "25.11.2021",
+    event: ["Ayaan's Beauty pageant", "Loz's Tea party"],
+  },
+  {
+    date: "27.11.2021",
+    event: ["Valerio's Birthday"],
+  },
+  {
+    date: "28.11.2021",
+    event: ["Arshi's Knightship", "Chris's Dentist Appointment"],
   },
 ];
