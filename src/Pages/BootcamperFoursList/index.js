@@ -28,7 +28,7 @@ export default function BootcamperFourList({ cohort }) {
 
   return (
     <>
-      <h1 className={css.mainTitle}>Cohort 7 Pairs</h1>
+      <h1 className={css.mainTitle}>Cohort 7 Groups of 4</h1>
       <div>
         <button
           className={css.button}
