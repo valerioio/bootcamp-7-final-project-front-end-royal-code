@@ -15,6 +15,7 @@ export const energisers = [
       Players can discuss their confusions in the chatbox with other players, and get done with them.`,
     link: "https://gartic.io/",
     logo: "https://i.ibb.co/xJXTjMz/Gartic.jpg",
+    bootcamperImage:"https://i.ibb.co/K002vKC/bootcamper-Gartic.png",
     screenshot: "https://i.ibb.co/1JPN3gN/gartic-energiser.png",
   },
   {
@@ -853,23 +854,23 @@ export const recordings = [
 
 export const eventData = [
   {
-    date: "22.11.2021",
+    date: "11.22.2021",
     event: ["Claire's Underwater Music Festival"],
   },
   {
-    date: "23.11.2021",
+    date: "11.23.2021",
     event: ["Yrral's Wedding day", "Toby's birthday"],
   },
   {
-    date: "25.11.2021",
+    date: "11.25.2021",
     event: ["Ayaan's Beauty pageant", "Loz's Tea party"],
   },
   {
-    date: "27.11.2021",
+    date: "11.27.2021",
     event: ["Valerio's Birthday"],
   },
   {
-    date: "28.11.2021",
+    date: "11.28.2021",
     event: ["Arshi's Knightship", "Chris's Dentist Appointment"],
   },
 ];
