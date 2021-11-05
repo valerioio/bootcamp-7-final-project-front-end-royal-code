@@ -33,7 +33,7 @@ export const energisers = [
 
     link: "https://swellgarfo.com/scattergories/",
     logo: "https://i.ibb.co/4KD6rnr/00-XBest-Sites-To-Play-Scattergories-Online.png",
-    screenshot: "https://i.ibb.co/4Tk7WWN/scattergories-energiser.png ",
+    screenshot: "https://i.ibb.co/4Tk7WWN/scattergories-energiser.png",
   },
   {
     name: "Higher or Lower",
@@ -45,8 +45,8 @@ export const energisers = [
         The objective is to get the most right in a row. If you get one wrong, you lose the game.`,
 
     link: "https://deck.of.cards/",
-    logo: " https://i.ibb.co/5kRg76N/higherorlower.jpg ",
-    screenshot: "https://i.ibb.co/XZCKkfS/higher-or-lower.png ",
+    logo: "https://i.ibb.co/5kRg76N/higherorlower.jpg",
+    screenshot: "https://i.ibb.co/XZCKkfS/higher-or-lower.png",
   },
   {
     name: "Countdown",
@@ -58,7 +58,7 @@ export const energisers = [
         They write this word onto the space for the first letter round on their Score Sheet. After the thirty seconds is up all players compare words`,
     link: "https://incoherency.co.uk/countdown/practice/",
     logo: "https://i.ibb.co/x3SgFXR/countdown-marks-its-6000th-episode-md.jpg",
-    screenshot: "https://i.ibb.co/khKQnvD/countdown-energiser.png ",
+    screenshot: "https://i.ibb.co/khKQnvD/countdown-energiser.png",
   },
   {
     name: "Charades",
@@ -66,16 +66,16 @@ export const energisers = [
     description: ` Split your group into teams and use a charades idea generator to choose your words and phrases. 
         The person who's acting out the charade uses the Zoom "spotlight" feature, and their team has one minute to figure out the phrase.`,
     link: "https://psycatgames.com/app/charades/",
-    logo: "https://i.ibb.co/426pW2q/e86abfcf-83e3-4842-a52b-82d48d9c721d.png ",
-    screenshot: "https://i.ibb.co/R2PRJz6/Charades-energiser.png ",
+    logo: "https://i.ibb.co/426pW2q/e86abfcf-83e3-4842-a52b-82d48d9c721d.png",
+    screenshot: "https://i.ibb.co/R2PRJz6/Charades-energiser.png",
   },
   {
     name: "Articulate",
 
     description: `This involves players describing things to their team without saying the word on the card.`,
     link: "https://www.drumondpark.com/articulate_cards",
-    logo: "https://i.ibb.co/nBhftPP/Articulate.png ",
-    screenshot: "https://i.ibb.co/rxsF54f/Articulate-energiser.png ",
+    logo: "https://i.ibb.co/nBhftPP/Articulate.png",
+    screenshot: "https://i.ibb.co/rxsF54f/Articulate-energiser.png",
   },
 ];
 
@@ -179,7 +179,7 @@ export const nameData = [
   {
     firstName: "Tao",
     lastName: "Sharma",
-    bootcamperImage: "https://i.ibb.co/VwHf3j0/boot-Camper28.png ",
+    bootcamperImage: "https://i.ibb.co/VwHf3j0/boot-Camper28.png",
   },
   {
     firstName: "Tom",
@@ -377,7 +377,7 @@ export const journeyData = [
       "Using Computational Thinking in Problem Solving",
       "Working with variables in the console",
     ],
-    topicIcon: "https://i.ibb.co/txPLQ5r/foundation-2.png",
+    topicIcon: "https://i.ibb.co/HC74WhJ/foundation3.png",
 
     color: "orange",
 
@@ -389,7 +389,7 @@ export const journeyData = [
     topic: "JavaScript",
     week: 2,
     description: ["Events", "Advanced functions", "Declaring Objects"],
-    topicIcon: "https://i.ibb.co/3dTLJdZ/js.png ",
+    topicIcon: "https://i.ibb.co/3dTLJdZ/js.png",
 
     color: "orange",
 
@@ -400,7 +400,7 @@ export const journeyData = [
   {
     topic: "Front-end",
     week: 3,
-    description: ["Array methods", "DOM manipulation ", "Asynchronous Request"],
+    description: ["Array methods", "DOM manipulation", "Asynchronous Request"],
     topicIcon:
       "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
 
@@ -430,7 +430,7 @@ export const journeyData = [
     topic: "Databases",
     week: 5,
     description: ["SQL", "PostgreSQL"],
-    topicIcon: "https://i.ibb.co/BgLqJXc/database.png ",
+    topicIcon: "https://i.ibb.co/BgLqJXc/database.png",
 
     color: "green",
 
@@ -442,7 +442,7 @@ export const journeyData = [
     topic: "Testing",
     week: 6,
     description: ["Introduction to Jest", "API endpoint testing", "Test-athon"],
-    topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png ",
+    topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png",
 
     color: "green",
 
@@ -458,7 +458,7 @@ export const journeyData = [
       "React useState",
       "Immutable Updates to Objects and Arrays",
     ],
-    topicIcon: "https://i.ibb.co/6HRsmdw/react.png ",
+    topicIcon: "https://i.ibb.co/6HRsmdw/react.png",
 
     color: "blue",
 
@@ -469,7 +469,7 @@ export const journeyData = [
   {
     topic: "React Advanced",
     week: 8,
-    description: ["React Side Effects", "UseEffect ", "useReducer"],
+    description: ["React Side Effects", "UseEffect", "useReducer"],
     topicIcon: "https://i.ibb.co/y8brvLf/react-logo.png",
 
     color: "blue",
@@ -486,7 +486,7 @@ export const journeyData = [
       "Planning Using Desiney Ideation",
       "Presentation",
     ],
-    topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png ",
+    topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png",
 
     color: "red",
 
@@ -498,7 +498,7 @@ export const journeyData = [
     topic: "Agile",
     week: 10,
     description: ["Scrum", "Kanban"],
-    topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png ",
+    topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png",
 
     color: "grey",
 
@@ -510,7 +510,7 @@ export const journeyData = [
     topic: "Computer Science",
     week: 11,
     description: ["Cypress", "Typescript", "Ui Libaries"],
-    topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png ",
+    topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png",
 
     color: "blue",
 
@@ -522,7 +522,7 @@ export const journeyData = [
     topic: "Architecture",
     week: 12,
     description: ["Containers", "DynamoDB", "AWS Amplify"],
-    topicIcon: "https://i.ibb.co/x8D77wp/architecture.png ",
+    topicIcon: "https://i.ibb.co/x8D77wp/architecture.png",
 
     color: "grey",
 
@@ -539,7 +539,7 @@ export const journeyData = [
       "Application Research",
       "Application Planning",
     ],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 
@@ -555,7 +555,7 @@ export const journeyData = [
       "Application coding",
       "Styling of Application",
     ],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 
@@ -572,7 +572,7 @@ export const journeyData = [
       "Depolyment Feedback",
       "Application Polishing",
     ],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 
@@ -584,7 +584,7 @@ export const journeyData = [
     topic: "Project",
     week: 16,
     description: ["Completed Application", "Presentation", "Demo"],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 

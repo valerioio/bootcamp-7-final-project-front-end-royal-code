@@ -33,8 +33,9 @@ export default function StickyNote({ text, deleteNote, changeNote }) {
         className={css.noteText}
         onChange={(e) => changeNote(e.target.value)}
         placeholder="add a new note"
-        maxLength={40} /* change here to make the notes longer to 56*/
-        rows={5} /* change here to make the notes longer to 7*/
+        maxLength={120}
+        rows={8}
+        cols={18}
         value={text}
       />
     </div>
