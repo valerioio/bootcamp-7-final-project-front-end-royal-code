@@ -16,20 +16,21 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
       <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
         <PinBoard />
+
+        {/* <Calendar /> */}
+        <h2 className={css.secondaryTitle}>Upcoming events</h2>
+        <ul>
+          {eventData.map((event, i) => (
+            <li>
+              <Event
+                key={`${i}147`}
+                date={new Date(event.date)}
+                eventText={event.event.join(",  ")}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
-      {/* <Calendar /> */}
-      <h2 className={css.secondaryTitle}>Upcoming events</h2>
-      <ul>
-        {eventData.map((event, i) => (
-          <li>
-            <Event
-              key={`${i}147`}
-              date={new Date(event.date)}
-              eventText={event.event.join(",  ")}
-            />
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
