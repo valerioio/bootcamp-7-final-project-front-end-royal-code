@@ -6,8 +6,10 @@
 
 .energiser {
   padding: 1em;
-  grid-column-start: 2;
-  grid-column-end: 6;
+  grid-column-start: 1;
+  grid-column-end: end;
+  justify-content: center;
+  display: flex;
 }
 
 .main {
@@ -26,12 +28,20 @@
 }
 
 .image {
-  width: auto;
+  width: 25vw;
   height: auto;
-  max-width: 6em;
-  max-height: 6em;
+  border-radius: 1em;
 }
 
 .link {
+  border: 0.1em solid;
+  border-color: #00675b;
   font-size: 1.5em;
+  margin-right: auto;
+  margin-left: 20%;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 1em;
+  width: 15vw;
+  text-align: center;
 }
