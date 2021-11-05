@@ -1,0 +1,42 @@
+.mainTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 8rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 6em;
+  height: auto;
+}
+
+.bootcamper {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  align-items: center;
+  margin: 1.5em;
+}
+
+.link {
+}
+
+.fakeButtonContainer {
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fakeButton {
+  border: 2px solid;
+  border-color: #00675b;
+  font-weight: bold;
+  padding: 0.75em;
+}

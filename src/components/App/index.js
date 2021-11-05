@@ -12,6 +12,11 @@ import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import GarticPage from "../../Pages/GarticPage";
 import ReadingListPage from "../../Pages/ReadingListPage";
 import LectureRecordingsPage from "../../Pages/LectureRecordingsPage";
+import BootcamperList from "../../Pages/BootcamperList";
+import BootcamperPairsList from "../../Pages/BootcamperPairsList";
+import BootcamperFoursList from "../../Pages/BootcamperFoursList";
+import BootcamperEightsList from "../../Pages/BootcamperEightsList";
+import CohortsPage from "../../Pages/CohortsPage";
 
 const theme = createTheme({
   palette: {
@@ -104,6 +109,31 @@ function App() {
             <Route exact path="/lecture-recordings">
               <Layout user={user} currentPage={"/lecture-recordings"}>
                 <LectureRecordingsPage />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/bootcampers">
+              <Layout user={user} currentPage={"/cohorts/7/bootcampers"}>
+                <BootcamperList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/groups-of-2">
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-2"}>
+                <BootcamperPairsList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/groups-of-4">
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-4"}>
+                <BootcamperFoursList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/groups-of-8">
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-8"}>
+                <BootcamperEightsList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts">
+              <Layout user={user} currentPage={"/cohorts"}>
+                <CohortsPage />
               </Layout>
             </Route>
           </Switch>

@@ -1,0 +1,58 @@
+.mainTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 8rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-around;
+}
+
+.avatar {
+  width: 6em;
+  height: auto;
+}
+
+.pairs {
+  padding: 1em 0 1em 0;
+}
+
+.secondaryTitle {
+  font-size: 4em;
+}
+
+.link {
+}
+
+.button {
+  border: 2px solid;
+  border-color: #00675b;
+  font-weight: bold;
+  padding: 0.75em;
+}
+
+.buttonRight {
+  float: right;
+  margin-right: 5em;
+}
+
+.image {
+  width: 30vw;
+  height: 25vw;
+
+  margin-right: 5em;
+}
+
+.bootcampersList {
+  width: 50vw;
+}
+
+.content {
+  display: flex;
+  align-items: space-around;
+}
