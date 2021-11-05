@@ -10,6 +10,10 @@
   grid-column-end: end;
   justify-content: center;
   display: flex;
+  border: 2px solid;
+  margin-top: 1em;
+  border-radius: 1em;
+margin-right: 3em;
 }
 
 .main {
@@ -44,4 +48,10 @@
   padding: 1em;
   width: 15vw;
   text-align: center;
+  border-radius: 1em;
+}
+
+.link:hover {
+  background-color: rgb(193, 218, 215, 0.3);
+ 
 }

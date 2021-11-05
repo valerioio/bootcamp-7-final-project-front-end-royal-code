@@ -14,7 +14,7 @@ export const energisers = [
       The players can also skip their turn if they do not want to draw.
       Players can discuss their confusions in the chatbox with other players, and get done with them.`,
     link: "https://gartic.io/",
-    logo: "https://i.ibb.co/xJXTjMz/Gartic.jpg",
+    logo: "https://i.ibb.co/YNwSmWG/gartic2.png",
     bootcamperImage: "https://i.ibb.co/K002vKC/bootcamper-Gartic.png",
     screenshot: "https://i.ibb.co/1JPN3gN/gartic-energiser.png",
     color: "royalblue",

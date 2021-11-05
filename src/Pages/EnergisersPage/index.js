@@ -8,7 +8,7 @@ const EnergisersPage = () => {
       <div className={css.main}>
         {energisers.map((energiser, i) => {
           return (
-            <div key={`${i}54`} className={css.energiser}>
+            <div key={`${i}54`} className={css.energiser} style={{borderColor:energiser.color}}>
               <a href={`energisers/${energiser.name.toLowerCase()}`}>
                 <img
                   src={energiser.logo}
@@ -17,7 +17,7 @@ const EnergisersPage = () => {
                 />
               </a>
               <a
-                className={css.link}
+                className={css.link} style={{borderColor:energiser.color}}
                 href={`energisers/${energiser.name.toLowerCase()}`}
               >
                 {energiser.name}
