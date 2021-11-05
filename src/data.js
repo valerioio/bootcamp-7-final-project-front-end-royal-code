@@ -15,8 +15,9 @@ export const energisers = [
       Players can discuss their confusions in the chatbox with other players, and get done with them.`,
     link: "https://gartic.io/",
     logo: "https://i.ibb.co/xJXTjMz/Gartic.jpg",
-    bootcamperImage:"https://i.ibb.co/K002vKC/bootcamper-Gartic.png",
+    bootcamperImage: "https://i.ibb.co/K002vKC/bootcamper-Gartic.png",
     screenshot: "https://i.ibb.co/1JPN3gN/gartic-energiser.png",
+    color: "royalblue",
   },
   {
     name: "Scattergories",
@@ -33,7 +34,8 @@ export const energisers = [
 
     link: "https://swellgarfo.com/scattergories/",
     logo: "https://i.ibb.co/4KD6rnr/00-XBest-Sites-To-Play-Scattergories-Online.png",
-    screenshot: "https://i.ibb.co/4Tk7WWN/scattergories-energiser.png",
+    screenshot: "https://i.ibb.co/4Tk7WWN/scattergories-energiser.png ",
+    color: "red",
   },
   {
     name: "Higher or Lower",
@@ -45,8 +47,9 @@ export const energisers = [
         The objective is to get the most right in a row. If you get one wrong, you lose the game.`,
 
     link: "https://deck.of.cards/",
-    logo: "https://i.ibb.co/5kRg76N/higherorlower.jpg",
-    screenshot: "https://i.ibb.co/XZCKkfS/higher-or-lower.png",
+    logo: " https://i.ibb.co/5kRg76N/higherorlower.jpg ",
+    screenshot: "https://i.ibb.co/XZCKkfS/higher-or-lower.png ",
+    color: "orange",
   },
   {
     name: "Countdown",
@@ -58,7 +61,8 @@ export const energisers = [
         They write this word onto the space for the first letter round on their Score Sheet. After the thirty seconds is up all players compare words`,
     link: "https://incoherency.co.uk/countdown/practice/",
     logo: "https://i.ibb.co/x3SgFXR/countdown-marks-its-6000th-episode-md.jpg",
-    screenshot: "https://i.ibb.co/khKQnvD/countdown-energiser.png",
+    screenshot: "https://i.ibb.co/khKQnvD/countdown-energiser.png ",
+    color: "Darkblue",
   },
   {
     name: "Charades",
@@ -66,16 +70,18 @@ export const energisers = [
     description: ` Split your group into teams and use a charades idea generator to choose your words and phrases. 
         The person who's acting out the charade uses the Zoom "spotlight" feature, and their team has one minute to figure out the phrase.`,
     link: "https://psycatgames.com/app/charades/",
-    logo: "https://i.ibb.co/426pW2q/e86abfcf-83e3-4842-a52b-82d48d9c721d.png",
-    screenshot: "https://i.ibb.co/R2PRJz6/Charades-energiser.png",
+    logo: "https://i.ibb.co/426pW2q/e86abfcf-83e3-4842-a52b-82d48d9c721d.png ",
+    screenshot: "https://i.ibb.co/R2PRJz6/Charades-energiser.png ",
+    color: "Lightblue",
   },
   {
     name: "Articulate",
 
     description: `This involves players describing things to their team without saying the word on the card.`,
     link: "https://www.drumondpark.com/articulate_cards",
-    logo: "https://i.ibb.co/nBhftPP/Articulate.png",
-    screenshot: "https://i.ibb.co/rxsF54f/Articulate-energiser.png",
+    logo: "https://i.ibb.co/nBhftPP/Articulate.png ",
+    screenshot: "https://i.ibb.co/rxsF54f/Articulate-energiser.png ",
+    color: "Darkred",
   },
 ];
 

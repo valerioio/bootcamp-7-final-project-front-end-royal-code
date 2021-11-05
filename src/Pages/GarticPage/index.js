@@ -16,14 +16,23 @@ export default function GarticPage() {
   const gartic = energisers[0];
   return ( 
   <main className={css.body}>
-    <div>
-      <h1 className={css.mainTitle}>{gartic.name}</h1>
+   <h1 className={css.mainTitle}>{gartic.name}</h1> <img className={css.garticLogo}
+        src={`${gartic.logo}`} alt="Gartic logo" />
+    <div className={css.content}>
      
+     
+       
+        <br/>
+        <br/>
+       
+        <br/> 
         <a className={css.link} href={`${gartic.link}`}>
           Play Gartic
         </a>
-        <img src={`${gartic.logo}`} alt="Gartic logo" />
-        <p>{gartic.description}</p>
+        <br/>
+        <p className={css.garticDescription}>{gartic.description}</p>
+        <br/>
+        <br/>
         <img
           src={`${gartic.bootcamperImage}`}
           alt="Bootcampers playing Gartic"
