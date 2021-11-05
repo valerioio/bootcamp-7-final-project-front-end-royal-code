@@ -97,7 +97,7 @@ function App() {
               <LoginPage />
             </Route>
             <Route exact path="/energisers/gartic">
-              <Layout user={user}>
+              <Layout user={user} art={true}>
                 <GarticPage />
               </Layout>
             </Route>

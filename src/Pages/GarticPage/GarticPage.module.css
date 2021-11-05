@@ -50,21 +50,3 @@
   justify-content: flex-start;
   align-items: center;
 }
-
-.body {
-  display: block;
-  position: relative;
-  z-index: 1;
-}
-
-.body::after {
-  content: "";
-  background: url("https://i.ibb.co/djGMmMV/splash.jpg");
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1 !important;
-}
