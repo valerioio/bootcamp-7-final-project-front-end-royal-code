@@ -79,6 +79,7 @@ export default function CoachDashboard({
           {eventData.map((event, i) => (
             <li>
               <Event
+                key={`${i}159`}
                 date={new Date(event.date)}
                 eventText={event.event.join(",  ")}
               />

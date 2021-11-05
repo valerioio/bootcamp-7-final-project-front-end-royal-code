@@ -23,6 +23,7 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
         {eventData.map((event, i) => (
           <li>
             <Event
+              key={`${i}147`}
               date={new Date(event.date)}
               eventText={event.event.join(",  ")}
             />
