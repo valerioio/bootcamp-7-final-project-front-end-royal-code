@@ -10,13 +10,31 @@
 
 .addNoteButton {
   background: white;
-  border-radius: 8px;
-  font-size: 2em;
-  max-width: 8vw;
-  max-height: 8vh;
-  padding: 0 0.5em 0.15em 0.5em;
-  align-items: right;
+  border-top: .15vw solid #00675b;
+  border-bottom: .15vw solid #00675b;
+  border-left: .15vw solid #00675b;
+  border-right: .15vw solid #00675b;
+  border-radius: .2vw;
+  width: 2vw;
+  height: 2vw;
+  font-size: 1vw;
+  font-weight: bold;
+  color: #00675b;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; 
 }
+
+ .addNoteButton:hover {
+  background-color: #00675B;
+  cursor: pointer;
+  color: #ffffff;
+} 
 
 .submitNoteButton {
   background: lightgrey;
