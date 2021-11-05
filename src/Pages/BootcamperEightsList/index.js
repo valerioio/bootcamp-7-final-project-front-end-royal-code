@@ -8,8 +8,8 @@
 // bootcamper image
 // bootcamper names in a tags with hrefs to individual pages.
 
-import React, { useReducer } from "react";
-import { weeksOf8 } from "../../weeks-of-8";
+import React, { useReducer, useState, useEffect } from "react";
+//import { weeksOf8 } from "../../weeks-of-8";
 import css from "./BootcamperEightsList.module.css";
 import img1 from "../../Images/soc12.jpg";
 
@@ -24,8 +24,26 @@ function reducer(week, action) {
   }
 }
 
-export default function BootcamperFourList({ cohort }) {
+export default function BootcamperEightsList({ cohort }) {
   const [week, dispatch] = useReducer(reducer, { count: 1 });
+  const [weeksOf8, setWeeksOf8] = useState([
+    { week: 1, groups: [["loading"]] },
+  ]);
+
+  useEffect(() => {
+    async function getGroupData() {
+      const res = await fetch(
+        "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/bootcamper-eights"
+      );
+      const data = await res.json();
+      const sortedData = data.sort(function (a, b) {
+        return a.week - b.week;
+      });
+      setWeeksOf8(sortedData);
+      return data;
+    }
+    getGroupData();
+  }, []);
 
   return (
     <>
@@ -56,7 +74,8 @@ export default function BootcamperFourList({ cohort }) {
                   {group.map((bootcamper, j) => {
                     return (
                       <div key={i + "042" + j} className={css.bootcamper}>
-                        <a className={css.link} href={''}> {/* href={bootcamper.link} <- bootcamper is a string */}
+                        <a className={css.link} href={""}>
+                          {/* href={bootcamper.link} <- bootcamper is a string */}
                           {bootcamper}
                         </a>
                       </div>
