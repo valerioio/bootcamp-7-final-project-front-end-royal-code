@@ -1,5 +1,4 @@
 import css from "./Event.module.css";
-import eventData from "../../data";
 
 const weekDays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
 

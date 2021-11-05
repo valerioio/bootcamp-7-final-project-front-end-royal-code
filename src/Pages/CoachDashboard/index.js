@@ -3,7 +3,7 @@ import "../../index.css";
 import { useState } from "react";
 //import List from "../List";
 import PinBoard from "../../components/PinBoard";
-import Calendar from "../../components/Calendar";
+// import Calendar from "../../components/Calendar";
 import { eventData } from "../../data";
 import Event from "../../components/Event";
 

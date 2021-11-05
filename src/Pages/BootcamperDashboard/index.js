@@ -1,9 +1,7 @@
-import List from "../../components/List";
 import css from "./BootcamperDashboard.module.css";
-import Calendar from "../../components/Calendar";
+// import Calendar from "../../components/Calendar";
 import PinBoard from "../../components/PinBoard";
 import Event from "../../components/Event";
-import Pin from "../../components/Pin";
 import { eventData } from "../../data";
 function dateInTheFuture(daysFromToday) {
   return new Date(new Date().setDate(new Date().getDate() + daysFromToday));
