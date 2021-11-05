@@ -11,6 +11,7 @@ import {
   MdOutlineWbSunny,
   MdBook,
   MdCameraRoll,
+  MdPeopleOutline,
 } from "react-icons/md";
 
 const navbarLinksCoaches = [
@@ -20,6 +21,11 @@ const navbarLinksCoaches = [
     linkText: "Energiser list",
     href: "/energisers",
     icon: <MdOutlineWbSunny />,
+  },
+  {
+    linkText: "Cohorts",
+    href: "/cohorts",
+    icon: <MdPeopleOutline />,
   },
 ];
 const navbarLinksBootcampers = [

@@ -8,7 +8,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import List from "../List";
-import InputForm from "../InputForm";
+//import InputForm from "../InputForm";
 
 // import TextField from '@mui/material/TextField';
 // import AdapterDateFns from '@mui/lab/AdapterDateFns';
@@ -79,13 +79,13 @@ export default function Calendar() {
         Get events
       </button>
       <List Listings={events} />
-      <InputForm
+      {/* <InputForm
         handleSubmit={() => {
           setCounterAdd(counterAdd + 1);
         }}
         handleChange={updateEventInfo}
         eventInfo={eventInfo}
-      />
+      /> */}
     </>
   );
 }

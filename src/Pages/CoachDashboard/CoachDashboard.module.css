@@ -1,13 +1,13 @@
 .mainTitle {
-  font-family: 'Cardo';
+  font-family: "Cardo";
   font-style: medium;
-  font-size: 8rem;
+  font-size: 5rem;
   letter-spacing: -4%;
   vertical-align: top;
 }
 
 .subTitle {
-  font-family: 'Cardo';
+  font-family: "Cardo";
   font-size: 1.4rem;
   letter-spacing: -4%;
   vertical-align: top;
@@ -34,22 +34,41 @@
 }
 
 .energiser {
+  display: grid;
   padding: 1em;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .energiserName {
   margin-top: 1em;
   font-size: large;
+  margin: auto;
 }
 
 .Button {
-  border-radius: 10%;
-  background-color: #1d5b40 !important;
-  color: #ffffff;
+  border: 0.1em solid;
+  border-color: #1d5b40 !important;
   font-size: 1em;
-  padding: 0 0.5em;
+  padding: 0 10px;
   height: 2em !important;
   display: block;
+  width: 10vw;
   margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+}
+
+.secondaryTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 4rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.energiserLink {
+  margin: auto;
+  padding-bottom: 1em;
 }

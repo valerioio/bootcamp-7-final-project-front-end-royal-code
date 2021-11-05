@@ -34,3 +34,12 @@
 .noteText:focus {
   outline: none;
 }
+
+.pin {
+  position: relative;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  margin: auto;
+  padding-bottom: 2em;
+  bottom: 2em;
+}

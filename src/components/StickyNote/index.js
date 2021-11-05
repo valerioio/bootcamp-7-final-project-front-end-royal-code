@@ -9,6 +9,7 @@
 
 import React, { useState } from "react";
 import css from "./StickyNote.module.css";
+import Pin from "../Pin";
 const COLORS = ["lavenderblush", "honeydew", "lightyellow", "lightcyan"];
 
 export default function StickyNote({ text, deleteNote, changeNote }) {
@@ -22,6 +23,9 @@ export default function StickyNote({ text, deleteNote, changeNote }) {
         backgroundColor: color,
       }}
     >
+      <div className={css.pin}>
+        <Pin />
+      </div>
       <button className={css.removeButton} onClick={deleteNote}>
         -
       </button>
