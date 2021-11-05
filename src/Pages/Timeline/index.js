@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Timeline,
   TimelineItem,
@@ -8,8 +8,8 @@ import {
   TimelineSeparator,
   TimelineOppositeContent,
 } from "@material-ui/lab";
-import { v4 as uuidv4 } from "uuid";
 import css from "./Timeline.module.css";
+import { Switch } from "@chakra-ui/react";
 
 /* plan
 import react 
@@ -30,7 +30,7 @@ export default function Journey({ data, navbarLinks, name }) {
     resources[week] ? resources[week].push(topic) : (resources[week] = [topic]);
     return resources;
   }, []);*/
-
+  const [detail, setDetail] = useState(true);
   const resources = data.reduce(
     (resources, { week, topic, topicIcon, description, color }) => {
       resources[week] = { topic, description, topicIcon, color };
@@ -41,47 +41,65 @@ export default function Journey({ data, navbarLinks, name }) {
   return (
     <>
       <h1 className={css.mainTitle}>Journey</h1>
-      <Timeline className={`timeLine`}>
+      <div className={css.toggle}>
+        <Switch
+          isChecked={detail}
+          onChange={() => setDetail(!detail)}
+          className={css.switch}
+        />
+        <p>
+          <span className={detail ? css.graydOut : css.highlighted}>
+            Minimum
+          </span>{" "}
+          |{" "}
+          <span className={detail ? css.highlighted : css.graydOut}>
+            Detail
+          </span>
+        </p>
+      </div>
+      <Timeline className={css.timeLine}>
         {resources
           .slice(1)
           .map(({ topic, description, topicIcon, color }, i) => {
             return (
-              <TimelineItem>
+              <TimelineItem key={i + "468"}>
                 <TimelineOppositeContent
                   style={{
-                    maxWidth: "1px",
-                    // paddingLeft: "30px",
-                    paddingRight: "30px",
+                    maxWidth: "0",
                   }}
                 />
                 <TimelineSeparator className={`seperator`}>
                   <TimelineDot color="primary" className={`dots`}>
                     {i + 1}
                   </TimelineDot>
-                  <TimelineConnector />
-                  <TimelineDot className={css.littleDot} variant="outlined" color="secondary" />
+                  <TimelineConnector style={{ maxHeight: "1.5em" }} />
+                  <TimelineDot
+                    className={css.littleDot}
+                    variant="outlined"
+                    color="secondary"
+                  />
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
                   <div
-                    className={`smallContainer ${css.sContainer}`}
-                    style={{ borderColor: color }}
+                    className={css.smallContainer}
+                    style={{
+                      borderColor: color,
+                    }}
                   >
-                    <h2 className={css.topicTitle}>{topic}</h2>
-
-                    <span className={css.list}>
-                      <ul>
-                        {description.map((subTopic) => {
-                          return <li>{subTopic}</li>;
-                        })}
-                      </ul>
-                    </span>
-                    <img
-                      style={{ float: "right" }}
-                      src={topicIcon}
-                      alt={topic}
-                      className={css.image}
-                    ></img>
+                    <div className={css.imageBox}>
+                      <img src={topicIcon} alt={topic} className={css.image} />
+                    </div>
+                    <div className={css.textBox}>
+                      <h4 className={css.topic}>{topic}</h4>
+                      {detail ? (
+                        <ul className={css.topicList}>
+                          {description.map((subTopic, j) => {
+                            return <li key={j + "965" + i}>{subTopic}</li>;
+                          })}
+                        </ul>
+                      ) : null}
+                    </div>
                   </div>
                 </TimelineContent>
               </TimelineItem>

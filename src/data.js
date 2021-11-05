@@ -185,7 +185,7 @@ export const nameData = [
   {
     firstName: "Tao",
     lastName: "Sharma",
-    bootcamperImage: "https://i.ibb.co/VwHf3j0/boot-Camper28.png ",
+    bootcamperImage: "https://i.ibb.co/VwHf3j0/boot-Camper28.png",
   },
   {
     firstName: "Tom",
@@ -383,7 +383,7 @@ export const journeyData = [
       "Using Computational Thinking in Problem Solving",
       "Working with variables in the console",
     ],
-    topicIcon: "https://i.ibb.co/txPLQ5r/foundation-2.png",
+    topicIcon: "https://i.ibb.co/HC74WhJ/foundation3.png",
 
     color: "orange",
 
@@ -395,7 +395,7 @@ export const journeyData = [
     topic: "JavaScript",
     week: 2,
     description: ["Events", "Advanced functions", "Declaring Objects"],
-    topicIcon: "https://i.ibb.co/3dTLJdZ/js.png ",
+    topicIcon: "https://i.ibb.co/3dTLJdZ/js.png",
 
     color: "orange",
 
@@ -406,7 +406,7 @@ export const journeyData = [
   {
     topic: "Front-end",
     week: 3,
-    description: ["Array methods", "DOM manipulation ", "Asynchronous Request"],
+    description: ["Array methods", "DOM manipulation", "Asynchronous Request"],
     topicIcon:
       "https://i.ibb.co/DgSyB29/Front-end-concept-icon-Software-development-kit-idea-thin-line-illustration-Service-orchestration-Pr.jpg",
 
@@ -436,7 +436,7 @@ export const journeyData = [
     topic: "Databases",
     week: 5,
     description: ["SQL", "PostgreSQL"],
-    topicIcon: "https://i.ibb.co/BgLqJXc/database.png ",
+    topicIcon: "https://i.ibb.co/BgLqJXc/database.png",
 
     color: "green",
 
@@ -448,7 +448,7 @@ export const journeyData = [
     topic: "Testing",
     week: 6,
     description: ["Introduction to Jest", "API endpoint testing", "Test-athon"],
-    topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png ",
+    topicIcon: "https://i.ibb.co/9cHvGbY/Testing.png",
 
     color: "green",
 
@@ -464,7 +464,7 @@ export const journeyData = [
       "React useState",
       "Immutable Updates to Objects and Arrays",
     ],
-    topicIcon: "https://i.ibb.co/6HRsmdw/react.png ",
+    topicIcon: "https://i.ibb.co/6HRsmdw/react.png",
 
     color: "blue",
 
@@ -475,7 +475,7 @@ export const journeyData = [
   {
     topic: "React Advanced",
     week: 8,
-    description: ["React Side Effects", "UseEffect ", "useReducer"],
+    description: ["React Side Effects", "UseEffect", "useReducer"],
     topicIcon: "https://i.ibb.co/y8brvLf/react-logo.png",
 
     color: "blue",
@@ -492,7 +492,7 @@ export const journeyData = [
       "Planning Using Desiney Ideation",
       "Presentation",
     ],
-    topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png ",
+    topicIcon: "https://i.ibb.co/zbQp3w5/client-project.png",
 
     color: "red",
 
@@ -504,7 +504,7 @@ export const journeyData = [
     topic: "Agile",
     week: 10,
     description: ["Scrum", "Kanban"],
-    topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png ",
+    topicIcon: "https://i.ibb.co/TqPRS3V/Agile.png",
 
     color: "grey",
 
@@ -516,7 +516,7 @@ export const journeyData = [
     topic: "Computer Science",
     week: 11,
     description: ["Cypress", "Typescript", "Ui Libaries"],
-    topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png ",
+    topicIcon: "https://i.ibb.co/jMcw2Cr/Computer-Science.png",
 
     color: "blue",
 
@@ -528,7 +528,7 @@ export const journeyData = [
     topic: "Architecture",
     week: 12,
     description: ["Containers", "DynamoDB", "AWS Amplify"],
-    topicIcon: "https://i.ibb.co/x8D77wp/architecture.png ",
+    topicIcon: "https://i.ibb.co/x8D77wp/architecture.png",
 
     color: "grey",
 
@@ -545,7 +545,7 @@ export const journeyData = [
       "Application Research",
       "Application Planning",
     ],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 
@@ -561,7 +561,7 @@ export const journeyData = [
       "Application coding",
       "Styling of Application",
     ],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 
@@ -578,7 +578,7 @@ export const journeyData = [
       "Depolyment Feedback",
       "Application Polishing",
     ],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 
@@ -590,7 +590,7 @@ export const journeyData = [
     topic: "Project",
     week: 16,
     description: ["Completed Application", "Presentation", "Demo"],
-    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png ",
+    topicIcon: "https://i.ibb.co/Z8T3bFf/project.png",
 
     color: "red",
 

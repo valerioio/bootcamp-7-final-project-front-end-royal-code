@@ -3,7 +3,7 @@ import "../../index.css";
 import { useState } from "react";
 //import List from "../List";
 import PinBoard from "../../components/PinBoard";
-import Calendar from "../../components/Calendar";
+// import Calendar from "../../components/Calendar";
 import { eventData } from "../../data";
 import Event from "../../components/Event";
 
@@ -77,9 +77,8 @@ export default function CoachDashboard({
         <h2 className={css.secondaryTitle}>Upcoming events</h2>
         <ul>
           {eventData.map((event, i) => (
-            <li>
+            <li key={`${i}179`}>
               <Event
-                key={`${i}159`}
                 date={new Date(event.date)}
                 eventText={event.event.join(",  ")}
               />

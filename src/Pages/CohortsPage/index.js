@@ -24,15 +24,15 @@ export default function CohortPage() {
       <section className={css.main}>
         {cohorts.map((cohort, i) => {
           return (
-            <div className={css.cohortTile}>
+            <div key={i + "701"} className={css.cohortTile}>
               <img
                 className={css.cohortImage}
                 src={cohort}
-                alt={`cohort ${i + 1} photo`}
+                alt={`cohort ${i + 1}`}
               />
               <a
                 className={css.link}
-                href={`https://main.d2o20242c1ey75.amplifyapp.com/cohorts/${
+                href={`cohorts/${
                   i + 1
                 }/bootcampers`}
               >

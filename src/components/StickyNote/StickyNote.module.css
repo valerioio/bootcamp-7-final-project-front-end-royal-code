@@ -13,18 +13,37 @@
 }
 
 .removeButton {
-  background: lightgrey;
-  border-radius: 8px;
-  font-size: 1.5em;
-  padding: 0.1em 0.3em;
-  margin: auto;
-  text-align: center;
+  background: transparent;
+  border-top: 0.15vw solid #e04c6a;
+  border-bottom: 0.15vw solid #e04c6a;
+  border-left: 0.15vw solid #e04c6a;
+  border-right: 0.15vw solid #e04c6a;
+  border-radius: 0.2vw;
+  width: 1vw;
+  height: 1vw;
+  font-size: 0.5vw;
+  color: #e04c6a;
+  font-weight: bold;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.removeButton:hover {
+  background-color: #e04c6a;
+  cursor: pointer;
+  color: #ffffff;
 }
 
 .noteText {
   grid-column-start: 2;
-  grid-column-end: 6;
-  grid-row-end: 5; /* change here to make the notes longer to 6*/
+  grid-column-end: 7;
+  grid-row-end: 7;
   grid-row-start: 3;
   font-family: courgette;
   background-color: inherit;
