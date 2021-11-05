@@ -17,15 +17,15 @@
 }
 
 .mainTitle {
-  font-family: 'Cardo';
+  font-family: "Cardo";
   font-style: medium;
-  font-size: 8rem;
+  font-size: 5rem;
   letter-spacing: -4%;
   vertical-align: top;
 }
 
 .secondaryTitle {
-  font-family: 'Cardo';
+  font-family: "Cardo";
   font-style: medium;
   font-size: 8rem;
   margin-left: 0.5em;
@@ -35,11 +35,10 @@
 }
 
 .subTitle {
-  font-family: 'Cardo';
+  font-family: "Cardo";
   font-size: 1.4rem;
   letter-spacing: -4%;
   vertical-align: top;
   margin-top: -2rem;
   margin-bottom: 2rem;
 }
-

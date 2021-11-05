@@ -1,38 +1,38 @@
 .mainTitle {
   font-family: "Cardo";
   font-style: medium;
-  font-size: 8rem;
+  font-size: 5rem;
   margin-left: 0.5em;
   letter-spacing: -4%;
   vertical-align: top;
   margin-bottom: 0.25em;
 }
-.timeLine{
+.timeLine {
   position: left;
   margin-left: 20%;
 }
 
-.littleDot{
+.littleDot {
   align-self: center;
 }
 
-.sContainer{
+.sContainer {
   display: flex;
- border: 1px solid; 
-border-color: aqua;
+  border: 1px solid;
+  border-color: aqua;
 }
-.image{
+.image {
   height: 50px;
   margin-left: auto;
   order: 2;
 }
-.list{
-padding: 2em;
-display: grid;
-align-items: center;
+.list {
+  padding: 2em;
+  display: grid;
+  align-items: center;
 }
-.topicTitle{
-  position:center;
+.topicTitle {
+  position: center;
 }
 
 /* body {
