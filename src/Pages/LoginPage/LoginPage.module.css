@@ -25,13 +25,13 @@
   letter-spacing: -4%;
   vertical-align: top;
   grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-end: auto;
 }
 
 .buttonAlign {
-  margin-left: 35%;
+  margin-left: 13em;
   align-items: center;
-  margin-top: 15%;
+  margin-top: 5em;
   grid-row-start: 3;
   grid-column-start: 3;
 }
