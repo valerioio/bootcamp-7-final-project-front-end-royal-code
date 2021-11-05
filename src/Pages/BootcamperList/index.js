@@ -26,6 +26,7 @@ export default function BootcamperList({ cohort }) {
     }
     getBootcamperData();
   }, []);
+
   return (
     <>
       <h1 className={css.mainTitle}>Cohort 7</h1>
