@@ -2,32 +2,35 @@ import css from "./CoachDashboard.module.css";
 import "../../index.css";
 import { useState } from "react";
 //import List from "../List";
+import PinBoard from "../../components/PinBoard";
+import Calendar from "../../components/Calendar";
+import { eventData } from "../../data";
+import Event from "../../components/Event";
 
-function groupParings(bootcampers, size) {
-  const groups = [];
-  for (let i = 0; i < bootcampers.length; i += size) {
-    groups.push(
-      <div key={`${i}95`}>
-        <p>
-          {size === 2 ? "Pair" : "Group"} {i / size + 1}
-        </p>
-        <li>
-          {" "}
-          {bootcampers.slice(i, i + size).map((bootcamper) => (
-            <p key={`${i}47`}>
-              {bootcamper.firstName + " " + bootcamper.lastName}
-            </p>
-          ))}{" "}
-        </li>
-        <br />
-      </div>
-    );
-  }
-  return groups;
-}
+// function groupParings(bootcampers, size) {
+//   const groups = [];
+//   for (let i = 0; i < bootcampers.length; i += size) {
+//     groups.push(
+//       <div key={`${i}95`}>
+//         <p>
+//           {size === 2 ? "Pair" : "Group"} {i / size + 1}
+//         </p>
+//         <li>
+//           {" "}
+//           {bootcampers.slice(i, i + size).map((bootcamper) => (
+//             <p key={`${i}47`}>
+//               {bootcamper.firstName + " " + bootcamper.lastName}
+//             </p>
+//           ))}{" "}
+//         </li>
+//         <br />
+//       </div>
+//     );
+//   }
+//   return groups;
+// }
 export default function CoachDashboard({
   Listings = null,
-  bootcampers,
   name = null,
   energisers,
 }) {
@@ -48,28 +51,41 @@ export default function CoachDashboard({
   return (
     <div>
       <h1 className={css.mainTitle}>Dashboard</h1>
-      <p className={css.subTitle}>{(new Date()).toDateString()}</p>
+      <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
-        <div className={`${css.energiser} container`}>
-          <h1 className={css.title}>Energiser</h1>
-          <button className={css.Button} onClick={randomiseEnergiser}>
-            Randomise
-          </button>
+        <div className={css.energiser}>
+          <h1 className={css.title}>Today's energiser is:</h1>
+
           <h4 className={css.energiserName}>
             {energisers[randomEnergiserIndex].name}
           </h4>
-          <br />
-          <p>{energisers[randomEnergiserIndex].description}</p>
-          <br />
           <a
+            className={css.energiserLink}
             href={energisers[randomEnergiserIndex].link}
             style={{ color: "blue" }}
           >
             {energisers[randomEnergiserIndex].link}
           </a>
+          <button className={css.Button} onClick={randomiseEnergiser}>
+            Randomise
+          </button>
           <br />
         </div>
-        <div className={`container`}>
+        <PinBoard />
+
+        {/* <Calendar /> */}
+        <h2 className={css.secondaryTitle}>Upcoming events</h2>
+        <ul>
+          {eventData.map((event, i) => (
+            <li>
+              <Event
+                date={new Date(event.date)}
+                eventText={event.event.join(",  ")}
+              />
+            </li>
+          ))}
+        </ul>
+        {/* <div className={`container`}>
           <h1 className={css.title}>Bootcamper pairings</h1>
           <ul className={css.list}> {groupParings(bootcampers, 2)}</ul>
         </div>
@@ -80,7 +96,7 @@ export default function CoachDashboard({
         <div className={`container`}>
           <h1 className={css.title}>Bootcamper groups of 8</h1>
           <ul className={css.list}> {groupParings(bootcampers, 8)}</ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
