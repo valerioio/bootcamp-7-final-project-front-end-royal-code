@@ -9,6 +9,7 @@ import {
   TimelineOppositeContent,
 } from "@material-ui/lab";
 import css from "./Timeline.module.css";
+import { Switch } from "@chakra-ui/react";
 
 /* plan
 import react 
@@ -40,8 +41,23 @@ export default function Journey({ data, navbarLinks, name }) {
   return (
     <>
       <h1 className={css.mainTitle}>Journey</h1>
-      <button onClick={()=>setDetail(!detail)}>Click me</button>
-      <Timeline className={`timeLine`}>
+      <div className={css.toggle}>
+        <Switch
+          isChecked={detail}
+          onChange={() => setDetail(!detail)}
+          className={css.switch}
+        />
+        <p>
+          <span className={detail ? css.graydOut : css.highlighted}>
+            Minimum
+          </span>{" "}
+          |{" "}
+          <span className={detail ? css.highlighted : css.graydOut}>
+            Detail
+          </span>
+        </p>
+      </div>
+      <Timeline className={css.timeLine}>
         {resources
           .slice(1)
           .map(({ topic, description, topicIcon, color }, i) => {

@@ -329,7 +329,7 @@ export const journeyData = [
       "Using Computational Thinking in Problem Solving",
       "Working with variables in the console",
     ],
-    topicIcon: "https://cdn0.iconfinder.com/data/icons/construction-icons-rounded/110/Brick-512.png",
+    topicIcon: "https://i.ibb.co/HC74WhJ/foundation3.png",
 
     color: "orange",
 
