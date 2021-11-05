@@ -1,0 +1,64 @@
+.stickyNote {
+  display: grid;
+  grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+  grid-template-rows: 10% 10% 20% 20% 20% 10% 10%;
+  background-color: #fdfd86;
+  line-height: 1;
+  text-align: left;
+  width: 225px;
+  height: 225px;
+  margin: 25px;
+  box-shadow: 0 0.5em 0.5em 0;
+  padding: 1em;
+}
+
+.removeButton {
+  background: transparent;
+  border-top: 0.15vw solid #e04c6a;
+  border-bottom: 0.15vw solid #e04c6a;
+  border-left: 0.15vw solid #e04c6a;
+  border-right: 0.15vw solid #e04c6a;
+  border-radius: 0.2vw;
+  width: 1vw;
+  height: 1vw;
+  font-size: 0.5vw;
+  color: #e04c6a;
+  font-weight: bold;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+.removeButton:hover {
+  background-color: #e04c6a;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.noteText {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  grid-row-end: 7;
+  grid-row-start: 3;
+  font-family: courgette;
+  background-color: inherit;
+  resize: none;
+}
+
+.noteText:focus {
+  outline: none;
+}
+
+.pin {
+  position: relative;
+  grid-column-start: 4;
+  grid-row-start: 1;
+  margin: auto;
+  padding-bottom: 2em;
+  bottom: 2em;
+}

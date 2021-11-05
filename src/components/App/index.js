@@ -1,14 +1,22 @@
 //import { useState, useEffect } from "react";
-import LoginPage from "../LoginPage";
+import LoginPage from "../../Pages/LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
-import { journeyData, energisers, nameData, recordings} from "../../data";
+import { journeyData, energisers, nameData, recordings } from "../../data";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Journey from "../Timeline";
-import Home from "../Home";
-import EnergisersPage from "../EnergisersPage";
+import Journey from "../../Pages/Timeline";
+import Home from "../../Pages/Home";
+import EnergisersPage from "../../Pages/EnergisersPage";
 import Layout from "../Layout";
 import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+import GarticPage from "../../Pages/GarticPage";
+import ReadingListPage from "../../Pages/ReadingListPage";
+import LectureRecordingsPage from "../../Pages/LectureRecordingsPage";
+import BootcamperList from "../../Pages/BootcamperList";
+import BootcamperPairsList from "../../Pages/BootcamperPairsList";
+import BootcamperFoursList from "../../Pages/BootcamperFoursList";
+import BootcamperEightsList from "../../Pages/BootcamperEightsList";
+import CohortsPage from "../../Pages/CohortsPage";
 
 const theme = createTheme({
   palette: {
@@ -60,12 +68,12 @@ function App() {
 */
 
   return (
-    <MuiThemeProvider theme = {theme}>
+    <MuiThemeProvider theme={theme}>
       <div className={CSS.App}>
         <Router>
           <Switch>
             <Route path="/home">
-              <Layout user={user}>
+              <Layout user={user} currentPage={"/home"}>
                 <Home
                   user={user}
                   nameData={nameData}
@@ -76,17 +84,57 @@ function App() {
               </Layout>
             </Route>
             <Route path="/journey">
-              <Layout user={user}>
+              <Layout user={user} currentPage={"/journey"}>
                 <Journey data={journeyData} />
               </Layout>
             </Route>
-            <Route path="/energisers">
-              <Layout user={user}>
+            <Route exact path="/energisers">
+              <Layout user={user} currentPage={"/energisers"}>
                 <EnergisersPage />
               </Layout>
             </Route>
-            <Route path="/">
+            <Route exact path="/">
               <LoginPage />
+            </Route>
+            <Route exact path="/energisers/gartic">
+              <Layout user={user} >
+                <GarticPage />
+              </Layout>
+            </Route>
+            <Route exact path="/reading-list">
+              <Layout user={user} currentPage={"/reading-list"}>
+                <ReadingListPage />
+              </Layout>
+            </Route>
+            <Route exact path="/lecture-recordings">
+              <Layout user={user} currentPage={"/lecture-recordings"}>
+                <LectureRecordingsPage />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/bootcampers">
+              <Layout user={user} currentPage={"/cohorts/7/bootcampers"}>
+                <BootcamperList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/groups-of-2">
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-2"}>
+                <BootcamperPairsList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/groups-of-4">
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-4"}>
+                <BootcamperFoursList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts/7/groups-of-8">
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-8"}>
+                <BootcamperEightsList />
+              </Layout>
+            </Route>
+            <Route exact path="/cohorts">
+              <Layout user={user} currentPage={"/cohorts"}>
+                <CohortsPage />
+              </Layout>
             </Route>
           </Switch>
         </Router>

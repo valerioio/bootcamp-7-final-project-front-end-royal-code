@@ -1,0 +1,74 @@
+.toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  float: right;
+  margin-right: 5vw;
+}
+
+.switch {
+  margin-bottom: 0.5em;
+  padding-left: 1.5em;
+}
+
+.mainTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 5rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+  margin-bottom: 0.25em;
+}
+
+.timeLine {
+  margin-top: 15vh;
+}
+
+.littleDot {
+  align-self: center !important;
+}
+
+.highlighted {
+  font-weight: 600;
+}
+.graydOut {
+  color: #7a7a7a;
+}
+
+.smallContainer {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin: 6.25em 0 2em -0.75em;
+  background-color: #f0f0f0;
+  border-width: 4px;
+  border-radius: 0.6em;
+  /* border-top-left-radius: 0; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.imageBox {
+  border-right: 1px solid #7a7a7a;
+  padding: 1em 1em 0 1em;
+}
+
+.image {
+  width: 3em;
+}
+
+.textBox {
+  padding: 1em;
+  font-family: "Josefin sans";
+}
+
+.topic {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.topicList {
+  padding-left: 2em;
+}

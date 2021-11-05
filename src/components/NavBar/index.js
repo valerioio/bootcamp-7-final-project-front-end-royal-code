@@ -1,23 +1,45 @@
 import React from "react";
-import { Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Text, Spacer } from "@chakra-ui/react";
 import css from "./NavBar.module.css";
 import logo from "../../socLogo.png";
 import { v4 as uuidv4 } from "uuid";
 import LogoutButton from "../LogoutButton";
+// import TimelineIcon from "@material-ui/icons/Timeline";
+import {
+  MdWindow,
+  MdTimeline,
+  MdOutlineWbSunny,
+  MdBook,
+  MdCameraRoll,
+  MdPeopleOutline,
+} from "react-icons/md";
 
 const navbarLinksCoaches = [
-  { linkText: "Dashboard", href: "/home" },
-  // { linkText: "Curriculum", href: "/curriculum" },
-  { linkText: "Energiser list", href: "/energisers" },
+  { linkText: "Dashboard", href: "/home", icon: <MdWindow /> },
+  // { linkText: "Curriculum", href: "/curriculum", icon: null},
+  {
+    linkText: "Energiser list",
+    href: "/energisers",
+    icon: <MdOutlineWbSunny />,
+  },
+  {
+    linkText: "Cohorts",
+    href: "/cohorts",
+    icon: <MdPeopleOutline />,
+  },
 ];
 const navbarLinksBootcampers = [
-  { linkText: "Dashboard", href: "/home" },
-  { linkText: "Journey", href: "/journey" },
-  // { linkText: "Reading List", href: "/reading" },
-  // { linkText: "Recordings", href: "/recordings" },
+  { linkText: "Dashboard", href: "/home", icon: <MdWindow /> },
+  { linkText: "Journey", href: "/journey", icon: <MdTimeline /> },
+  { linkText: "Reading List", href: "/reading-list", icon: <MdBook /> },
+  {
+    linkText: "Lecture Recordings",
+    href: "/lecture-recordings",
+    icon: <MdCameraRoll />,
+  },
 ];
 
-const NavBar = ({ email }) => {
+const NavBar = ({ email, currentPage }) => {
   return (
     <Flex>
       <Flex
@@ -26,16 +48,11 @@ const NavBar = ({ email }) => {
         direction="column"
         align="center"
         wrap="wrap"
-        w="10em"
+        w="15em"
         h="100vh"
-        p={3}
-        bg="#005b4f"
-        color="white"
       >
-        <img
-          src={logo}
-          alt="logo"
-        />
+        <br />
+        <img src={logo} alt="logo" width="90%" />
         <Flex
           as="nav"
           direction="column"
@@ -43,7 +60,7 @@ const NavBar = ({ email }) => {
           justify="space-around"
           wrap="wrap"
           w="100%"
-          mt="30%"
+          mt="10%"
         >
           {(email === "bootcamper@schoolofcode.co.uk"
             ? navbarLinksBootcampers
@@ -55,14 +72,24 @@ const NavBar = ({ email }) => {
               <Link
                 key={uuidv4()}
                 href={link.href}
-                style={{ margin: "1.5em 0" }}
+                className={
+                  link.href === currentPage
+                    ? `${css.link} ${css.selected}`
+                    : css.link
+                }
               >
-                <Text display="block">{link.linkText}</Text>
+                <div className={css.icon}>{link.icon}</div>
+                <Text pt="0.25em" display="block">
+                  {link.linkText}
+                </Text>
               </Link>
             );
           })}
         </Flex>
-        <LogoutButton />
+        <Spacer />
+        <div className={css.link}>
+          <LogoutButton />
+        </div>
       </Flex>
     </Flex>
   );

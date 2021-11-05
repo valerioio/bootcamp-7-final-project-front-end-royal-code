@@ -10,11 +10,19 @@ function ListItem({ text }) {
     <>
       <li className={CSS.listContainer}>
         {keys.map((key, i) => {
-          return (
-            <p>
-              {capsKeys[i]}: {text[key]}
-            </p>
-          );
+          if (typeof text[key] === "string" && text[key].includes("http")) {
+            return (
+              <a className={CSS.link} href={text[key]}>
+                {text[key]}
+              </a>
+            );
+          } else {
+            return (
+              <p>
+                {capsKeys[i]}: {text[key]}
+              </p>
+            );
+          }
         })}
       </li>
       <br />

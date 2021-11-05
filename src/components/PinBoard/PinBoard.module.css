@@ -1,0 +1,64 @@
+.pinBoard {
+  background-image: url("https://i.ibb.co/ysJnjxJ/pinboard.jpg");
+  width: 65vw;
+  min-height: 80vh;
+  height: auto;
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addNoteButton {
+  background: white;
+  border-top: .15vw solid #00675b;
+  border-bottom: .15vw solid #00675b;
+  border-left: .15vw solid #00675b;
+  border-right: .15vw solid #00675b;
+  border-radius: .2vw;
+  width: 2vw;
+  height: 2vw;
+  font-size: 1vw;
+  font-weight: bold;
+  color: #00675b;
+  -webkit-transition: background-color 0.5s ease-out;
+  -moz-transition: background-color 0.5s ease-out;
+  -o-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
+  -webkit-transition: color 0.5s ease-out;
+  -moz-transition: color 0.5s ease-out;
+  -o-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out; 
+}
+
+ .addNoteButton:hover {
+  background-color: #00675B;
+  cursor: pointer;
+  color: #ffffff;
+} 
+
+.submitNoteButton {
+  background: lightgrey;
+  border-radius: 8px;
+  font-size: 1.5em;
+  padding: 0.1em 0.3em;
+  margin: auto;
+  text-align: center;
+}
+
+.noteInput {
+  border-radius: 8px;
+}
+
+.stickyNote {
+  display: grid;
+  grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+  grid-template-rows: 10% 10% 20% 20% 20% 10% 10%;
+  background-color: #fdfd86;
+  line-height: 1;
+  text-align: left;
+  width: 225px;
+  height: 225px;
+  margin: 25px;
+  box-shadow: 0 0.5em 0.5em 0;
+  padding: 1em;
+}

@@ -1,6 +1,14 @@
+.logout {
+  width: 100%;
+  height: 4em;
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: "Josefin Sans";
+  font-size: large;
+}
+
 .Button {
   border-radius: 3px;
-
   background-color: #63a4ff;
   color: #000000;
   font-size: 1em;

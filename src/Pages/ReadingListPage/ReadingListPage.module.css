@@ -1,0 +1,34 @@
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: #800000;
+  text-decoration: underline;
+}
+
+.mainTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 5rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+  margin-bottom: 0.25em;
+}
+
+.main {
+  border: 1px solid;
+  padding: 10vh;
+}
+
+.data {
+  padding: 1.5em;
+  line-height: 2;
+}
+
+.title {
+  font-size: 1.2em;
+  text-decoration: underline;
+  font-weight: bold;
+}

@@ -1,0 +1,74 @@
+.mainTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 5rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+}
+
+.subTitle {
+  font-family: "Cardo";
+  font-size: 1.4rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.list {
+  margin-left: 25%;
+  margin-right: auto;
+  width: 50%;
+  left: 100px;
+}
+
+.title {
+  margin: 0.5em 0;
+  text-align: center;
+  font-size: x-large;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.energiser {
+  display: grid;
+  padding: 1em;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.energiserName {
+  margin-top: 1em;
+  font-size: large;
+  margin: auto;
+}
+
+.Button {
+  border: 0.1em solid;
+  border-color: #1d5b40 !important;
+  font-size: 1em;
+  padding: 0 10px;
+  height: 2em !important;
+  display: block;
+  width: 10vw;
+  margin: auto;
+}
+
+.secondaryTitle {
+  font-family: "Cardo";
+  font-style: medium;
+  font-size: 5rem;
+  letter-spacing: -4%;
+  vertical-align: top;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.energiserLink {
+  margin: auto;
+  padding-bottom: 1em;
+}
