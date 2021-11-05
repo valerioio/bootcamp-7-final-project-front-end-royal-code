@@ -12,18 +12,17 @@
   font-family: "Cardo";
   font-style: medium;
   font-size: 5rem;
-  margin-left: 0.5em;
   letter-spacing: -4%;
   vertical-align: top;
   margin-bottom: 0.25em;
 }
 
 .main {
-  margin-left: 3em;
 }
 
 .recordingDetails {
-  padding: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
   line-height: 2;
 }
 
