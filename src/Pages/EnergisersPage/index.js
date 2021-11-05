@@ -1,7 +1,22 @@
-import { energisers } from "../../data";
+//import { energisers } from "../../data";
 import css from "./EnergisersPage.module.css";
+import React, { useState, useEffect } from "react";
 
 const EnergisersPage = () => {
+  const [energisers, setEnergisers] = useState([]);
+
+  useEffect(() => {
+    async function getEnergiserData() {
+      const res = await fetch(
+        "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/energisers"
+      );
+      const data = await res.json();
+      setEnergisers(data);
+      return data;
+    }
+    getEnergiserData();
+  }, []);
+
   return (
     <>
       <h1 className={css.mainTitle}>Energisers</h1>
