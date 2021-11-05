@@ -77,9 +77,8 @@ export default function CoachDashboard({
         <h2 className={css.secondaryTitle}>Upcoming events</h2>
         <ul>
           {eventData.map((event, i) => (
-            <li>
+            <li key={`${i}179`}>
               <Event
-                key={`${i}159`}
                 date={new Date(event.date)}
                 eventText={event.event.join(",  ")}
               />

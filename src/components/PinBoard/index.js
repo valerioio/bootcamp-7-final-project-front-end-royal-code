@@ -56,7 +56,6 @@ export default function PinBoard() {
   // update note state (spread and slice)
   function deleteNote(index) {
     const newNotes = [...notes.slice(0, index), ...notes.slice(index + 1)];
-    console.log(notes, newNotes);
     localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     setNotes(newNotes);
   }
@@ -78,7 +77,7 @@ export default function PinBoard() {
       </button>
       {notes.map((note, index) => {
         return (
-          <StickyNote
+          <StickyNote key={index+'454'}
             text={note}
             deleteNote={() => deleteNote(index)}
             changeNote={(noteText) => changeNote(index, noteText)}

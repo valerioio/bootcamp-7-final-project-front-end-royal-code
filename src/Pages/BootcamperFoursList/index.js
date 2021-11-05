@@ -53,13 +53,13 @@ export default function BootcamperFourList({ cohort }) {
         <h2 className={css.secondaryTitle}>Week {week.count}</h2>
         <div className={css.content}>
           <ul className={css.bootcampersList}>
-            {weeksOf4[week.count - 1].groups.map((group) => {
+            {weeksOf4[week.count - 1].groups.map((group, i) => {
               return (
-                <li className={css.pairs}>
-                  {group.map((bootcamper) => {
+                <li key={i + "041"} className={css.pairs}>
+                  {group.map((bootcamper, j) => {
                     return (
-                      <div className={css.bootcamper}>
-                        <a className={css.link} href={bootcamper.link}>
+                      <div key={i + "041" + j} className={css.bootcamper}>
+                        <a className={css.link} href={''}> {/* href={bootcamper.link} <- bootcamper is a string */}
                           {bootcamper}
                         </a>
                       </div>

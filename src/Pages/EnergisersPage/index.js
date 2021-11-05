@@ -9,9 +9,7 @@ const EnergisersPage = () => {
         {energisers.map((energiser, i) => {
           return (
             <div key={`${i}54`} className={css.energiser}>
-              <a
-                href={`https://main.d2o20242c1ey75.amplifyapp.com/energisers/${energiser.name.toLowerCase()}`}
-              >
+              <a href={`energisers/${energiser.name.toLowerCase()}`}>
                 <img
                   src={energiser.logo}
                   alt={energiser.name + " logo"}
@@ -20,7 +18,7 @@ const EnergisersPage = () => {
               </a>
               <a
                 className={css.link}
-                href={`https://main.d2o20242c1ey75.amplifyapp.com/energisers/${energiser.name.toLowerCase()}`}
+                href={`energisers/${energiser.name.toLowerCase()}`}
               >
                 {energiser.name}
               </a>

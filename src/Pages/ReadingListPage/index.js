@@ -16,14 +16,14 @@ export default function ReadingListPage() {
     <>
       <h1 className={css.mainTitle}>Reading List</h1>
       <div className={css.main}>
-        {journeyData.map((week) => {
+        {journeyData.map((week, i) => {
           return (
-            <div className={css.data}>
+            <div key={i + "749"} className={css.data}>
               <h1
                 className={css.title}
               >{`Week ${week.week}: ${week.topic}`}</h1>
-              {week.description.map((description) => {
-                return <p>{description}</p>;
+              {week.description.map((description, j) => {
+                return <p key={j + "749" + i}>{description}</p>;
               })}
               <a className={css.link} href={week.link}>
                 {week.link}

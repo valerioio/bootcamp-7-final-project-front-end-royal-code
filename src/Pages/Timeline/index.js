@@ -62,7 +62,7 @@ export default function Journey({ data, navbarLinks, name }) {
           .slice(1)
           .map(({ topic, description, topicIcon, color }, i) => {
             return (
-              <TimelineItem>
+              <TimelineItem key={i + "468"}>
                 <TimelineOppositeContent
                   style={{
                     maxWidth: "0",
@@ -94,8 +94,8 @@ export default function Journey({ data, navbarLinks, name }) {
                       <h4 className={css.topic}>{topic}</h4>
                       {detail ? (
                         <ul className={css.topicList}>
-                          {description.map((subTopic) => {
-                            return <li>{subTopic}</li>;
+                          {description.map((subTopic, j) => {
+                            return <li key={j + "965" + i}>{subTopic}</li>;
                           })}
                         </ul>
                       ) : null}

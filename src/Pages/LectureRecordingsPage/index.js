@@ -16,9 +16,9 @@ export default function LectureRecordingsPage() {
     <>
       <h1 className={css.mainTitle}>Lecture Recordings</h1>
       <div className={css.main}>
-        {recordings.map((recording) => {
+        {recordings.map((recording, i) => {
           return (
-            <div className={css.recordingDetails}>
+            <div key={i + "951"} className={css.recordingDetails}>
               <h1 className={css.title}>{recording.title}</h1>
               <p>{recording.date}</p>
               <a className={css.link} href={recording.link}>

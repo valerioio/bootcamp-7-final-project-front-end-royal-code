@@ -21,9 +21,8 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
         <h2 className={css.secondaryTitle}>Upcoming events</h2>
         <ul>
           {eventData.map((event, i) => (
-            <li>
+            <li key={`${i}147`}>
               <Event
-                key={`${i}147`}
                 date={new Date(event.date)}
                 eventText={event.event.join(",  ")}
               />
