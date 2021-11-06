@@ -37,7 +37,7 @@ export default function Journey({ navbarLinks, name }) {
       topic: "loading",
       link: "",
       thumbnail: "",
-      descripton: [""],
+      description: [""],
     },
   ]);
 

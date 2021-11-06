@@ -18,7 +18,7 @@ export default function ReadingListPage() {
       topic: "loading",
       link: "",
       thumbnail: "",
-      descripton: [""],
+      description: [""],
     },
   ]);
 
