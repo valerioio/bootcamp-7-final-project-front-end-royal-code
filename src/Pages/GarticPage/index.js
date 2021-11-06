@@ -20,6 +20,7 @@ export default function GarticPage() {
       link: "",
       description: "",
       logo: "",
+      bootcamperImage: "",
       id: "",
       name: "Loading",
       color: "",
