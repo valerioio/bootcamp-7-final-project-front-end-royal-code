@@ -10,6 +10,7 @@ import {
 } from "@material-ui/lab";
 import css from "./Timeline.module.css";
 import { Switch } from "@chakra-ui/react";
+import changeOpacity from "../../helpers/colors";
 
 /* plan
 import react 
@@ -85,9 +86,15 @@ export default function Journey({ data, navbarLinks, name }) {
                     className={css.smallContainer}
                     style={{
                       borderColor: color,
+                      backgroundColor: changeOpacity(color, 0.1),
                     }}
                   >
-                    <div className={css.imageBox}>
+                    <div
+                      className={css.imageBox}
+                      style={{
+                        borderRight: `1px solid ${color}`,
+                      }}
+                    >
                       <img src={topicIcon} alt={topic} className={css.image} />
                     </div>
                     <div className={css.textBox}>
