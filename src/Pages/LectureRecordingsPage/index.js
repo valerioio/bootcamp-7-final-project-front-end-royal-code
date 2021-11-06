@@ -23,7 +23,6 @@ export default function LectureRecordingsPage() {
       const sortedData = data.sort(function (a, b) {
         return a.date.slice(0, 2) - b.date.slice(0, 2);
       });
-      console.log(sortedData);
       setRecordings(sortedData);
       return data;
     }

@@ -43,16 +43,13 @@ export default function Journey({ navbarLinks, name }) {
 
   useEffect(() => {
     async function getResourceData() {
-      console.log("useEffect");
       const res = await fetch(
         "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/resources"
       );
       const data = await res.json();
-      console.log(data);
       const sortedData = data.sort(function (a, b) {
         return a.week - b.week;
       });
-      console.log(sortedData);
       setData(sortedData);
       return data;
     }

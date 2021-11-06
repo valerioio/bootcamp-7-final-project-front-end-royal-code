@@ -37,7 +37,6 @@ export default function BootcamperPairList({ cohort }) {
       const sortedData = data.sort(function (a, b) {
         return a.week - b.week;
       });
-      console.log(sortedData);
       setWeeksOf2(sortedData);
       return data;
     }
