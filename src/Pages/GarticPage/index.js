@@ -22,6 +22,7 @@ export default function GarticPage() {
       logo: "",
       id: "",
       name: "Loading",
+      color: "",
     },
   ]);
 
