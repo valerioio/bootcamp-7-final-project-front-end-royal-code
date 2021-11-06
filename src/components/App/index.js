@@ -3,7 +3,12 @@ import LoginPage from "../../Pages/LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
 import { journeyData, energisers, nameData, recordings } from "../../data";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Journey from "../../Pages/Timeline";
 import Home from "../../Pages/Home";
 import EnergisersPage from "../../Pages/EnergisersPage";
@@ -17,6 +22,7 @@ import BootcamperPairsList from "../../Pages/BootcamperPairsList";
 import BootcamperFoursList from "../../Pages/BootcamperFoursList";
 import BootcamperEightsList from "../../Pages/BootcamperEightsList";
 import CohortsPage from "../../Pages/CohortsPage";
+import WorkInProgress from "../../Pages/WorkInProgress";
 
 const theme = createTheme({
   palette: {
@@ -136,6 +142,12 @@ function App() {
                 <CohortsPage />
               </Layout>
             </Route>
+            <Route exact path="/in-progress">
+              <Layout user={user}>
+                <WorkInProgress />
+              </Layout>
+            </Route>
+            <Redirect to="/in-progress" />
           </Switch>
         </Router>
       </div>
