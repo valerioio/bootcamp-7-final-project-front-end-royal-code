@@ -15,14 +15,13 @@ import css from "./GarticPage.module.css";
 export default function GarticPage() {
   const [gartic, setGartic] = useState([
     {
-      screenshot: "https://i.ibb.co/R2PRJz6/Charades-energiser.png",
-      createdAt: "2021-11-05T12:52:21.718Z",
-      link: "https://psycatgames.com/app/charades/",
-      description:
-        ' Split your group into teams and use a charades idea generator to choose your words and phrases. \n        The person who\'s acting out the charade uses the Zoom "spotlight" feature, and their team has one minute to figure out the phrase.',
-      logo: "https://i.ibb.co/426pW2q/e86abfcf-83e3-4842-a52b-82d48d9c721d.png",
-      id: "Charades",
-      name: "Charades",
+      screenshot: "",
+      createdAt: "",
+      link: "",
+      description: "",
+      logo: "",
+      id: "",
+      name: "Loading",
     },
   ]);
 
