@@ -103,7 +103,10 @@ function App() {
               <LoginPage />
             </Route>
             <Route exact path="/energisers/gartic">
-              <Layout user={user} art={true}>
+              <Layout
+                user={user}
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+              >
                 <GarticPage />
               </Layout>
             </Route>

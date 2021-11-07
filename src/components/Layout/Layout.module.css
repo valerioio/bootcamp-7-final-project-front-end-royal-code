@@ -1,14 +1,12 @@
-.mainArt {
+.mainImage {
   grid-column-start: 2;
   display: block;
   position: relative;
   padding-left: 5rem;
 }
 
-.mainArt::after {
+.mainImageAfter {
   content: "";
-  background: url("https://i.ibb.co/djGMmMV/splash.jpg");
-  opacity: 0.2;
   top: 0;
   left: 0;
   bottom: 0;
@@ -17,7 +15,7 @@
   z-index: -1 !important;
 }
 
-.layoutArt {
+.layoutImage {
   display: grid;
   grid-template-columns: 15rem auto;
 }
