@@ -7,7 +7,7 @@
 // sticky note for each note in list.
 // persist list in local storage
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import StickyNote from "../StickyNote";
 import css from "./PinBoard.module.css";
 
@@ -23,6 +23,8 @@ export default function PinBoard() {
     "and another",
     "and another",
   ]);
+  const [coords, setCoords] = useState(null);
+  const pinboardRef = useRef();
   useEffect(() => {
     if (!localStorage.getItem(NOTES)) {
       localStorage.setItem(NOTES, notes.join(SEPARATOR));
@@ -33,6 +35,13 @@ export default function PinBoard() {
       );
     }
     setNotes(localStorage.getItem(NOTES).split(SEPARATOR));
+    const boundingClientRect = pinboardRef.current.getBoundingClientRect();
+    setCoords({
+      left: boundingClientRect.left,
+      right: boundingClientRect.right,
+      top: boundingClientRect.top,
+      bottom: boundingClientRect.bottom,
+    });
   }, []);
 
   // plan for addNote
@@ -54,7 +63,6 @@ export default function PinBoard() {
     // localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     // setNotes(newNotes);
   }
-
   function changeNote(index, noteText) {
     const newNotes = [
       ...notes.slice(0, index),
@@ -66,20 +74,23 @@ export default function PinBoard() {
   }
 
   return (
-    <div className={css.pinBoard}>
+    <div className={css.pinBoard} ref={pinboardRef}>
       <button className={css.addNoteButton} onClick={addNote}>
         +
       </button>
-      {notes.map((note, index) => {
-        return (
-          <StickyNote
-            key={index + "454"}
-            text={note}
-            deleteNote={() => deleteNote(index)}
-            changeNote={(noteText) => changeNote(index, noteText)}
-          />
-        );
-      })}
+      {coords
+        ? notes.map((note, index) => {
+            return (
+              <StickyNote
+                key={index + "454"}
+                text={note}
+                deleteNote={() => deleteNote(index)}
+                changeNote={(noteText) => changeNote(index, noteText)}
+                pinboardCoords={coords}
+              />
+            );
+          })
+        : null}
     </div>
   );
 }
