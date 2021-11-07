@@ -16,9 +16,11 @@ import { useRef } from "react";
 const COLORS = ["lavenderblush", "honeydew", "lightyellow", "lightcyan"];
 
 export default function StickyNote({ text, deleteNote, changeNote }) {
+  console.log(0);
   const [color, setColor] = useState(
     COLORS[Math.floor(Math.random() * COLORS.length)]
   );
+  const [zIndex, setZIndex] = useState(0);
   const constraintsRef = useRef(null);
   return (
     <motion.div
@@ -29,13 +31,20 @@ export default function StickyNote({ text, deleteNote, changeNote }) {
       className={css.stickyNote}
       style={{
         backgroundColor: color,
+        zIndex: zIndex,
       }}
     >
       <div className={css.pin}>
         <Pin />
       </div>
 
-      <button className={css.removeButton} onClick={deleteNote}>
+      <button
+        className={css.removeButton}
+        onClick={() => {
+          deleteNote();
+          setZIndex(-1);
+        }}
+      >
         x
       </button>
       <textarea

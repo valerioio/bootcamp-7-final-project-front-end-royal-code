@@ -12,6 +12,7 @@ import StickyNote from "../StickyNote";
 import css from "./PinBoard.module.css";
 
 const SEPARATOR = "|";
+const DELETE = "!";
 const NOTES = "notes";
 
 export default function PinBoard() {
@@ -26,6 +27,11 @@ export default function PinBoard() {
   useEffect(() => {
     if (!localStorage.getItem(NOTES)) {
       localStorage.setItem(NOTES, notes.join(SEPARATOR));
+    } else {
+      localStorage.setItem(
+        NOTES,
+        localStorage.getItem(NOTES).replace(/(\|!)|(!\|)/g, "") // DELETE === '!'
+      );
     }
     setNotes(localStorage.getItem(NOTES).split(SEPARATOR));
   }, []);
@@ -34,30 +40,21 @@ export default function PinBoard() {
   // get note text from noteText state
   // add new note text to note array
   // update note state (spread)
+  console.log(localStorage.getItem(NOTES));
   function addNote() {
     const newNotes = [...notes, ""];
-    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     setNotes(newNotes);
-    // return (
-    //   <div className={css.stickyNote}>
-    //     <input className={css.noteInput} type="text"></input>
-    //     <button
-    //       className={css.submitNoteButton}
-    //       onClick={setNotes([...notes, noteText])}
-    //     >
-    //       Add Note
-    //     </button>
-    //   </div>
-    // );
+    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
   }
 
   // plan for deleteNote
   // delete specific note from array
   // update note state (spread and slice)
   function deleteNote(index) {
-    const newNotes = [...notes.slice(0, index), ...notes.slice(index + 1)];
-    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
-    setNotes(newNotes);
+    changeNote(index, DELETE);
+    // const newNotes = [...notes.slice(0, index), ...notes.slice(index + 1)];
+    // localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
+    // setNotes(newNotes);
   }
 
   function changeNote(index, noteText) {
@@ -66,8 +63,8 @@ export default function PinBoard() {
       noteText,
       ...notes.slice(index + 1),
     ];
-    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
     setNotes(newNotes);
+    localStorage.setItem(NOTES, newNotes.join(SEPARATOR));
   }
 
   return (
@@ -77,7 +74,8 @@ export default function PinBoard() {
       </button>
       {notes.map((note, index) => {
         return (
-          <StickyNote key={index+'454'}
+          <StickyNote
+            key={index + "454"}
             text={note}
             deleteNote={() => deleteNote(index)}
             changeNote={(noteText) => changeNote(index, noteText)}
