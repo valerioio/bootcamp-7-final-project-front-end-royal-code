@@ -23,14 +23,13 @@ export default function PinBoard() {
     "and another",
     "and another",
   ]);
-  // const [noteText, setNoteText] = useState("");
   useEffect(() => {
     if (!localStorage.getItem(NOTES)) {
       localStorage.setItem(NOTES, notes.join(SEPARATOR));
     } else {
       localStorage.setItem(
         NOTES,
-        localStorage.getItem(NOTES).replace(/(\|!)|(!\|)/g, "") // DELETE === '!'
+        localStorage.getItem(NOTES).replace(/(\|!)|(!\|)|!/g, "") // DELETE === '!'
       );
     }
     setNotes(localStorage.getItem(NOTES).split(SEPARATOR));
@@ -40,7 +39,6 @@ export default function PinBoard() {
   // get note text from noteText state
   // add new note text to note array
   // update note state (spread)
-  console.log(localStorage.getItem(NOTES));
   function addNote() {
     const newNotes = [...notes, ""];
     setNotes(newNotes);

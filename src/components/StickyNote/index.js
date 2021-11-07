@@ -16,7 +16,6 @@ import { useRef } from "react";
 const COLORS = ["lavenderblush", "honeydew", "lightyellow", "lightcyan"];
 
 export default function StickyNote({ text, deleteNote, changeNote }) {
-  console.log(0);
   const [color, setColor] = useState(
     COLORS[Math.floor(Math.random() * COLORS.length)]
   );
