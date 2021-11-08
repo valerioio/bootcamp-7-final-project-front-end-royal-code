@@ -1,0 +1,10 @@
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -5rem;
+}
+
+.image {
+  width: 30vw;
+}

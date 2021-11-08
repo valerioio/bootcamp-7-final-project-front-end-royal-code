@@ -3,6 +3,7 @@ import css from "./BootcamperDashboard.module.css";
 import PinBoard from "../../components/PinBoard";
 import Event from "../../components/Event";
 import { eventData } from "../../data";
+
 function dateInTheFuture(daysFromToday) {
   return new Date(new Date().setDate(new Date().getDate() + daysFromToday));
 }

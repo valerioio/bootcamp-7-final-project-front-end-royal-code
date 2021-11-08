@@ -42,7 +42,7 @@
   align-items: stretch;
   justify-content: flex-start;
   margin: 6.25em 0 2em -0.75em;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
   border-width: 4px;
   border-radius: 0.6em;
   /* border-top-left-radius: 0; */
@@ -50,7 +50,7 @@
 }
 
 .imageBox {
-  border-right: 1px solid #7a7a7a;
+  /* border-right: 1px solid #7a7a7a; */
   padding: 1em 1em 0 1em;
 }
 
