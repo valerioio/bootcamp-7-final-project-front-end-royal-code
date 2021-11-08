@@ -4,6 +4,7 @@
   font-size: 5rem;
   letter-spacing: -4%;
   vertical-align: top;
+  margin-bottom: 2.5rem;
 }
 
 .main {
@@ -12,15 +13,20 @@
 }
 
 .cohortImage {
-  width: 20vw;
-  height: auto;
+
+  height: 20vh;
 }
 
 .cohortTile {
   padding: 1.5em;
   align-self: baseline;
+  font-family: "Cardo";
+  margin-bottom: 2.5rem;
+
+
 }
 
 .link {
   font-size: 1.5em;
+
 }

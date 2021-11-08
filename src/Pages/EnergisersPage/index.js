@@ -21,10 +21,10 @@ const EnergisersPage = () => {
     <>
       <h1 className={css.mainTitle}>Energisers</h1>
       <div className={css.main}>
-        {energisers.map((energiser, i) => {
+        {energisers.map((energiser, i) => {console.log(`energisers/${energiser.name.toLowerCase().replaceAll(" ", "-")}`)
           return (
             <div key={`${i}54`} className={css.energiser} style={{borderColor:energiser.color}}>
-              <a href={`energisers/${energiser.name.toLowerCase()}`}>
+              <a href={`energisers/${energiser.name.toLowerCase().replaceAll(" ", "-")}`}>
                 <img
                   src={energiser.logo}
                   alt={energiser.name + " logo"}

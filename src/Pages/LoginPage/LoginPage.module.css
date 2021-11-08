@@ -19,7 +19,7 @@
 .title {
   font-family: "Cardo";
   font-style: medium;
-  font-size: 10em;
+  font-size: 7.5em;
   letter-spacing: -4%;
   text-align: center;
   letter-spacing: -4%;
@@ -36,6 +36,7 @@
   grid-column-start: 3;
 }
 
+
 .banner {
   border-top: 0.15em solid;
   border-color: #00675b;
@@ -47,4 +48,5 @@
   z-index: -1;
   grid-row-start: 4;
   grid-row-end: 5;
+  
 }

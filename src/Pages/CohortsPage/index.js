@@ -30,6 +30,7 @@ export default function CohortPage() {
                 src={cohort}
                 alt={`cohort ${i + 1}`}
               />
+              <br />
               <a
                 className={css.link}
                 href={`cohorts/${

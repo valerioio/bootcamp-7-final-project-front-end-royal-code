@@ -14,7 +14,7 @@ export default function LoginPage() {
   return (
     <div className={styles.background}>
       <img className={styles.logo} src={logo} alt="logo" />
-      <h1 className={styles.title}>Login.</h1>
+      <h1 className={styles.title}>Codely</h1>
       <div className={styles.buttonAlign}>
         <LoginButton className={styles.login} />
       </div>

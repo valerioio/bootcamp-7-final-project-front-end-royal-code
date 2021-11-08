@@ -35,17 +35,22 @@
 }
 
 .energiser {
-  display: grid;
+ /* display: grid;*/
+ display: flex;
   padding: 1em;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin: auto;
+  margin-bottom: 3em; 
+  width: 40vw;
 }
 
 .energiserName {
-  margin-top: 1em;
+   margin-top: 10em; 
   font-size: large;
   margin: auto;
+  
+
 }
 
 .Button {
@@ -57,6 +62,12 @@
   display: block;
   width: 10vw;
   margin: auto;
+  background-color: rgb(193, 218, 215, 0.3);
+ 
+}
+.Button:hover {
+  background-color: rgb(193, 218, 215, 0.3);
+  border-right: 1em solid #00675b !important;
 }
 
 .secondaryTitle {
@@ -69,7 +80,4 @@
   margin-top: 1em;
 }
 
-.energiserLink {
-  margin: auto;
-  padding-bottom: 1em;
-}
+

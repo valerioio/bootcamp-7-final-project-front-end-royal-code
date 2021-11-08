@@ -7,9 +7,10 @@ const Layout = ({
   user,
   currentPage,
   color = "white",
-  image,
+  image= 'url("https://i.ibb.co/19xnwCL/bg.jpg")',
   opacity,
 }) => {
+
   return (
     <div
       className={image ? css.layoutImage : css.layout}

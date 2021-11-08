@@ -23,6 +23,7 @@ import BootcamperFoursList from "../../Pages/BootcamperFoursList";
 import BootcamperEightsList from "../../Pages/BootcamperEightsList";
 import CohortsPage from "../../Pages/CohortsPage";
 import WorkInProgress from "../../Pages/WorkInProgress";
+import EnergiserPage from "../../Pages/EnergiserPage";
 
 const theme = createTheme({
   palette: {
@@ -145,7 +146,46 @@ function App() {
                 user={user}
                 image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
               >
-                <GarticPage />
+              <EnergiserPage energiserName= 'Gartic'/>
+              </Layout>
+            </Route>
+            <Route exact path="/energisers/countdown">
+              <Layout
+                user={user}
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+              >
+              <EnergiserPage energiserName= 'Countdown'/>
+              </Layout>
+            </Route>  <Route exact path="/energisers/higher-or-lower">
+              <Layout
+                user={user}
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+              >
+              <EnergiserPage energiserName= 'Higher or Lower'/>
+              </Layout>
+            </Route>
+            <Route exact path="/energisers/scattergories">
+              <Layout
+                user={user}
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+              >
+              <EnergiserPage energiserName= 'Scattergories'/>
+              </Layout>
+            </Route>
+            <Route exact path="/energisers/articulate">
+              <Layout
+                user={user}
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+              >
+              <EnergiserPage energiserName= 'Articulate'/>
+              </Layout>
+            </Route>
+            <Route exact path="/energisers/charades">
+              <Layout
+                user={user}
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+              >
+              <EnergiserPage energiserName= 'Charades'/>
               </Layout>
             </Route>
             <Route exact path="/reading-list">
@@ -174,12 +214,14 @@ function App() {
               </Layout>
             </Route>
             <Route exact path="/cohorts/7/groups-of-8">
-              <Layout user={user} currentPage={"/cohorts/7/groups-of-8"}>
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-8"}
+              >
                 <BootcamperEightsList />
               </Layout>
             </Route>
             <Route exact path="/cohorts">
-              <Layout user={user} currentPage={"/cohorts"}>
+              <Layout user={user} currentPage={"/cohorts"}
+              image='url("https://i.ibb.co/19xnwCL/bg.jpg")' opacity="20%">
                 <CohortsPage />
               </Layout>
             </Route>
