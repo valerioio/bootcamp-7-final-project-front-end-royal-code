@@ -4,6 +4,7 @@ import PinBoard from "../../components/PinBoard";
 import Event from "../../components/Event";
 //import { eventData } from "../../data";
 import { useEffect, useRef, useState } from "react";
+
 function dateInTheFuture(daysFromToday) {
   return new Date(new Date().setDate(new Date().getDate() + daysFromToday));
 }
