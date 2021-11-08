@@ -1,6 +1,6 @@
 import css from "./CoachDashboard.module.css";
 import "../../index.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 //import List from "../List";
 import PinBoard from "../../components/PinBoard";
 // import Calendar from "../../components/Calendar";
@@ -29,11 +29,21 @@ import Event from "../../components/Event";
 //   }
 //   return groups;
 // }
-export default function CoachDashboard({
-  Listings = null,
-  name = null,
-  energisers,
-}) {
+export default function CoachDashboard({ name = null, energisers }) {
+  const [eventData, setEventData] = useState([]);
+
+  useEffect(() => {
+    async function getEventData() {
+      const res = await fetch(
+        "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/events"
+      );
+      const data = await res.json();
+      setEventData(data);
+      return data;
+    }
+    getEventData();
+  }, []);
+
   if (!localStorage.getItem("initialEnergiser")) {
     localStorage.setItem(
       "initialEnergiser",

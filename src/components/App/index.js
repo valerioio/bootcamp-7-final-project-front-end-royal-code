@@ -1,4 +1,4 @@
-//import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import LoginPage from "../../Pages/LoginPage";
 import CSS from "./App.module.css";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -49,29 +49,67 @@ function App() {
   // async function, await fetch to endpoints
   // res.json returned data
   // call function
-  /*
-  useEffect(() => {
-    async function getAllData() {
-      const energiserResponse = await fetch(
-        "https://xsfe9i5ech.execute-api.eu-west-1.amazonaws.com/dev/energisers"
-      );
-      const bootcamperResponse = await fetch(
-        "https://xsfe9i5ech.execute-api.eu-west-1.amazonaws.com/dev/bootcampers"
-      );
-      const resourceResponse = await fetch(
-        "https://xsfe9i5ech.execute-api.eu-west-1.amazonaws.com/dev/resources"
-      );
-      const energiserData = await energiserResponse.json();
-      const bootcamperData = await bootcamperResponse.json();
-      const resourceData = await resourceResponse.json();
-      console.log(energiserData, bootcamperData, resourceData);
-      return [energiserData, bootcamperData, resourceData];
-    }
-    const allData = getAllData();
-    console.log(allData);
-    return allData;
-  }, []);
-*/
+
+  // useEffect(() => {
+  //   async function getAllData() {
+  //     // make all fetches
+  //     const energiserResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/energisers"
+  //     );
+  //     const bootcamperResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/bootcampers"
+  //     );
+  //     const resourceResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/resources"
+  //     );
+  //     const bootcamperPairsResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/bootcamper-pairs"
+  //     );
+  //     const bootcamperFoursResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/bootcamper-fours"
+  //     );
+  //     const bootcamperEightsResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/bootcamper-eights"
+  //     );
+  //     const eventsResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/resources"
+  //     );
+  //     const recordingsResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/resources"
+  //     );
+  //     const weeksResponse = await fetch(
+  //       "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/resources"
+  //     );
+
+  //     // res.json all data
+  //     const energiserData = await energiserResponse.json();
+  //     const bootcamperData = await bootcamperResponse.json();
+  //     const resourceData = await resourceResponse.json();
+  //     const bootcamperPairsData = await bootcamperPairsResponse.json();
+  //     const bootcamperFoursData = await bootcamperFoursResponse.json();
+  //     const bootcamperEightsData = await bootcamperEightsResponse.json();
+  //     const eventsData = await eventsResponse.json();
+  //     const recordingsData = await recordingsResponse.json();
+  //     const weeksData = await weeksResponse.json();
+  //     console.log(energiserData, bootcamperData, resourceData);
+
+  //     //return data
+  //     return [
+  //       energiserData,
+  //       bootcamperData,
+  //       resourceData,
+  //       bootcamperPairsData,
+  //       bootcamperFoursData,
+  //       bootcamperEightsData,
+  //       eventsData,
+  //       recordingsData,
+  //       weeksData,
+  //     ];
+  //   }
+  //   const allData = getAllData();
+  //   console.log(allData);
+  //   return allData;
+  // }, []);
 
   return (
     <MuiThemeProvider theme={theme}>

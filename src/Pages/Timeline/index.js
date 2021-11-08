@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Timeline,
   TimelineItem,
@@ -21,7 +21,7 @@ return = ul with jouneryData.map that will give us a contain (divs,h2, p)
 
 */
 
-export default function Journey({ data, navbarLinks, name }) {
+export default function Journey({ navbarLinks, name }) {
   /* const topics = data.reduce((topics, { week, topic }) => {
     topics[week] ? topics[week].push(topic) : (topics[week] = [topic]);
     return topics;
@@ -32,6 +32,31 @@ export default function Journey({ data, navbarLinks, name }) {
     return resources;
   }, []);*/
   const [detail, setDetail] = useState(true);
+  const [data, setData] = useState([
+    {
+      week: "1",
+      topic: "loading",
+      link: "",
+      thumbnail: "",
+      description: [""],
+    },
+  ]);
+
+  useEffect(() => {
+    async function getResourceData() {
+      const res = await fetch(
+        "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/resources"
+      );
+      const data = await res.json();
+      const sortedData = data.sort(function (a, b) {
+        return a.week - b.week;
+      });
+      setData(sortedData);
+      return data;
+    }
+    getResourceData();
+  }, []);
+
   const resources = data.reduce(
     (resources, { week, topic, topicIcon, description, color }) => {
       resources[week] = { topic, description, topicIcon, color };
