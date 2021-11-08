@@ -6,7 +6,9 @@ describe("test1", () => {
   });
   it("test1", () => {
     cy.contains("Login").click();
-    cy.get("#username");
-    cy.get("#password");
+    cy.get("#username").type("bootcamper@schoolofcode.co.uk");
+    cy.get("#password").type("bootc4mper!");
+    cy.get("form").contains("Continue").click();
+    cy.contains("Log out").click();
   });
 });
