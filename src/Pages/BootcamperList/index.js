@@ -11,8 +11,14 @@ import React, { useEffect, useState } from "react";
 //import { nameData } from "../../data";
 import css from "./BootcamperList.module.css";
 
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
 export default function BootcamperList({ cohort }) {
   const [nameData, setNameData] = useState([]);
+  const [shuffledNames, setShuffledNames] = useState();
+  const [currentBootcamper, setCurrentBootcamper] = useState(0);
 
   useEffect(() => {
     async function getBootcamperData() {
@@ -22,6 +28,7 @@ export default function BootcamperList({ cohort }) {
       const data = await res.json();
 
       setNameData(data);
+      setShuffledNames(shuffle(data));
       return data;
     }
     getBootcamperData();
@@ -41,6 +48,9 @@ export default function BootcamperList({ cohort }) {
           Groups of 8
         </a>
       </section>
+      <button
+        onClick={() => setCurrentBootcamper((currentBootcamper + 1) % 42)}
+      />
       <main className={css.main}>
         {nameData.map((bootcamper, i) => {
           return (

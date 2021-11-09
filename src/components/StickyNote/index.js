@@ -25,7 +25,7 @@ export default function StickyNote({
     COLORS[Math.floor(Math.random() * COLORS.length)]
   );
   const [constraints, setConstraints] = useState();
-  const [zIndex, setZIndex] = useState(0);
+  const [display, setDisplay] = useState(true);
   const noteRef = useRef();
   useEffect(() => {
     const coords = noteRef.current.getBoundingClientRect();
@@ -47,7 +47,9 @@ export default function StickyNote({
       className={css.stickyNote}
       style={{
         backgroundColor: color,
-        zIndex: zIndex,
+        zIndex: display ? 0 : -1,
+        opacity: display ? 1 : 0,
+        cursor: display ? "pointer" : "default",
       }}
     >
       <div className={css.pin}>
@@ -58,7 +60,7 @@ export default function StickyNote({
         className={css.removeButton}
         onClick={() => {
           deleteNote();
-          setZIndex(-1);
+          setDisplay(false);
         }}
       >
         x
@@ -71,6 +73,9 @@ export default function StickyNote({
         rows={8}
         cols={18}
         value={text}
+        style={{
+          cursor: display ? "text" : "default",
+        }}
       />
     </motion.div>
   );
