@@ -28,4 +28,6 @@ Button:hover {
   border-color: #1d5b40;
   font-size: 50px;
   padding: 0.5em; 
+  border-radius: 1em;
+  box-shadow: #1d5b40;
 }
