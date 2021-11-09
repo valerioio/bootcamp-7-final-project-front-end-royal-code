@@ -14,7 +14,7 @@ const NameIcon = ({ name }) => {
           bg="#004ba0"
           color="white"
           w="fit-content"
-          p="0.5vw"
+          p="1.7vw 1.3vw "
           h="3em"
           m="1vw"
         >
