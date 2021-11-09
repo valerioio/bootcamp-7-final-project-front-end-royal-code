@@ -12,10 +12,46 @@ import React, { useReducer, useEffect, useState } from "react";
 //import { weeksOf4 } from "../../weeks-of-4";
 import css from "./BootcamperFoursList.module.css";
 import img1 from "../../Images/soc10.jpg";
-import { Avatar, } from "@chakra-ui/react";
+import { Avatar } from "@chakra-ui/react";
 
- let borderArr = ["#FFADAD", "#FFD6A5", "#FDFFB6", "#CAFFBF", "#9BF6FF", "#A0C4FF", "#BDB2FF", "#FFC6FF", "#FFFFFC","#FFADAD", "#FFD6A5", "#FDFFB6", "#CAFFBF", "#9BF6FF", "#A0C4FF", "#BDB2FF", "#FFC6FF", "#FFFFFC"];
-let avatarArr = ["red.400", "orange.400", "green.400", "cyan.400", "blue.400", "purple.400", "pink.400", "pink.200","red.400", "orange.400", "green.400", "cyan.400", "blue.400", "purple.400", "pink.400", "pink.200"];
+let borderArr = [
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+];
+let avatarArr = [
+  "red.400",
+  "orange.400",
+  "green.400",
+  "cyan.400",
+  "blue.400",
+  "purple.400",
+  "pink.400",
+  "pink.200",
+  "red.400",
+  "orange.400",
+  "green.400",
+  "cyan.400",
+  "blue.400",
+  "purple.400",
+  "pink.400",
+  "pink.200",
+];
 function reducer(week, action) {
   switch (action.type) {
     case "increment":
@@ -52,34 +88,41 @@ export default function BootcamperFourList({ cohort }) {
     <>
       <h1 className={css.mainTitle}>Cohort 7</h1>
       <h2 className={css.secondaryTitle}>Groups of 4</h2>
-<div className={css.alignment}>
-      <button
-        className={css.button}
-        onClick={() => {
-          dispatch({ type: "decrement" });
-        }}
-      >
-        Last Week
-      </button>
+      <div className={css.alignment}>
+        <button
+          className={css.button}
+          onClick={() => {
+            dispatch({ type: "decrement" });
+          }}
+        >
+          Last Week
+        </button>
         <h2 className={css.secondaryTitle}>Week {week.count}</h2>
-      <button
-        className={`${css.buttonRight} ${css.button}`}
-        onClick={() => {
-          dispatch({ type: "increment" });
-        }}
-      >
-        Next Week
-      </button>
-</div>
+        <button
+          className={`${css.buttonRight} ${css.button}`}
+          onClick={() => {
+            dispatch({ type: "increment" });
+          }}
+        >
+          Next Week
+        </button>
+      </div>
       <main className={css.main}>
-
         <div className={css.content}>
           <ul className={css.bootcampersList}>
             {weeksOf4[week.count - 1].groups.map((group, i) => {
               return (
-                <li key={i + "041"} className={css.pairs}>
-
-                <Avatar name={(i+1).toString().split("").join(" ")} bg={avatarArr[i]} size="lg" className={css.avatar}/>
+                <li
+                  key={i + "041"}
+                  className={css.pairs}
+                  style={{ borderColor: borderArr[i] }}
+                >
+                  <Avatar
+                    name={(i + 1).toString().split("").join(" ")}
+                    bg={avatarArr[i]}
+                    size="lg"
+                    className={css.avatar}
+                  />
                   {group.map((bootcamper, j) => {
                     return (
                       <div key={i + "041" + j} className={css.bootcamper}>
