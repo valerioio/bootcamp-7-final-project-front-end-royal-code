@@ -12,7 +12,7 @@ import React, { useEffect, useState } from "react";
 //import { energisers } from "../../data";
 import css from "./EnergiserPage.module.css";
 
-export default function EnergisersPage({energiserName}) {
+export default function EnergisersPage({ energiserName }) {
   const [energiser, setEnergiser] = useState([
     {
       screenshot: "",
@@ -24,13 +24,11 @@ export default function EnergisersPage({energiserName}) {
       id: "",
       name: "Loading",
       color: "",
-     
     },
   ]);
 
   function getEnergiser(energiserData) {
-   return energiserData.find(e=>e.name==energiserName)
-    
+    return energiserData.find((e) => e.name == energiserName);
   }
 
   useEffect(() => {
@@ -59,7 +57,7 @@ export default function EnergisersPage({energiserName}) {
       </header>
       <div className={css.content}>
         <a className={css.link} href={`${energiser.link}`}>
-          Play Energiser
+          Play {energiser.name}
         </a>
 
         <p className={css.energiserDescription}>{energiser.description}</p>
