@@ -65,11 +65,9 @@ export default function CoachDashboard({ name = null, energisers }) {
       <div className={css.dashboard}>
         <div className={css.energiser}>
           <h1 className={css.title}>Today's energiser is:</h1>
-
           <a className={css.energiserName} href={energisers[randomEnergiserIndex].link}  style={{ color: "blue" }}>
             {energisers[randomEnergiserIndex].name}
           </a>
-         
           <button className={css.Button} onClick={randomiseEnergiser}>
             Randomise
           </button>
