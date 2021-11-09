@@ -1,6 +1,7 @@
 //import { energisers } from "../../data";
 import css from "./EnergisersPage.module.css";
 import React, { useState, useEffect } from "react";
+import changeOpacity from "../../helpers/colors";
 
 const EnergisersPage = () => {
   const [energisers, setEnergisers] = useState([]);
@@ -21,10 +22,23 @@ const EnergisersPage = () => {
     <>
       <h1 className={css.mainTitle}>Energisers</h1>
       <div className={css.main}>
-        {energisers.map((energiser, i) => {console.log(`energisers/${energiser.name.toLowerCase().replaceAll(" ", "-")}`)
+        {energisers.map((energiser, i) => {
+          console.log(
+            `energisers/${energiser.name.toLowerCase().replaceAll(" ", "-")}`
+          );
           return (
-            <div key={`${i}54`} className={css.energiser} style={{borderColor:energiser.color}}>
-              <a href={`energisers/${energiser.name.toLowerCase().replaceAll(" ", "-")}`}>
+            <div
+              key={`${i}54`}
+              className={css.energiser}
+              style={{
+                borderColor: energiser.color,
+              }}
+            >
+              <a
+                href={`energisers/${energiser.name
+                  .toLowerCase()
+                  .replaceAll(" ", "-")}`}
+              >
                 <img
                   src={energiser.logo}
                   alt={energiser.name + " logo"}
@@ -32,7 +46,10 @@ const EnergisersPage = () => {
                 />
               </a>
               <a
-                className={css.link} style={{borderColor:energiser.color}}
+                className={css.link}
+                style={{
+                  borderColor: energiser.color,
+                }}
                 href={`energisers/${energiser.name.toLowerCase()}`}
               >
                 {energiser.name}
