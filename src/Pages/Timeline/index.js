@@ -111,7 +111,7 @@ export default function Journey({ navbarLinks, name }) {
                     className={css.smallContainer}
                     style={{
                       borderColor: color,
-                      backgroundColor: changeOpacity(color, 0.1),
+                      backgroundColor : color ? changeOpacity(color, 0.1): "white",
                     }}
                   >
                     <div
