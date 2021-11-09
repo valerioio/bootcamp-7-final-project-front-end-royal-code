@@ -10,6 +10,28 @@
 import React, { useState, useEffect } from "react";
 //import { journeyData } from "../../data";
 import css from "./ReadingListPage.module.css";
+import { changeHexOpacity } from "../../helpers/colors";
+
+let borderArr = [
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+];
 
 export default function ReadingListPage() {
   const [journeyData, setJourneyData] = useState([
@@ -43,12 +65,26 @@ export default function ReadingListPage() {
       <div className={css.main}>
         {journeyData.map((week, i) => {
           return (
-            <div key={i + "749"} className={css.data}>
+            <div
+              key={i + "749"}
+              className={css.data}
+              // style={{ borderColor: borderArr[i] }}
+              style={{
+                borderColor: borderArr[i],
+                backgroundColor: borderArr[i]
+                  ? changeHexOpacity(borderArr[i], 0.1)
+                  : "white",
+              }}
+            >
               <h1
                 className={css.title}
               >{`Week ${week.week}: ${week.topic}`}</h1>
               {week.description.map((description, j) => {
-                return <p key={j + "749" + i}>{description}</p>;
+                return (
+                  <p key={j + "749" + i} className={css.description}>
+                    {description}
+                  </p>
+                );
               })}
               <img
                 className={css.thumbnail}

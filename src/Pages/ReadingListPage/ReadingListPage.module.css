@@ -1,11 +1,13 @@
 .link {
   color: blue;
   text-decoration: underline;
+  grid-column: 1;
 }
 
 .link:visited {
   color: #800000;
   text-decoration: underline;
+  grid-column: 1;
 }
 
 .mainTitle {
@@ -18,21 +20,36 @@
 }
 
 .main {
-  border: 1px solid;
-  padding: 10vh;
+  /* padding: 10vh; */
 }
 
 .data {
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: 1.5em;
   line-height: 2;
+  border: 3px solid;
+  border-radius: 1em;
+  background-color: #f1f2f4;
+  margin: 1.5em;
 }
 
 .title {
   font-size: 1.2em;
   text-decoration: underline;
   font-weight: bold;
+  grid-column: 1;
 }
 
 .thumbnail {
   width: 25vw;
+  grid-column: 2;
+  grid-row: 2 / span 6;
+  border-radius: 1em;
+  margin-left: 1em;
+}
+
+.description {
+  grid-column: 1;
+  line-height: 2em;
 }
