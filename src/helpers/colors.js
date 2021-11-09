@@ -311,6 +311,10 @@ function hexToRgb(colorHex, opacity) {
   return `rgb(${red}, ${green}, ${blue}, ${opacity})`;
 }
 
-export default function changeOpacity(colorName, opacity) {
+export function changeOpacity(colorName, opacity) {
   return hexToRgb(nameToHex(colorName), opacity);
+}
+
+export function changeHexOpacity(colorHex, opacity) {
+  return hexToRgb(colorHex.slice(1), opacity);
 }

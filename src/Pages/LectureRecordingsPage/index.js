@@ -10,6 +10,7 @@
 import React, { useState, useEffect } from "react";
 //import { recordings } from "../../data";
 import css from "./LectureRecordingsPage.module.css";
+import { changeHexOpacity } from "../../helpers/colors";
 
 let borderArr = [
   "#FFADAD",
@@ -57,7 +58,12 @@ export default function LectureRecordingsPage() {
           return (
             <div
               className={css.recordings}
-              style={{ borderColor: borderArr[i] }}
+              style={{
+                borderColor: borderArr[i],
+                backgroundColor: borderArr[i]
+                  ? changeHexOpacity(borderArr[i], 0.1)
+                  : "white",
+              }}
             >
               <h1 className={css.title}>{recording.title}</h1>
               <div className={css.recordingDetails}>
