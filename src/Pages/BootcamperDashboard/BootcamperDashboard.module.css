@@ -25,14 +25,13 @@
   vertical-align: top;
 }
 
-.secondaryTitle {
+.subTitle {
   font-family: "Cardo";
-  font-style: medium;
-  font-size: 5rem;
+  font-size: 1.4rem;
   letter-spacing: -4%;
   vertical-align: top;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
+  margin-top: -1.5rem;
+  margin-bottom: 5rem;
 }
 
 .subTitle {
@@ -41,5 +40,5 @@
   letter-spacing: -4%;
   vertical-align: top;
   margin-top: -1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
