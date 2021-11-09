@@ -17,11 +17,9 @@ const NOTES = "notes";
 
 export default function PinBoard() {
   const [notes, setNotes] = useState([
-    "here is a test note",
-    "here is another note",
-    "and another",
-    "and another",
-    "and another",
+    "edit serverless recordings",
+    "pop quiz friday",
+    "browser preview vs code extension",
   ]);
   const [coords, setCoords] = useState(null);
   const pinboardRef = useRef();
