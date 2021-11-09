@@ -60,10 +60,9 @@ export default function CoachDashboard({ name = null, energisers }) {
   }
   return (
     <div>
-      <h1 className={css.mainTitle}>Dashboard</h1>
+      <h1 className={css.mainTitle}>Welcom Liz</h1>
       <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
-        <h2 className={css.secondaryTitle}>Pinboard</h2>
         <PinBoard />
         <div className={css.energiser}>
           <h2 className={css.secondaryTitle}>Today's energiser is:</h2>
