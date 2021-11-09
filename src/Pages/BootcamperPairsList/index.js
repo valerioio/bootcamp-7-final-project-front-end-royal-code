@@ -134,6 +134,7 @@ export default function BootcamperPairList({ cohort }) {
                     bg={avatarArr[i]}
                     size="lg"
                     className={css.avatar}
+                    color="white"
                   />
                   {pair.map((bootcamper, j) => {
                     return (

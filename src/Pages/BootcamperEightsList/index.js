@@ -17,22 +17,22 @@ import { Avatar } from "@chakra-ui/react";
 let borderArr = [
   "#FFADAD",
   "#FFD6A5",
-  "#FDFFB6",
   "#CAFFBF",
   "#9BF6FF",
   "#A0C4FF",
   "#BDB2FF",
   "#FFC6FF",
-  "#FFFFFC",
+  "#FFAFCC",
   "#FFADAD",
   "#FFD6A5",
-  "#FDFFB6",
   "#CAFFBF",
   "#9BF6FF",
   "#A0C4FF",
   "#BDB2FF",
   "#FFC6FF",
-  "#FFFFFC",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
 ];
 let avatarArr = [
   "red.400",
@@ -113,7 +113,11 @@ export default function BootcamperEightsList({ cohort }) {
           <ul className={css.bootcampersList}>
             {weeksOf8[week.count - 1].groups.map((group, i) => {
               return (
-                <li key={i + "042"} className={css.pairs}>
+                <li
+                  key={i + "042"}
+                  className={css.pairs}
+                  style={{ borderColor: borderArr[i] }}
+                >
                   <Avatar
                     name={(i + 1).toString().split("").join(" ")}
                     bg={avatarArr[i]}
