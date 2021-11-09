@@ -7,7 +7,7 @@ const Layout = ({
   user,
   currentPage,
   color = "white",
-  image= 'url("https://i.ibb.co/19xnwCL/bg.jpg")',
+  image= 'url("https://i.ibb.co/z7MgkTf/triangle-mosaic.png")',
   opacity,
 }) => {
 
@@ -22,7 +22,7 @@ const Layout = ({
         {children}
         <div
           className={image ? css.mainImageAfter : null}
-          style={image ? { background: image, opacity: opacity || 0.2 } : null}
+          style={image ? { background: image, opacity: opacity || 1 } : null}
         ></div>
       </main>
     </div>
