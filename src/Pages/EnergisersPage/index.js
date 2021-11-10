@@ -1,7 +1,7 @@
 //import { energisers } from "../../data";
 import css from "./EnergisersPage.module.css";
 import React, { useState, useEffect } from "react";
-import changeOpacity from "../../helpers/colors";
+import { changeOpacity } from "../../helpers/colors";
 
 const EnergisersPage = () => {
   const [energisers, setEnergisers] = useState([]);
@@ -23,15 +23,15 @@ const EnergisersPage = () => {
       <h1 className={css.mainTitle}>Energisers</h1>
       <div className={css.main}>
         {energisers.map((energiser, i) => {
-          console.log(
-            `energisers/${energiser.name.toLowerCase().replaceAll(" ", "-")}`
-          );
           return (
             <div
               key={`${i}54`}
               className={css.energiser}
               style={{
                 borderColor: energiser.color,
+                backgroundColor: energiser.color
+                  ? changeOpacity(energiser.color, 0.1)
+                  : "white",
               }}
             >
               <a

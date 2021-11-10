@@ -11,12 +11,67 @@ import React, { useEffect, useState } from "react";
 //import { nameData } from "../../data";
 import css from "./BootcamperList.module.css";
 
-// function shuffle(array) {
-//   array.sort(() => Math.random() - 0.5);
-// }
+let borderArr = [
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+  "#CAFFBF",
+  "#9BF6FF",
+  "#A0C4FF",
+  "#BDB2FF",
+  "#FFC6FF",
+  "#FFAFCC",
+  "#FFADAD",
+  "#FFD6A5",
+];
+
 
 export default function BootcamperList({ cohort }) {
   const [nameData, setNameData] = useState([]);
+
 
   useEffect(() => {
     async function getBootcamperData() {
@@ -48,16 +103,14 @@ export default function BootcamperList({ cohort }) {
       <main className={css.main}>
         {nameData.map((bootcamper, i) => {
           return (
-            <div key={i + "350"} className={css.bootcamper}>
+            <a key={i + "350"} className={css.bootcamper} href={bootcamper.link} style={{ borderColor: borderArr[i] }}>
               <img
                 className={css.avatar}
                 src={bootcamper.image}
                 alt={`${bootcamper.firstName} ${bootcamper.lastName} avatar`}
               />
-              <a className={css.link} href={bootcamper.link}>
                 {bootcamper.firstName} {bootcamper.lastName}
               </a>
-            </div>
           );
         })}
       </main>

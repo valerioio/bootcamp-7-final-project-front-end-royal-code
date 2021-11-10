@@ -15,6 +15,8 @@ import img5 from "../../Images/soc1.jpg";
 import img6 from "../../Images/soc2.jpg";
 import img7 from "../../Images/soc6.jpg";
 
+
+
 const cohorts = [img1, img2, img3, img4, img5, img6, img7];
 
 export default function CohortPage() {
@@ -24,7 +26,7 @@ export default function CohortPage() {
       <section className={css.main}>
         {cohorts.map((cohort, i) => {
           return (
-            <div key={i + "701"} className={css.cohortTile}>
+            <div key={i + "701"} className={css.cohortTile} >
               <img
                 className={css.cohortImage}
                 src={cohort}
