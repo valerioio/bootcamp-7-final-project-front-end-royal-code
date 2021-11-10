@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import LoginPage from "../../Pages/LoginPage";
-import CSS from "./App.module.css";
+
 import { useAuth0 } from "@auth0/auth0-react";
 import { journeyData, energisers, nameData, recordings } from "../../data";
 import {

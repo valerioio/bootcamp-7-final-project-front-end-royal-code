@@ -48,11 +48,11 @@ const NavBar = ({ email, currentPage }) => {
         direction="column"
         align="center"
         wrap="wrap"
-        w="15em"
+        w="15vw"
         h="100vh"
       >
         <br />
-        <img src={logo} alt="logo" width="90%" />
+        <img src={logo} alt="logo" width="130vw" />
         <Flex
           as="nav"
           direction="column"
