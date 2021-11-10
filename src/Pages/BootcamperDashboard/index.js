@@ -29,7 +29,7 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
       <h1 className={css.mainTitle}>Welcome Cassandra</h1>
       <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
-        <PinBoard />
+        <PinBoard user="bootcamper" />
 
         {/* <Calendar /> */}
         <h2 className={css.secondaryTitle}>Upcoming events</h2>

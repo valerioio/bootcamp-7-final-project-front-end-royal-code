@@ -14,7 +14,6 @@ import Home from "../../Pages/Home";
 import EnergisersPage from "../../Pages/EnergisersPage";
 import Layout from "../Layout";
 import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
-import GarticPage from "../../Pages/GarticPage";
 import ReadingListPage from "../../Pages/ReadingListPage";
 import LectureRecordingsPage from "../../Pages/LectureRecordingsPage";
 import BootcamperList from "../../Pages/BootcamperList";
@@ -144,48 +143,55 @@ function App() {
             <Route exact path="/energisers/gartic">
               <Layout
                 user={user}
-                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")'
+                opacity="20%"
               >
-              <EnergiserPage energiserName= 'Gartic'/>
+                <EnergiserPage energiserName="Gartic" />
               </Layout>
             </Route>
             <Route exact path="/energisers/countdown">
               <Layout
                 user={user}
-                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")'
+                opacity="20%"
               >
-              <EnergiserPage energiserName= 'Countdown'/>
+                <EnergiserPage energiserName="Countdown" />
               </Layout>
-            </Route>  <Route exact path="/energisers/higher-or-lower">
+            </Route>{" "}
+            <Route exact path="/energisers/higher-or-lower">
               <Layout
                 user={user}
-                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")'
+                opacity="20%"
               >
-              <EnergiserPage energiserName= 'Higher or Lower'/>
+                <EnergiserPage energiserName="Higher or Lower" />
               </Layout>
             </Route>
             <Route exact path="/energisers/scattergories">
               <Layout
                 user={user}
-                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")'
+                opacity="20%"
               >
-              <EnergiserPage energiserName= 'Scattergories'/>
+                <EnergiserPage energiserName="Scattergories" />
               </Layout>
             </Route>
             <Route exact path="/energisers/articulate">
               <Layout
                 user={user}
-                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")'
+                opacity="20%"
               >
-              <EnergiserPage energiserName= 'Articulate'/>
+                <EnergiserPage energiserName="Articulate" />
               </Layout>
             </Route>
             <Route exact path="/energisers/charades">
               <Layout
                 user={user}
-                image='url("https://i.ibb.co/djGMmMV/splash.jpg")' opacity='20%'
+                image='url("https://i.ibb.co/djGMmMV/splash.jpg")'
+                opacity="20%"
               >
-              <EnergiserPage energiserName= 'Charades'/>
+                <EnergiserPage energiserName="Charades" />
               </Layout>
             </Route>
             <Route exact path="/reading-list">
@@ -214,14 +220,17 @@ function App() {
               </Layout>
             </Route>
             <Route exact path="/cohorts/7/groups-of-8">
-              <Layout user={user} currentPage={"/cohorts/7/groups-of-8"}
-              >
+              <Layout user={user} currentPage={"/cohorts/7/groups-of-8"}>
                 <BootcamperEightsList />
               </Layout>
             </Route>
             <Route exact path="/cohorts">
-              <Layout user={user} currentPage={"/cohorts"}
-              image='url("https://i.ibb.co/19xnwCL/bg.jpg")' opacity="20%">
+              <Layout
+                user={user}
+                currentPage={"/cohorts"}
+                image='url("https://i.ibb.co/19xnwCL/bg.jpg")'
+                opacity="20%"
+              >
                 <CohortsPage />
               </Layout>
             </Route>

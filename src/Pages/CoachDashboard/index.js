@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 //import List from "../List";
 import PinBoard from "../../components/PinBoard";
 // import Calendar from "../../components/Calendar";
-import { eventData } from "../../data";
+//import { eventData } from "../../data";
 import Event from "../../components/Event";
 
 // function groupParings(bootcampers, size) {
@@ -63,7 +63,7 @@ export default function CoachDashboard({ name = null, energisers }) {
       <h1 className={css.mainTitle}>Welcome Liz</h1>
       <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
-        <PinBoard />
+        <PinBoard user="coach" />
         <div className={css.energiser}>
           <h2 className={css.secondaryTitle}>Today's energiser is:</h2>
           <div className={css.energiserCard}>

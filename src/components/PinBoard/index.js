@@ -15,12 +15,23 @@ const SEPARATOR = "|";
 const DELETE = "!";
 const NOTES = "notes";
 
-export default function PinBoard() {
-  const [notes, setNotes] = useState([
-    "edit serverless recordings",
-    "pop quiz friday",
-    "browser preview vs code extension",
-  ]);
+export default function PinBoard({ user }) {
+  const [notes, setNotes] = useState(
+    user === "bootcamper"
+      ? [
+          "sort VS code autosave",
+          "update users table",
+          "plan bootcamper party 🎉",
+        ]
+      : user === "coach"
+      ? [
+          "edit serverless recordings",
+          "pop quiz friday",
+          "browser preview vs code extension",
+        ]
+      : []
+  );
+
   const [coords, setCoords] = useState(null);
   const pinboardRef = useRef();
   useEffect(() => {

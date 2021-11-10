@@ -11,6 +11,7 @@ import logo from "../../socLogo.png";
 import styles from "./LoginPage.module.css";
 
 export default function LoginPage() {
+  localStorage.clear();
   return (
     <div className={styles.background}>
       <img className={styles.logo} src={logo} alt="logo" />

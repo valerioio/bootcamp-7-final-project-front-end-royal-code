@@ -62,9 +62,11 @@ const NavBar = ({ email, currentPage }) => {
           w="100%"
           mt="10%"
         >
-          {(email === "bootcamper@schoolofcode.co.uk"
+          {(email === "bootcamper@schoolofcode.co.uk" ||
+          email === "emanuel@email.com"
             ? navbarLinksBootcampers
-            : email === "coach@schoolofcode.co.uk"
+            : email === "coach@schoolofcode.co.uk" ||
+              email === "christina@schoolofcode.co.uk"
             ? navbarLinksCoaches
             : [{ linkText: "Dashboard", href: "/home" }]
           ).map((link) => {
