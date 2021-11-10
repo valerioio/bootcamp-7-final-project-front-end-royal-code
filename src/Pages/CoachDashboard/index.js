@@ -60,21 +60,27 @@ export default function CoachDashboard({ name = null, energisers }) {
   }
   return (
     <div>
-      <h1 className={css.mainTitle}>Dashboard</h1>
+      <h1 className={css.mainTitle}>Welcome Liz</h1>
       <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
-        <div className={css.energiser}>
-          <h1 className={css.title}>Today's energiser is:</h1>
-          <a className={css.energiserName} href={energisers[randomEnergiserIndex].link}  style={{ color: "blue" }}>
-            {energisers[randomEnergiserIndex].name}
-          </a>
-          <button className={css.Button} onClick={randomiseEnergiser}>
-            Randomise
-          </button>
-          <br />
-        </div>
         <PinBoard />
-
+        <div className={css.energiser}>
+          <h2 className={css.secondaryTitle}>Today's energiser is:</h2>
+          <div className={css.energiserCard}>
+            <a
+              className={css.energiserName}
+              href={energisers[randomEnergiserIndex].link}
+            >
+              {energisers[randomEnergiserIndex].name}
+            </a>
+            <button
+              className={css.randomiserButton}
+              onClick={randomiseEnergiser}
+            >
+              Randomise
+            </button>
+          </div>
+        </div>
         {/* <Calendar /> */}
         <h2 className={css.secondaryTitle}>Upcoming events</h2>
         <ul>

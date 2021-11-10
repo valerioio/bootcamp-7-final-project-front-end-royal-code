@@ -100,9 +100,7 @@ export default function BootcamperList({ cohort }) {
           Groups of 8
         </a>
       </section>
-
-      <main className={css.main}  >
-
+      <main className={css.main}>
         {nameData.map((bootcamper, i) => {
           return (
             <a key={i + "350"} className={css.bootcamper} href={bootcamper.link} style={{ borderColor: borderArr[i] }}>
