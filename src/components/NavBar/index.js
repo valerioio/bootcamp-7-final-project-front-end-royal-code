@@ -52,7 +52,7 @@ const NavBar = ({ email, currentPage }) => {
         h="100vh"
       >
         <br />
-        <img src={logo} alt="logo" width="90%" />
+        <img src={logo} alt="logo" width="50%" />
         <Flex
           as="nav"
           direction="column"
