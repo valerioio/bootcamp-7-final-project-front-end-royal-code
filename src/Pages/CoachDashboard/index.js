@@ -1,10 +1,10 @@
 import css from "./CoachDashboard.module.css";
 import "../../index.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 //import List from "../List";
 import PinBoard from "../../components/PinBoard";
 // import Calendar from "../../components/Calendar";
-import { eventData } from "../../data";
+//import { eventData } from "../../data";
 import Event from "../../components/Event";
 
 // function groupParings(bootcampers, size) {
@@ -29,11 +29,21 @@ import Event from "../../components/Event";
 //   }
 //   return groups;
 // }
-export default function CoachDashboard({
-  Listings = null,
-  name = null,
-  energisers,
-}) {
+export default function CoachDashboard({ name = null, energisers }) {
+  const [eventData, setEventData] = useState([]);
+
+  useEffect(() => {
+    async function getEventData() {
+      const res = await fetch(
+        "https://d27b2o3all.execute-api.eu-west-1.amazonaws.com/dev/events"
+      );
+      const data = await res.json();
+      setEventData(data);
+      return data;
+    }
+    getEventData();
+  }, []);
+
   if (!localStorage.getItem("initialEnergiser")) {
     localStorage.setItem(
       "initialEnergiser",
@@ -50,29 +60,27 @@ export default function CoachDashboard({
   }
   return (
     <div>
-      <h1 className={css.mainTitle}>Dashboard</h1>
+      <h1 className={css.mainTitle}>Welcome Liz</h1>
       <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
+        <PinBoard user="coach" />
         <div className={css.energiser}>
-          <h1 className={css.title}>Today's energiser is:</h1>
-
-          <h4 className={css.energiserName}>
-            {energisers[randomEnergiserIndex].name}
-          </h4>
-          <a
-            className={css.energiserLink}
-            href={energisers[randomEnergiserIndex].link}
-            style={{ color: "blue" }}
-          >
-            {energisers[randomEnergiserIndex].link}
-          </a>
-          <button className={css.Button} onClick={randomiseEnergiser}>
-            Randomise
-          </button>
-          <br />
+          <h2 className={css.secondaryTitle}>Today's energiser is:</h2>
+          <div className={css.energiserCard}>
+            <a
+              className={css.energiserName}
+              href={energisers[randomEnergiserIndex].link}
+            >
+              {energisers[randomEnergiserIndex].name}
+            </a>
+            <button
+              className={css.randomiserButton}
+              onClick={randomiseEnergiser}
+            >
+              Randomise
+            </button>
+          </div>
         </div>
-        <PinBoard />
-
         {/* <Calendar /> */}
         <h2 className={css.secondaryTitle}>Upcoming events</h2>
         <ul>

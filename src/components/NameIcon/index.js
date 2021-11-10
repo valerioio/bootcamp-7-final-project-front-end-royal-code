@@ -14,7 +14,7 @@ const NameIcon = ({ name }) => {
           bg="#004ba0"
           color="white"
           w="fit-content"
-          p="0.5vw"
+          p="1.7vw 1.3vw "
           h="3em"
           m="1vw"
         >
@@ -26,6 +26,13 @@ const NameIcon = ({ name }) => {
               color="#004ba0"
               size="sm"
               m="0 1em 0 0"
+              src={
+                name === "christina"
+                  ? "https://ca.slack-edge.com/T6L933W4X-URP49GRN2-363ac7421e9d-512"
+                  : name === "emanuel"
+                  ? "https://ca.slack-edge.com/T6L933W4X-U0280RAM4RE-31d1651f6a96-512"
+                  : ""
+              }
             />
             <Text className={css.name}>{capitalizedName}</Text>
           </Flex>

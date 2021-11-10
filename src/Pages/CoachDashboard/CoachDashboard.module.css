@@ -12,7 +12,7 @@
   letter-spacing: -4%;
   vertical-align: top;
   margin-top: -1.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 .list {
@@ -31,44 +31,43 @@
 .dashboard {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.energiser {
-  display: grid;
-  padding: 1em;
+.energiserCard {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin: auto;
+  border: 3px solid#1d5b40;
+  padding: 2.7em 5em;
+  border-radius: 1em;
+  box-shadow: 0 3px 3px 0;
+  background-color: rgb(193, 218, 215, 0.3);
 }
 
 .energiserName {
-  margin-top: 1em;
-  font-size: large;
-  margin: auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: blue;
 }
 
-.Button {
-  border: 0.1em solid;
-  border-color: #1d5b40 !important;
-  font-size: 1em;
-  padding: 0 10px;
-  height: 2em !important;
-  display: block;
-  width: 10vw;
-  margin: auto;
+.randomiserButton {
+  border: 3px solid#1d5b40;
+  padding: 0.5em;
+  border-radius: 1em;
+  box-shadow: 0 3px 3px 0;
+  font-size: 1.5rem;
+}
+.randomiserButton:hover {
+  background-color: rgb(193, 218, 215, 0.3);
 }
 
 .secondaryTitle {
   font-family: "Cardo";
   font-style: medium;
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: -4%;
   vertical-align: top;
-  margin-bottom: 0.5em;
-  margin-top: 1em;
-}
-
-.energiserLink {
-  margin: auto;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
