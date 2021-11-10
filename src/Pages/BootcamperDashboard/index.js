@@ -26,7 +26,7 @@ export default function BootcamperDashboard({ Listings, name, recordings }) {
 
   return (
     <div>
-      <h1 className={css.mainTitle}>Welcome Cassandra</h1>
+      <h1 className={css.mainTitle}>Welcome Emanuel</h1>
       <p className={css.subTitle}>{new Date().toDateString()}</p>
       <div className={css.dashboard}>
         <PinBoard />
