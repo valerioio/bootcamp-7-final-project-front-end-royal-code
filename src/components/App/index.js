@@ -228,7 +228,7 @@ function App() {
               <Layout
                 user={user}
                 currentPage={"/cohorts"}
-                image='url("https://i.ibb.co/19xnwCL/bg.jpg")'
+                // image='url("https://i.ibb.co/19xnwCL/bg.jpg")'
                 opacity="20%"
               >
                 <CohortsPage />

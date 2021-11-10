@@ -6,7 +6,7 @@ const Layout = ({
   children,
   user,
   currentPage,
-  color = "white",
+  // color = "white",
   image= 'url("https://i.ibb.co/z7MgkTf/triangle-mosaic.png")',
   opacity,
 }) => {
@@ -14,7 +14,7 @@ const Layout = ({
   return (
     <div
       className={image ? css.layoutImage : css.layout}
-      style={{ backgroundColor: color }}
+      // style={{ backgroundColor: color }}
     >
       <NavBar email={user?.email} currentPage={currentPage} />
       <main className={image ? css.mainImage : css.main}>

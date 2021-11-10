@@ -300,24 +300,21 @@ const COLOR_HEXS = [
   "9acd32",
 ];
 function nameToHex(colorName) {
-  console.log("nameToHex", colorName);
   const lowerName = colorName.toLowerCase();
   return COLOR_HEXS[COLOR_NAMES.findIndex((name) => name === lowerName)];
 }
 
 function hexToRgb(colorHex, opacity) {
-  console.log("hexToRgb", colorHex, opacity);
   const [red, green, blue] = colorHex
     .match(/../g)
     .map((hex) => parseInt(hex, 16));
   return `rgb(${red}, ${green}, ${blue}, ${opacity})`;
 }
 
-export function changeOpacity(colorName, opacity) {
-  console.log("changeOpacity", colorName, opacity);
-  return hexToRgb(nameToHex(colorName), opacity);
-}
-
-export function changeHexOpacity(colorHex, opacity) {
-  return hexToRgb(colorHex.slice(1), opacity);
+export default function changeOpacity(color, opacity) {
+  if (!color) color = "white";
+  return hexToRgb(
+    color.charAt(0) === "#" ? color.slice(1) : nameToHex(color),
+    opacity
+  );
 }

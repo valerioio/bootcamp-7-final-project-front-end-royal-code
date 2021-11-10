@@ -1,7 +1,7 @@
 //import { energisers } from "../../data";
 import css from "./EnergisersPage.module.css";
 import React, { useState, useEffect } from "react";
-import { changeOpacity } from "../../helpers/colors";
+import changeOpacity from "../../helpers/colors";
 
 const EnergisersPage = () => {
   const [energisers, setEnergisers] = useState([]);
@@ -29,9 +29,7 @@ const EnergisersPage = () => {
               className={css.energiser}
               style={{
                 borderColor: energiser.color,
-                backgroundColor: energiser.color
-                  ? changeOpacity(energiser.color, 0.1)
-                  : "white",
+                backgroundColor: changeOpacity(energiser.color, 0.1),
               }}
             >
               <a
