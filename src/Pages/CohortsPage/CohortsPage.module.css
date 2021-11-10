@@ -13,7 +13,6 @@
 }
 
 .cohortImage {
-
   height: 20vh;
 }
 
@@ -22,11 +21,14 @@
   align-self: baseline;
   font-family: "Cardo";
   margin-bottom: 2.5rem;
-
-
+  border: 3px solid;
+  border-radius: 1em;
+  background-color: #f1f2f4;
+  margin: 1.5em;
+  box-shadow: 0 3px 3px 0;
+  text-align: center;
 }
 
 .link {
   font-size: 1.5em;
-
 }
