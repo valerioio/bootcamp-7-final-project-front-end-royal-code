@@ -7,7 +7,7 @@
 
 import React from "react";
 import css from "./CohortsPage.module.css";
-import { changeHexOpacity } from "../../helpers/colors";
+import changeOpacity from "../../helpers/colors";
 import img1 from "../../Images/soc7.jpg";
 import img2 from "../../Images/soc8.jpg";
 import img3 from "../../Images/soc3.jpg";
@@ -50,9 +50,7 @@ export default function CohortPage() {
               className={css.cohortTile}
               style={{
                 borderColor: borderArr[i],
-                backgroundColor: borderArr[i]
-                  ? changeHexOpacity(borderArr[i], 0.1)
-                  : "white",
+                backgroundColor: changeOpacity(borderArr[i], 0.1),
               }}
             >
               <img

@@ -10,7 +10,7 @@
 import React, { useState, useEffect } from "react";
 //import { journeyData } from "../../data";
 import css from "./ReadingListPage.module.css";
-import { changeHexOpacity } from "../../helpers/colors";
+import changeOpacity from "../../helpers/colors";
 
 let borderArr = [
   "#FFADAD",
@@ -71,9 +71,7 @@ export default function ReadingListPage() {
               // style={{ borderColor: borderArr[i] }}
               style={{
                 borderColor: borderArr[i],
-                backgroundColor: borderArr[i]
-                  ? changeHexOpacity(borderArr[i], 0.1)
-                  : "white",
+                backgroundColor: changeOpacity(borderArr[i], 0.1),
               }}
             >
               <h1

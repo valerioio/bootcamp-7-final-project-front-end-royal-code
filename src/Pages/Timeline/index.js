@@ -10,7 +10,7 @@ import {
 } from "@material-ui/lab";
 import css from "./Timeline.module.css";
 import { Switch } from "@chakra-ui/react";
-import { changeOpacity } from "../../helpers/colors";
+import changeOpacity from "../../helpers/colors";
 
 /* plan
 import react 
@@ -111,9 +111,7 @@ export default function Journey({ navbarLinks, name }) {
                     className={css.smallContainer}
                     style={{
                       borderColor: color,
-                      backgroundColor: color
-                        ? changeOpacity(color, 0.1)
-                        : "white",
+                      backgroundColor: changeOpacity(color, 0.1),
                     }}
                   >
                     <div
