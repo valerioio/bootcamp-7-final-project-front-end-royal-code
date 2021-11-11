@@ -229,7 +229,7 @@ function App() {
                 user={user}
                 currentPage={"/cohorts"}
                 // image='url("https://i.ibb.co/19xnwCL/bg.jpg")'
-                opacity="20%"
+                // opacity="20%"
               >
                 <CohortsPage />
               </Layout>
