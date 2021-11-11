@@ -2,5 +2,6 @@
   "baseUrl": "https://main.d2o20242c1ey75.amplifyapp.com/",
   "viewportWidth": 1536,
   "viewportHeight": 714,
+  "scrollBehavior": false,
   "chromeWebSecurity": false
 }
