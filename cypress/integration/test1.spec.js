@@ -28,17 +28,17 @@ describe("Bootcamper Demo", () => {
       .move({ deltaX: 100, deltaY: -700 })
       .wait(1500);
     cy.get("p").contains("Yrral").scrollIntoView({ duration: 2000 }).wait(1000);
-    cy.get('a[href*="/journey"]').realHover().wait(1500).click().wait(1500);
+    cy.get('a[href*="/journey"]').realHover().wait(1500).click().wait(2500);
     cy.get(`span[class="chakra-switch__thumb css-7roig"]`).click().wait(2000);
     cy.get(`span[class="chakra-switch__thumb css-7roig"]`).click().wait(1000);
     cy.scrollTo("bottom", { duration: 2000 }).wait(1000);
-    cy.get('a[href*="/reading-list"]').realHover().wait(1000).click().wait(500);
+    cy.get('a[href*="/reading-list"]').realHover().wait(1000).click().wait(2000);
     cy.scrollTo("bottom", { duration: 2000 }).wait(1000);
     cy.get('a[href*="/lecture-recordings"]')
       .realHover()
       .wait(1000)
       .click()
-      .wait(500);
+      .wait(2000);
     cy.scrollTo("bottom", { duration: 2000 }).wait(1000);
     cy.get(`button[class="LogoutButton_logout__3XION"]`).click();
   });
@@ -92,7 +92,7 @@ describe("Coach Demo", () => {
     cy.scrollTo("bottom", { duration: 1000 }).wait(1000);
     cy.get(`a`).contains("Gartic").realHover().wait(1000).click().wait(1000);
     cy.scrollTo("bottom", { duration: 1000 }).wait(1000);
-    cy.get('a[href*="/cohorts"]').realHover().wait(1000).click().wait(500);
+    cy.get('a[href*="/cohorts"]').realHover().wait(1000).click().wait(2000);
     cy.scrollTo("bottom", { duration: 2000 }).wait(1000);
     cy.get(`a`).contains("7").click().wait(1000);
     cy.get(`a[href="https://main.d3rc3gpot85iux.amplifyapp.com/student/122"]`)
@@ -103,7 +103,7 @@ describe("Coach Demo", () => {
     cy.get(`a[href="https://main.d3rc3gpot85iux.amplifyapp.com/student/122"]`)
       .contains("Cassandra")
       .click()
-      .wait(7500);
+      .wait(10000);
     cy.go("back").go("back").go("back").wait(1000);
     cy.get("a").contains("Pairs").click().wait(1000);
     cy.get("button").contains("Next").click().wait(1500);
